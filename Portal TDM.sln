@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "TDM.Db", "LaefazDb\TDM.Db.sqlproj", "{393ED8E2-5406-4CF5-AB28-7D8CD75B5AF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDM.Web", "LaefazWeb\TDM.Web.csproj", "{B76D5E5D-A2C6-4B99-B32C-A492BADF63C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDM.Jenkins.PosBuild", "TDM.Jenkins.PosBuild\TDM.Jenkins.PosBuild.csproj", "{9B11C0C0-A966-4DEF-B4A7-C1C35D916204}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TDM.Jenkins.PosBuild2", "TDM.Jenkins.PosBuild2\TDM.Jenkins.PosBuild2.csproj", "{F2DD18C7-7E26-49F2-AB34-9EDBBBC27249}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{393ED8E2-5406-4CF5-AB28-7D8CD75B5AF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{393ED8E2-5406-4CF5-AB28-7D8CD75B5AF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{393ED8E2-5406-4CF5-AB28-7D8CD75B5AF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{393ED8E2-5406-4CF5-AB28-7D8CD75B5AF9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{393ED8E2-5406-4CF5-AB28-7D8CD75B5AF9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B76D5E5D-A2C6-4B99-B32C-A492BADF63C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76D5E5D-A2C6-4B99-B32C-A492BADF63C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76D5E5D-A2C6-4B99-B32C-A492BADF63C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76D5E5D-A2C6-4B99-B32C-A492BADF63C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B11C0C0-A966-4DEF-B4A7-C1C35D916204}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B11C0C0-A966-4DEF-B4A7-C1C35D916204}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B11C0C0-A966-4DEF-B4A7-C1C35D916204}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B11C0C0-A966-4DEF-B4A7-C1C35D916204}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DD18C7-7E26-49F2-AB34-9EDBBBC27249}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DD18C7-7E26-49F2-AB34-9EDBBBC27249}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DD18C7-7E26-49F2-AB34-9EDBBBC27249}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DD18C7-7E26-49F2-AB34-9EDBBBC27249}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://teamproject.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = LaefazDb\\TDM.Db.sqlproj
+		SccProjectName1 = LaefazDb
+		SccLocalPath1 = LaefazDb
+		SccProjectUniqueName2 = LaefazWeb\\TDM.Web.csproj
+		SccProjectName2 = LaefazWeb
+		SccLocalPath2 = LaefazWeb
+		SccProjectUniqueName3 = TDM.Jenkins.PosBuild\\TDM.Jenkins.PosBuild.csproj
+		SccProjectName3 = TDM.Jenkins.PosBuild
+		SccLocalPath3 = TDM.Jenkins.PosBuild
+		SccProjectUniqueName4 = TDM.Jenkins.PosBuild2\\TDM.Jenkins.PosBuild2.csproj
+		SccProjectName4 = TDM.Jenkins.PosBuild2
+		SccLocalPath4 = TDM.Jenkins.PosBuild2
+	EndGlobalSection
+EndGlobal

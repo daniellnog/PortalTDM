@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="40c6133f5c1c4760b7a716713e3f6e8c" Name="Diagram1">
+        <EntityTypeShape EntityType="TDM.Db.AmbienteExecucao" Width="1.5" PointX="1.5" PointY="50.125" />
+        <EntityTypeShape EntityType="TDM.Db.AmbienteVirtual" Width="1.5" PointX="1.5" PointY="47.625" />
+        <EntityTypeShape EntityType="TDM.Db.AUT" Width="1.5" PointX="1.5" PointY="22.375" />
+        <EntityTypeShape EntityType="TDM.Db.CondicaoScript" Width="1.5" PointX="1.5" PointY="33.25" />
+        <EntityTypeShape EntityType="TDM.Db.DataPool" Width="1.5" PointX="0.75" PointY="14.375" />
+        <EntityTypeShape EntityType="TDM.Db.Demanda" Width="1.5" PointX="1.5" PointY="19.875" />
+        <EntityTypeShape EntityType="TDM.Db.Execucao" Width="1.5" PointX="0.75" PointY="38.25" />
+        <EntityTypeShape EntityType="TDM.Db.MapaCalor" Width="1.5" PointX="3" PointY="6.875" />
+        <EntityTypeShape EntityType="TDM.Db.Parametro" Width="1.5" PointX="0.75" PointY="60.125" />
+        <EntityTypeShape EntityType="TDM.Db.ParametroScript" Width="1.5" PointX="3" PointY="58.625" />
+        <EntityTypeShape EntityType="TDM.Db.ParametroValor" Width="1.5" PointX="5.25" PointY="2.25" />
+        <EntityTypeShape EntityType="TDM.Db.Script" Width="1.5" PointX="1.5" PointY="29.875" />
+        <EntityTypeShape EntityType="TDM.Db.Script_CondicaoScript" Width="1.5" PointX="1.5" PointY="25.625" />
+        <EntityTypeShape EntityType="TDM.Db.Script_CondicaoScript_Ambiente" Width="1.5" PointX="1.5" PointY="43.375" />
+        <EntityTypeShape EntityType="TDM.Db.Status" Width="1.5" PointX="0.75" PointY="55.125" />
+        <EntityTypeShape EntityType="TDM.Db.StatusExecucao" Width="1.5" PointX="1.5" PointY="35.875" />
+        <EntityTypeShape EntityType="TDM.Db.TDM" Width="1.5" PointX="1.5" PointY="11.125" />
+        <EntityTypeShape EntityType="TDM.Db.TDM_Usuario" Width="1.5" PointX="6" PointY="7.25" />
+        <EntityTypeShape EntityType="TDM.Db.TelaMapaCalor" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="TDM.Db.TestData" Width="1.5" PointX="3" PointY="0.75" />
+        <EntityTypeShape EntityType="TDM.Db.TipoFaseTeste" Width="1.5" PointX="1.5" PointY="52.5" />
+        <EntityTypeShape EntityType="TDM.Db.TipoParametro" Width="1.5" PointX="0.75" PointY="57.75" />
+        <EntityTypeShape EntityType="TDM.Db.Usuario" Width="1.5" PointX="0.75" PointY="7.25" />
+        <AssociationConnector Association="TDM.Db.FK_Script_CondicaoScript_Ambiente_AmbienteExeucao" />
+        <AssociationConnector Association="TDM.Db.FK_Script_CondicaoScript_Ambiente_AmbienteVirtual" />
+        <AssociationConnector Association="TDM.Db.FK_DataPool_Aut" />
+        <AssociationConnector Association="TDM.Db.FK_Script_AUT" />
+        <AssociationConnector Association="TDM.Db.FK_Script_CondicaoScript_CondicaoScript" />
+        <AssociationConnector Association="TDM.Db.FK_DataPool_Demanda" />
+        <AssociationConnector Association="TDM.Db.FK_DataPool_Script_CondicaoScript" />
+        <AssociationConnector Association="TDM.Db.FK_DataPool_TDM" />
+        <AssociationConnector Association="TDM.Db.FK_TestData_DataPool" />
+        <AssociationConnector Association="TDM.Db.FK_Script_CondicaoScript_Ambiente_Execucao" />
+        <AssociationConnector Association="TDM.Db.FK_TestData_Execucao" />
+        <AssociationConnector Association="TDM.Db.FK_TipoFaseTeste_Execucao" />
+        <AssociationConnector Association="TDM.Db.FK_TipoFaseTeste_StatusExecucao" />
+        <AssociationConnector Association="TDM.Db.FK_MapaCalor_Monitoramento_MapaCalor" />
+        <AssociationConnector Association="TDM.Db.FK_MapaCalor_Monitoramento_Usuario" />
+        <AssociationConnector Association="TDM.Db.FK_ParametroScript_Parametro" />
+        <AssociationConnector Association="TDM.Db.FK_ParametroScript_Script_CondicaoScript" />
+        <AssociationConnector Association="TDM.Db.FK_ParametroScript_TipoParametro" />
+        <AssociationConnector Association="TDM.Db.FK_ParametroValor_ParametroScript" />
+        <AssociationConnector Association="TDM.Db.FK_ParametroValor_TestData" />
+        <AssociationConnector Association="TDM.Db.FK_Script_CondicaoScript_Script" />
+        <AssociationConnector Association="TDM.Db.FK_Script_ScriptPai" />
+        <AssociationConnector Association="TDM.Db.FK_Script_CondicaoScript_Ambiente_CondicaoScript" />
+        <AssociationConnector Association="TDM.Db.FK_TestData_Script_CondicaoScript" />
+        <AssociationConnector Association="TDM.Db.FK_TestData_Status" />
+        <AssociationConnector Association="TDM.Db.FK_TDM_Usuario_TDM" />
+        <AssociationConnector Association="TDM.Db.FK_TDM_Usuario_Usuario" />
+        <AssociationConnector Association="TDM.Db.FK_TestData_Usuario" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

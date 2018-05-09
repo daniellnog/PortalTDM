@@ -1,0 +1,472 @@
+﻿@using TDMWeb.Extensions
+@model LaefazWeb.Models.DataPool
+@{
+    ViewBag.Titulo = "Massa de teste";
+}
+
+@section styles {
+    @Styles.Render("~/Asset/Vendor/jquery-upload-file/css")
+
+    <style type="text/css">
+        .form-control[readonly] {
+            background-color: white;
+            cursor: not-allowed;
+        }
+
+        .progress {
+            position: relative;
+        }
+
+            .progress span {
+                position: absolute;
+                display: block;
+                width: 100%;
+                color: black;
+            }
+    </style>
+}
+
+@using (Html.BeginForm("Salvar", "TestData", FormMethod.Post, new { @id = "form-test-data", @class = "formLoading", enctype = "multipart/form-data" }))
+{
+    <input type="hidden" name="MAX_FILE_SIZE" value="314572800" />
+    <div class="box box-primary">
+        <div class="box-header with-border">
+            <h3 class="box-title">Adicionar Massa de Teste</h3>
+        </div>
+        <div class="box-body">
+            <div class="form-group">
+
+                <div class="row">
+                    @*campo data geração solicitada*@
+                    <div class="col-xs-4 form-group">
+                        @Html.Label("DescricaoTestData", "Descrição")
+                        @Html.TextBox("DescricaoTestData", null, new { @class = "form-control", required = "required" })
+
+                    </div>
+
+                    <div class="col-xs-4 form-group">
+                            @Html.Label("dtGeracaoSolicitadaText", "Data de geração solicitação")
+                            <div class="input-group date">
+                                <div class="input-group-addon">
+                                    <i class="fa fa-calendar"></i>
+                                </div>
+                                @Html.TextBoxFor(m => m.DataSolicitacao, "{0:dd/MM/yyyy}", new { @id = "dtGeracaoSolicitada", @class = "form-control pull-right", @required = "required" })
+                            </div>
+
+                        </div>
+
+                    @*campo status*@
+                    <div class="col-xs-4 form-group">
+                        @Html.Label("status", "Status")
+                        @Html.DropDownList("ListStatus", new SelectList(ViewBag.listStatus, "Id", "Descricao"), null, new
+                   {
+                       @class = "form-control",
+                       @id = "list-status",
+                       @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                       @required = "required",
+                       @disabled = "true",
+                       @tabindex = "-1",
+                   }
+                        )
+
+
+                        @*@Html.Hidden("idStatus", new {@id = "idStatus" })*@
+                        
+                    </div>
+
+                </div>
+
+
+
+                <div class="row">
+                    @*campo migração de codigo*@
+                    <div class="col-xs-4 form-group">
+                        @Html.Label("migracao", "Gerar antes de migração de código?")
+                        @Html.DropDownList("ListMigracao", new SelectList(ViewBag.listaChaveVO, "key", "value"), null, new
+                   {
+                       @class = "form-control",
+                       @id = "list-migracao-codigo",
+                       @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                       @required = "required",
+
+                   }
+               )
+
+                    </div>
+                    @*caso de teste relativo*@
+                    <div class="col-xs-4 form-group">
+                        @Html.Label("CasoTesteRelativo", "Caso Teste Relativo")
+                        @Html.TextBox("casoTesteRelativo", null, new { @class = "form-control", required = "required" })
+                    </div>
+
+                    @*campo gerado por*@
+                    <div class="col-xs-4 form-group">
+                        @Html.Label("lbl-gerado-por", "Gerado por")
+                        @Html.TextBox("gerado-por", null, new { @class = "form-control", @readonly = true, @disabled = true })
+                    </div>
+                </div>
+
+                <div class="row">
+                    @*campo script*@
+                    <div class="col-xs-6 form-group">
+                        @Html.Label("script", "Script")
+                        @Html.DropDownList("listScript", new SelectList(ViewBag.listScript, "Id", "Descricao"), null, new
+                   {
+                       @class = "form-control",
+                       @id = "list-script",
+                       @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                       //@onchange = "SelectedIndexChanged()",
+                       @required = "required",
+                       @disabled = "true",
+
+                   }
+                        )
+                    </div>
+
+                    @*campo condicao script*@
+                    <div class="col-xs-6 form-group">
+                        @Html.Label("script", "Condição")
+                        @Html.DropDownList("listCondicaoScript", new SelectList(ViewBag.listCondicaoScript, "Id", "Descricao"), null, new
+                   {
+                       @class = "form-control",
+                       @id = "list-script-condicao",
+                       @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                       @required = "required",
+                       @disabled = "true",
+
+                   }
+                        )
+                    </div>
+
+                    @Html.HiddenFor(m => m.Id, new { Id = "idDataPool" })
+                    @Html.HiddenFor(m => m.IdScript_CondicaoScript, new { Id = "IdScriptCondicao" })
+
+                </div>
+
+
+                @*campo observação*@
+                <div class="row">
+                        <div class="col-xs-12 form-group">
+                            @Html.Label("lbl-observacao", "Observação")
+                            @Html.TextArea("observacao", "", new { @class = "form-control", @id = "observacao", @style = "resize: none", @rows = "5" })
+                        </div>
+                    </div>
+                    @*<div class="box-footer" align="right">
+                        <a href="@Url.Action("Index", "Ambiente")" class="btn btn-danger" id="cancelar">Cancelar</a>
+                        <button type="submit" class="btn btn-primary">Salvar</button>
+                    </div>*@
+
+            </div>
+        </div>
+        <div class="box-footer" align="right">
+            <a href="@Url.Action("Editar/"+Model.Id, "DataPool")" class="btn btn-danger" id="cancelar">Cancelar</a>
+            <button type="submit" class="btn btn-primary" id="submit-form">Salvar</button>
+        </div>
+        <!-- /.box-body -->
+    </div>
+
+    <div class="box box-primary" id="box-parametros-entrada">
+        <div class="box-header with-border">
+            <h3 class="box-title">Parâmetros de Entrada</h3>
+        </div>
+        <div class="box-body" id="parametros-entrada">
+        </div>
+    </div>
+
+    <div class="box box-primary" id="box-parametros-saida">
+        <div class="box-header with-border">
+            <h3 class="box-title">Parâmetros de Saída</h3>
+        </div>
+        <div class="box-body" id="parametros-saida">
+        </div>
+    </div>
+}
+<!-- /.box -->
+@section scripts
+{
+    @Styles.Render("~/Asset/Vendor/jquery-upload-file/js")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            loadFields();
+            onsubmitForm();
+            calendarioDataGeracaoSolicitada();
+            //onsubmit do form
+            
+
+
+        });
+
+        function calendarioDataGeracaoSolicitada() {
+            $('#dtGeracaoSolicitada').daterangepicker({
+                "opens": "right",
+                "singleDatePicker": true,
+                "startDate": Date.now,
+                "locale": {
+                    "opens": "right",
+                    "format": "DD/MM/YYYY",
+                    "separator": " - ",
+                    "applyLabel": "Confirmar",
+                    "cancelLabel": "Cancelar",
+                    "fromLabel": "De",
+                    "toLabel": "Para",
+                    "customRangeLabel": "Custom",
+                    "weekLabel": "W",
+                    "daysOfWeek": [
+                        "Dom",
+                        "Seg",
+                        "Ter",
+                        "Qua",
+                        "Qui",
+                        "Sex",
+                        "Sab"
+                    ],
+                    "monthNames": [
+                        "Janeiro",
+                        "Fevereiro",
+                        "Março",
+                        "Abril",
+                        "Maio",
+                        "Junho",
+                        "Julho",
+                        "Agosto",
+                        "Setembro",
+                        "Outubro",
+                        "Novembro",
+                        "Dezembro"
+                    ],
+                    "firstDay": 1
+                }
+            });
+        };
+
+
+        function SelectedIndexChanged() {
+
+            $.ajax(
+       {
+           url: '@Url.Action("carregaCondicaoScript", "TestData")',
+           type: 'POST',
+           data: "{id:" + $("#list-script").val() + "}",
+           contentType: 'application/json; charset=utf-8',
+           success: function (result) {
+               var json = $.parseJSON(result);
+               $("#list-script-condicao").empty();
+
+               if (JSON.stringify(json) === '{}') {
+                   $("#list-script-condicao").attr("disabled", true);
+                   $("#list-script-condicao").append
+                      ($('<option></option>').val(0).html("N/A"))
+               } else {
+
+                   $.each(json, function (id, descricao) {
+                       $("#list-script-condicao").append
+                       ($('<option></option>').val(id).html(descricao))
+                   })
+
+                   $("#list-script-condicao").removeAttr("disabled");
+               }
+
+
+
+               console.log(result);
+
+           },
+           error: function (erro) {
+               alert(erro);
+           }
+       });
+        }
+
+
+
+        function loadFields() {
+
+
+            $.ajax({
+                url: '@Url.Action("CarregarParametros", "TestData")',
+                type: 'POST',
+                data: "{idScriptCondicaoScript:" + @Model.IdScript_CondicaoScript + ", idTestData:" +@Model.Id +"}",
+                contentType: 'application/json; charset=utf-8',
+                success: function (result) {
+                    var obj = JSON.parse(result);
+                    var input = "";
+                    var linhaSaida = "";
+                    var linhaEntrada = "";
+                    var contSaida = 1;
+                    var contEntrada = 1;
+                    var total = obj.length;
+                    var totalEntrada = 0;
+                    var totalSaida = 0;
+                    var divParametro;
+                    var contParametroEntrada = false;
+                    var contParametroSaida = false;
+
+
+                    obj.forEach(function (o, index) {
+                        if (o.Tipo == 2) {
+                            totalSaida++;
+                            contParametroSaida = true;
+
+                        } else {
+                            totalEntrada++;
+                            contParametroEntrada = true;
+                        }
+                    });
+
+                    var camposEntrada = [];
+                    var camposSaida = [];
+                    var readOnly = "";
+
+                    obj.forEach(function (o, index) {
+
+                        switch (o.Tipo) {
+                            case "NUMBER":
+                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><input IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" onkeypress=\"if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;\" value=\"\" class=\"form-control\" id=\"" + o.Descricao + "\"  " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
+                                break;
+                            case "DATE":
+                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><div class=\"input-group date\"><div class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></div><input IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" class=\"form-control pull-right\" data-val=\"true\" data-val-date=\"The field DataSolicitacao must be a date.\" data-val-required=\"The DataSolicitacao field is required.\" name=\"DataSolicitacao\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " type=\"text\" data-mask=\"00/00/0000\" id=\"data-parametro\" value=\"\" aria-required=\"true\"  aria-invalid=\"false\"></div></div>";
+                                break;
+                            default:
+                                //var desc = o.Descricao == "USUARIO"? o.Descricao+"01": o.Descricao;
+                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><input IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" value=\"\" class=\"form-control\" id=\"" + o.Descricao + "\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
+                                break;
+                        }
+
+                        if (o.IdTipoParametro == 1) {
+                            camposEntrada.push(input);
+                        } else {
+                            camposSaida.push(input);
+                        }
+                    });
+
+                    //adicionando parâmetros de entrada
+                    if (camposEntrada.length > 0) {
+                        var divParametroEntrada = $("#parametros-entrada");
+                        var ultimaPosicao = 0;
+                        var qtdLinhaExtra = camposEntrada.length < 3 ? 0 : Math.round(camposEntrada.length % 3);
+                        var qtdLinha = camposEntrada.length < 3 ? 1 : Math.round(camposEntrada.length / 3);
+
+
+                        for (var i = 0; i < qtdLinha; i++) {
+                            var campos = [];
+                            for (var j = 0; j < 3; j++) {
+                                if (camposEntrada[ultimaPosicao] != undefined) {
+                                    campos[j] = camposEntrada[ultimaPosicao];
+                                    ultimaPosicao++;
+                                } else {
+                                    break;
+                                }
+                            }
+                            var linha = addLinha(campos);
+                            divParametroEntrada.append(linha);
+                        }
+
+                        if (camposEntrada.length > 3) {
+                            for (var i = 0; i < qtdLinhaExtra; i++) {
+                                var campos = [];
+                                for (var j = 0; j < 3; j++) {
+                                    if (camposEntrada[ultimaPosicao] != undefined) {
+                                        campos[j] = camposEntrada[ultimaPosicao];
+                                        ultimaPosicao++;
+                                    } else {
+                                        break;
+                                    }
+                                }
+                                var linha = addLinha(campos);
+                                divParametroEntrada.append(linha);
+                            }
+                        }
+
+
+                    } else {
+                        $("#box-parametros-entrada").toggle();
+                    }
+
+                    //adicionando parâmetros de saida
+                    if (camposSaida.length > 0) {
+                        var div = $("#parametros-saida");
+                        var ultimaPosicao = 0;
+                        var qtdLinhaExtra = camposSaida.length < 3 ? 0 : Math.round(camposSaida.length % 3);
+                        var qtdLinha = camposSaida.length < 3 ? 1 : Math.round(camposSaida.length / 3);
+
+
+                        for (var i = 0; i < qtdLinha; i++) {
+                            var campos = [];
+                            for (var j = 0; j < 3; j++) {
+                                if (camposSaida[ultimaPosicao] != undefined) {
+                                    campos[j] = camposSaida[ultimaPosicao];
+                                    ultimaPosicao++;
+                                } else {
+                                    break;
+                                }
+
+                            }
+                            var linha = addLinha(campos);
+                            div.append(linha);
+                        }
+
+                        if (camposSaida.length > 3) {
+                            for (var i = 0; i < qtdLinhaExtra; i++) {
+                                var campos = [];
+                                for (var j = 0; j < 3; j++) {
+                                    if (camposSaida[ultimaPosicao] != undefined) {
+                                        campos[j] = camposSaida[ultimaPosicao];
+                                        ultimaPosicao++;
+                                    } else {
+                                        break;
+                                    }
+
+                                }
+                                var linha = addLinha(campos);
+                                div.append(linha);
+                            }
+                        }
+
+
+                    } else {
+                        $("#box-parametros-saida").toggle();
+                    }
+
+
+                }
+            });
+        }
+
+
+        function addLinha(campos) {
+            var iniLinha = "<div class=\"row\">";
+            var linha = "";
+            var fimLinha = "</div>";
+            for (var i = 0; i < campos.length; i++) {
+                linha += campos[i];
+            }
+
+            return iniLinha + linha + fimLinha;
+        }
+
+        function onsubmitForm() {
+
+         
+
+
+
+
+            $("#form-test-data").submit(function (event) {
+                var dataAtual = $.datepicker.formatDate('dd/mm/yy', new Date());
+
+                if ($("#dtGeracaoSolicitada").val() < dataAtual) {
+                    $.MessageBoxOK({ mensagem: "Não é possível selecionar uma data de Solicitação menor do que a data atual" });
+                    $("#Loading").remove();
+                    event.preventDefault();
+                }
+
+                if ($("#form-test-data").valid()) {
+                    $("#list-status").removeAttr("disabled");
+                }
+            });
+        }
+
+    </script>
+}
