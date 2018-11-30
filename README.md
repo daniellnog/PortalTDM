@@ -1,2 +1,2 @@
-# PortalTDM
-Portal Test Data Management
+# Portal ATMP
+Portal Automation Test Management Process
