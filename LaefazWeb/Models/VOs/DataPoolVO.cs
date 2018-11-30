@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
 
 namespace LaefazWeb.Models.VOs
 {
@@ -28,6 +27,9 @@ namespace LaefazWeb.Models.VOs
         public int? QtdCadastrada { get; set; }
         public int Farol { get; set; }
         public int TotalCount { get; set; }
+        public bool emExecucao { get; set; }
+        public bool emCancelamento { get; set; }
+        public bool ConsiderarRotinaDiaria { get; set; }
         public DataPoolVO()
         {
             DbEntities db = new DbEntities();

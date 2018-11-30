@@ -97,7 +97,6 @@
     <None Include="Scripts\Post-deployment\Data.Status.sql" />
     <Build Include="Tables\Execucao.sql" />
     <Build Include="Procedures\PR_LISTAR_DATAPOOL.sql" />
-    <Build Include="Procedures\PR_LISTAR_DATAPOOL.sql" />
     <Build Include="Tables\TDM_Usuario.sql" />
     <Build Include="Tables\Script_CondicaoScript.sql" />
     <Build Include="Tables\AmbienteExecucao.sql" />
@@ -112,6 +111,30 @@
     <None Include="Scripts\Post-deployment\Data.Script_CondicaoScript_Ambiente.sql" />
     <None Include="Scripts\Post-deployment\Data.TelaMapaCalor.sql" />
     <None Include="Scripts\Post-deployment\Data.MapaCalor.sql" />
+    <Build Include="Tables\Historico.sql" />
+    <None Include="Scripts\Post-deployment\Data.TipoDadoParametro.sql" />
+    <Build Include="Tables\TipoDadoParametro.sql" />
+    <Build Include="Tables\Encadeamento_TestData.sql" />
+    <Build Include="Tables\Encadeamento.sql" />
+    <Build Include="Procedures\PR_LISTAR_DADOS_EXECUCAO.sql" />
+    <Build Include="Procedures\PR_LISTAR_TEST_DATA.sql" />
+    <Build Include="Procedures\PR_LISTAR_TESTDATA_SEM_ENCADEAMENTO.sql" />
+    <Build Include="Procedures\PR_LISTAR_ENCADEAMENTO.sql" />
+    <Build Include="Procedures\PR_LISTAR_PARAMETRO_TESTDATA.sql" />
+    <Build Include="Tables\ParametroValor_Historico.sql" />
+    <Build Include="Tables\ParametroScript_Valor.sql" />
+    <Build Include="Procedures\PR_LISTAR_TESTDATA.sql" />
+    <Build Include="Procedures\PR_LISTAR_AMBIENTE_VIRTUAL_DISPONIVEL.sql" />
+    <Build Include="Procedures\PR_LISTAR_AMBIENTE_EXECUCAO.sql" />
+    <Build Include="Procedures\PR_LISTAR_DATAPOOL_COM_TESTDATA.sql" />
+    <Build Include="Procedures\PR_LISTAR_EXECUCAO.sql" />
+    <Build Include="Procedures\PR_LISTAR_DATAPOOL.sql" />
+    <Build Include="Procedures\PR_LISTAR_EXECUCAO.sql" />
+    <Build Include="Procedures\PR_LISTAR_DATAPOOL_COM_TESTDATA.sql" />
+    <Build Include="Procedures\PR_LISTAR_DATAPOOL_SEM_USUARIO.sql" />
+    <Build Include="Tables\Agendamento.sql" />
+    <Build Include="Tables\Agendamento_TestData.sql" />
+    <Build Include="Procedures\PR_CARREGAR_ENCADEAMENTOS.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="LOCAL.TDM.Db.publish.xml" />
@@ -122,6 +145,7 @@
     <None Include="Template_Importacao\AccessDatabaseEngine_X64.exe" />
     <None Include="Template_Importacao\Template_Planilha_TDM.xlsb" />
     <None Include="Dev-VDI_160.DevTDM.Db.publish.xml" />
+    <None Include="DEV-LOCAL.TDM.Db.publish.xml" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Scripts\Post-deployment\Script.PostDeployment.sql" />

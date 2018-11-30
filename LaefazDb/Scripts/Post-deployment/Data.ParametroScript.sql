@@ -132,7 +132,7 @@ LEFT JOIN Script scr ON scrcon.IdScript = scr.Id
 LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id
 WHERE scr.Descricao = 'CRIAÇÃO DE CONTATO E CONTA PF SEM ENVIO AO CDI'), tpar.Id, 1 
 FROM Parametro par, TipoParametro tpar
-WHERE par.Descricao = 'PONTO RESIDENCIA'
+WHERE par.Descricao = 'PONTO REFERENCIA'
 AND tpar.Descricao = 'ENTRADA');
 
 INSERT INTO ParametroScript (IdParametro, IdScript_CondicaoScript, IdTipoParametro, Obrigatorio) 
@@ -244,8 +244,7 @@ WHERE scr.Descricao = 'CRIAÇÃO DE CONTATO E CONTA PF SEM ENVIO AO CDI'), tpar.
 FROM Parametro par, TipoParametro tpar
 WHERE par.Descricao = 'EVIDENCIA: NOME DO CASO DE TESTE'
 AND tpar.Descricao = 'ENTRADA');
-	
-	
+		
 INSERT INTO ParametroScript (IdParametro, IdScript_CondicaoScript, IdTipoParametro,Obrigatorio) 
 (SELECT par.Id,
 (SELECT scrcon.Id 
@@ -278,6 +277,29 @@ WHERE scr.Descricao = 'CRIAÇÃO DE CONTATO E CONTA PF SEM ENVIO AO CDI'), tpar.
 FROM Parametro par, TipoParametro tpar
 WHERE par.Descricao = 'EVIDENCIA: NUMERO DO CASO DE TESTE'
 AND tpar.Descricao = 'ENTRADA');	
+
+
+INSERT INTO ParametroScript (IdParametro, IdScript_CondicaoScript, IdTipoParametro, Obrigatorio) 
+(SELECT par.Id,
+(SELECT scrcon.Id 
+FROM Script_CondicaoScript scrcon 
+LEFT JOIN Script scr ON scrcon.IdScript = scr.Id
+LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id
+WHERE scr.Descricao = 'CRIAÇÃO DE CONTATO E CONTA PF SEM ENVIO AO CDI'), tpar.Id, 1 
+FROM Parametro par, TipoParametro tpar
+WHERE par.Descricao = 'TIPO RESIDENCIA'
+AND tpar.Descricao = 'SAÍDA');
+
+INSERT INTO ParametroScript (IdParametro, IdScript_CondicaoScript, IdTipoParametro, Obrigatorio) 
+(SELECT par.Id,
+(SELECT scrcon.Id 
+FROM Script_CondicaoScript scrcon 
+LEFT JOIN Script scr ON scrcon.IdScript = scr.Id
+LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id
+WHERE scr.Descricao = 'CRIAÇÃO DE CONTATO E CONTA PF SEM ENVIO AO CDI'), tpar.Id, 1 
+FROM Parametro par, TipoParametro tpar
+WHERE par.Descricao = 'PONTO REFERENCIA'
+AND tpar.Descricao = 'SAÍDA');
 
 ---------------------------------------------------------------------------------------------------------
 

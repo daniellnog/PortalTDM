@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using TDMWeb.Extensions;
 using WebGrease.Css.Extensions;
 using TDMWeb.Lib;
+using TDMWeb.Models.VOs;
 
 namespace LaefazWeb.Controllers
 {
@@ -20,7 +21,19 @@ namespace LaefazWeb.Controllers
 
         public ActionResult Index()
         {
-            return View(db.Status.ToList());
+            List<StatusVO> status = new List<StatusVO>();
+
+            foreach(Status s in db.Status.ToList())
+            {
+                status.Add(new StatusVO { Status = s, StatusExecucao = null, Tipo = "STATUS" });
+            }
+
+            foreach (StatusExecucao s in db.StatusExecucao.ToList())
+            {
+                status.Add(new StatusVO { Status = null, StatusExecucao = s, Tipo = "STATUS EXECUÇÃO" });
+            }
+
+            return View(status);
         }
 
         public ActionResult Adicionar()
@@ -92,13 +105,27 @@ namespace LaefazWeb.Controllers
                 }
                 else
                 {
-                    status = new Status()
-                    {
-                        Descricao = Request.Form.Get("descricao"),
-                    };
+                    string tipo = Request.Form.Get("tipoStatus");
 
-                    db.Status.Add(status);
-                    db.SaveChanges();
+                    if (tipo.Equals("STATUS")) {
+                        status = new Status()
+                        {
+                            Descricao = Request.Form.Get("descricao"),
+                        };
+
+                        db.Status.Add(status);
+                        db.SaveChanges();
+                    }else {
+
+                        StatusExecucao statusExecucao = new StatusExecucao()
+                        {
+                            Descricao = Request.Form.Get("descricao"),
+                        };
+
+                        db.StatusExecucao.Add(statusExecucao);
+                        db.SaveChanges();
+
+                    }
 
                     this.FlashSuccess("Status adicionado com sucesso!.");
                 }
@@ -112,6 +139,79 @@ namespace LaefazWeb.Controllers
             }
 
             return RedirectToAction("Index");
+        }
+
+        public JsonResult EditarStatus(string id, string descricao, string tipo, string editar)
+        {
+            try
+            {
+
+                if (editar.Equals("true"))
+                {
+                    if (tipo.Equals("STATUS"))
+                    {
+                        Status status = new Status()
+                        {
+                            Descricao = descricao,
+                            Id = Int32.Parse(id)
+                        };
+                        db.Entry(status).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+
+                        StatusExecucao statusExecucao = new StatusExecucao()
+                        {
+                            Descricao = descricao,
+                            Id = Int32.Parse(id)
+                        };
+
+                        db.Entry(statusExecucao).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+
+                    }
+                }
+                else
+                {
+                    if (tipo.Equals("STATUS"))
+                    {
+                        Status status = new Status()
+                        {
+                            Descricao = descricao
+                            
+                        };
+
+                        db.Status.Add(status);
+                        db.SaveChanges();
+                    }
+                    else
+                    {
+                        db = new DbEntities();
+                        StatusExecucao statusExecucao = new StatusExecucao()
+                        {
+                            Descricao = descricao
+                            
+                        };
+
+                        db.StatusExecucao.Add(statusExecucao);
+                        db.SaveChanges();
+
+                    }
+                }
+
+
+                
+            }
+            catch (Exception ex)
+            {
+                return Json(ex.Message, JsonRequestBehavior.AllowGet);
+                
+            }
+
+            return Json("Operação realizada com sucesso!", JsonRequestBehavior.AllowGet);
+
+
         }
     }
 }

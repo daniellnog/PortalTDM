@@ -11,6 +11,11 @@ namespace LaefazWeb.Enumerators
         EmProcessamento = 2,
         ProcessandoLogTosca = 3,
         Sucesso = 4,
-        Falha = 5
+        Falha = 5,
+        Cancelada = 6,
+        EmCancelamento = 7,
+        Agendada = 8
+
+        
     }
 }

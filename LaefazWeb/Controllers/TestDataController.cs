@@ -1,16 +1,18 @@
-﻿using LaefazWeb.Models;
+﻿using LaefazWeb.Enumerators;
+using LaefazWeb.Extensions;
+using LaefazWeb.Models;
+using LaefazWeb.Models.VOs;
 using Microsoft.Ajax.Utilities;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Web.Mvc;
 using TDMWeb.Extensions;
-using WebGrease.Css.Extensions;
 using TDMWeb.Lib;
 using TDMWeb.Models.VOs;
-using LaefazWeb.Enumerators;
-using Newtonsoft.Json;
+using WebGrease.Css.Extensions;
 
 namespace LaefazWeb.Controllers
 {
@@ -20,11 +22,12 @@ namespace LaefazWeb.Controllers
 
         private DbEntities db = new DbEntities();
         private static IList<ParametroValor> listParametro { get; set; }
-        
+
+        private static LogTDM log = new LogTDM(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public ActionResult Index()
         {
-            
+
             //PEGA O OBJETO COM O USUÁRIO QUE ESTÁ LOGADO
             Usuario user = (Usuario)Session["ObjUsuario"];
             return View();
@@ -45,6 +48,15 @@ namespace LaefazWeb.Controllers
             ViewBag.listScript = db.Script.Where(s => s.Id == Script_CondicaoScript.IdScript).ToList();
             ViewBag.listCondicaoScript = db.CondicaoScript.Where(s => s.Id == Script_CondicaoScript.IdCondicaoScript).ToList();
 
+            List<ChaveVO> listaClassificacaoMassa = new List<ChaveVO>();
+
+            listaClassificacaoMassa.Add(new ChaveVO("CT", 0));
+            listaClassificacaoMassa.Add(new ChaveVO("Backup", 1));
+
+
+
+            ViewBag.ListaClassificacao = listaClassificacaoMassa;
+
             return View(dataPool);
         }
 
@@ -55,7 +67,7 @@ namespace LaefazWeb.Controllers
 
             try
             {
-                for(int i=0; i < ids.Count; i++)
+                for (int i = 0; i < ids.Count; i++)
                 {
                     int idAtual = Int32.Parse(ids[i]);
                     TestData testData = db.TestData.SingleOrDefault(a => a.Id == idAtual);
@@ -70,18 +82,23 @@ namespace LaefazWeb.Controllers
                         //Remove register TestData
                         db.TestData.Remove(testData);
                         db.SaveChanges();
+                        log.Debug(Util.ToString(testData));
+                        log.Info("Testdata excluída com sucesso!");
 
                         result.Data = new { Result = "Massa excluída com sucesso.", Status = (int)WebExceptionStatus.Success };
                     }
                     else
                     {
                         result.Data = new { Result = "Não é possível excluir uma massa com status diferente de Cadastrada", Status = (int)WebExceptionStatus.UnknownError };
+                        log.Debug(Util.ToString(testData));
+                        log.Info("Não é possível excluir uma massa com status diferente de Cadastrada");
                     }
                 }
             }
             catch (Exception ex)
             {
-                result.Data = new { Result = ex.Message, Status = (int)WebExceptionStatus.UnknownError };
+                log.Error("Erro ao excluir tesdata. CODIGO_ERRO: " + ex.GetHashCode(), ex);
+                result.Data = new { Result = "Não foi possível excluir o TestData. [CODIGO_ERRO :" + ex.GetHashCode() + "]", Status = (int)WebExceptionStatus.UnknownError };
             }
             return result;
         }
@@ -105,23 +122,52 @@ namespace LaefazWeb.Controllers
             //carregaCondicaoScript(testData.Script_CondicaoScript.IdScript+"");
             ViewBag.listStatus = carregaListaStatus(testData.Status.Id);
 
+            List<ChaveVO> listaClassificacaoMassa = new List<ChaveVO>();
 
+            listaClassificacaoMassa.Add(new ChaveVO("CT", 0));
+            listaClassificacaoMassa.Add(new ChaveVO("Backup", 1));
+
+            ViewBag.ListaClassificacao = listaClassificacaoMassa;
 
             return View(testData);
         }
+
         [HttpPost]
         public ActionResult SalvarEdicao([Bind(Exclude = "Usuario")]TestData objeto)
         {
             try
             {
+                log.Debug(Util.ToString(objeto));
                 Salvar(objeto, true);
                 this.FlashSuccess("Massa de teste editada com sucesso.");
             }
             catch (Exception ex)
             {
-                this.FlashError(ex.Message);
+
+                log.Error("Erro ao editar tesdata. CODIGO_ERRO: " + ex.GetHashCode(), ex);
+                this.FlashError("Não foi possível editar o TestData. [CODIGO_ERRO :" + ex.GetHashCode() + "]");
             }
             return RedirectToAction("Editar/" + objeto.IdDataPool, "DataPool");
+        }
+
+        public void SalvarAlteracoesParametros(TestData ObjTestData)
+        {
+            string jsonR = Request.Form.Get("ParametrosEntrada");
+
+            List<Alteracao> obj = new List<Alteracao>();
+            obj = JsonConvert.DeserializeObject<List<Alteracao>>(jsonR);
+
+
+
+            /*
+             * 
+             *  from m in wordList group m.KeyCol by m.ValueCol into g
+                select new { Name = g.Key, KeyCols = g.ToList() };
+             */
+
+            var historico = from o in obj
+                            group o.Chave by o.IdCampo into item
+                            select new { id = item.Key, inicio = item.ToList() };
         }
 
         [HttpPost]
@@ -139,76 +185,147 @@ namespace LaefazWeb.Controllers
                     return View("Adicionar", objeto);
                 }
 
-                  //PEGA O OBJETO COM O USUÁRIO QUE ESTÁ LOGADO
+                //PEGA O OBJETO COM O USUÁRIO QUE ESTÁ LOGADO
                 Usuario user = (Usuario)Session["ObjUsuario"];
                 TestData testData;
 
-                // tratamento para impedir que o status seja diferente de cadastrada
-                if (Int32.Parse(Request.Form.Get("ListStatus")) != 1)
+                if (editar)
                 {
-                    this.FlashError("Não é possível inserir um testData com status diferente de cadastrada!");
-                }
-                else
-                {
-                    if (editar)
+
+                    string jsonR = Request.Form.Get("ParametrosEntrada");
+
+                    List<Alteracao> obj = new List<Alteracao>();
+                    obj = JsonConvert.DeserializeObject<List<Alteracao>>(jsonR);
+
+
+
+                    /*
+                     * 
+                     *  from m in wordList group m.KeyCol by m.ValueCol into g
+                        select new { Name = g.Key, KeyCols = g.ToList() };
+                     */
+
+
+                    int count = 1;
+                    Alteracao objAnterior = new Alteracao();
+
+                    foreach (var item in obj)
                     {
-                        
-                        objeto.Descricao = Request.Form.Get("Descricao") == null ? Request.Form.Get("hidden-descricao") : Request.Form.Get("Descricao");
-                        objeto.IdStatus = Request.Form.Get("listStatus") == null ? objeto.IdStatus : Int32.Parse(Request.Form.Get("listStatus"));
-                        if (Request.Form.Get("listMigracao") != null)
-                            objeto.GerarMigracao = (Int32.Parse(Request.Form.Get("listMigracao")) == 0) ? false : true;
-                        objeto.CasoTesteRelativo = Request.Form.Get("CasoTesteRelativo") == null ? Request.Form.Get("hidden-caso-teste-relativo") : Request.Form.Get("CasoTesteRelativo");
-                        objeto.Observacao = Request.Form.Get("Observacao") == null ? Request.Form.Get("hidden-observacao") : Request.Form.Get("Observacao");
-
-                        // anexar objeto ao contexto
-                        db.TestData.Attach(objeto);
-
-
-                        db.Entry(objeto).State = System.Data.Entity.EntityState.Modified;
-                        db.SaveChanges();
-
-                        //salva parametros
-                        SalvaParametros(objeto.Id, objeto.IdScript_CondicaoScript, editar);
-                        
-                    }
-                    else
-                    {
-                        DateTime dataAtual = DateTime.Today;
-                        if ((DateTime)Convert.ToDateTime(Request.Form.Get("DataSolicitacao")) < dataAtual)
+                        if (count % 2 == 0)
                         {
-                            this.FlashError("Não é permitido selecionar uma Data de Geração Solicitada menor do que a data atual");
+                            if (objAnterior.Valor != item.Valor)
+                            {
+                                ParametroValor_Historico historico = new ParametroValor_Historico();
+                                historico.IdParametroValor = item.IdCampo;
+                                historico.Valor = item.Valor;
+                                historico.TempoInicio = DateTime.Parse(objAnterior.Inicio);
+                                historico.TempoTermino = DateTime.Parse(item.Termino);
+
+                                db.ParametroValor_Historico.Add(historico);
+                            }
                         }
                         else
                         {
-                            testData = new TestData()
-                            {
-                                Descricao = Request.Form.Get("DescricaoTestData"),
-                                IdStatus = Int32.Parse(Request.Form.Get("ListStatus")),
-                                IdScript_CondicaoScript = objeto.IdScript_CondicaoScript,
-                                IdDataPool = objeto.Id,
-                                CasoTesteRelativo = Request.Form.Get("CasoTesteRelativo"),
-                                GerarMigracao = Int32.Parse(Request.Form.Get("ListMigracao")) == 1 ? true : false,
-                                Observacao = Request.Form.Get("observacao"),
-                                IdUsuario = user.Id
-                            };
+                            objAnterior = item;
+                        }
 
-                            db.TestData.Add(testData);
-                            db.SaveChanges();
-
-                            //Salvar parametros
-                            SalvaParametros(testData.Id, testData.IdScript_CondicaoScript, editar);
-
-                            this.FlashSuccess("Massa de teste adicionada com sucesso.");
-                        }                        
+                        count++;
                     }
-                }                
+
+                    objeto.Descricao = Request.Form.Get("Descricao") == null ? Request.Form.Get("hidden-descricao") : Request.Form.Get("Descricao");
+                    objeto.IdStatus = Request.Form.Get("listStatus") == null ? objeto.IdStatus : Int32.Parse(Request.Form.Get("listStatus"));
+                    if (Request.Form.Get("listMigracao") != null)
+                        objeto.GerarMigracao = (Int32.Parse(Request.Form.Get("listMigracao")) == 0) ? false : true;
+                    objeto.CasoTesteRelativo = Request.Form.Get("CasoTesteRelativo") == null ? Request.Form.Get("hidden-caso-teste-relativo") : Request.Form.Get("CasoTesteRelativo");
+                    objeto.Observacao = Request.Form.Get("Observacao") == null ? Request.Form.Get("hidden-observacao") : Request.Form.Get("Observacao");
+
+                    string horaEstimada = "2001-01-01";
+                    string tempoEstimado = Request["tempoEstimado"].ToString();
+                    if (tempoEstimado != "NaN : NaN")
+                    {
+                        tempoEstimado = tempoEstimado.Replace(" ", "");
+                        tempoEstimado += ":00.000";
+                        string hora = horaEstimada + " " + tempoEstimado;
+
+                        DateTime tempo = DateTime.ParseExact(hora, "yyyy-MM-dd HH:mm:ss.fff", System.Globalization.CultureInfo.InvariantCulture);
+
+                        objeto.TempoEstimadoExecucao = tempo;
+                    }
+
+                    // anexar objeto ao contexto
+                    db.TestData.Attach(objeto);
+
+                    log.Debug(Util.ToString(objeto));
+                    db.Entry(objeto).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+                    log.Info("TestData editado com sucesso");
+
+                    //salva parametros
+                    SalvaParametros(objeto.Id, objeto.IdScript_CondicaoScript, editar);
+
+                }
+                else
+                {
+                    // tratamento para impedir que o status seja diferente de cadastrada
+                    if (Int32.Parse(Request.Form.Get("ListStatus")) != 1)
+                    {
+                        log.Debug(Util.ToString(objeto));
+                        log.Warn("Não é possível inserir um testData com status diferente de cadastrada!");
+                        this.FlashError("Não é possível inserir um testData com status diferente de cadastrada!");
+                    }
+
+                    DateTime dataAtual = DateTime.Today;
+                    if ((DateTime)Convert.ToDateTime(Request.Form.Get("DataSolicitacao")) < dataAtual)
+                    {
+                        this.FlashError("Não é permitido selecionar uma Data de Geração Solicitada menor do que a data atual");
+                    }
+                    else
+                    {
+                        string horaEstimada = "2001-01-01";
+                        string tempoEstimado = Request["tempoEstimado"].ToString();
+                        tempoEstimado = tempoEstimado.Replace(" ", "");
+                        tempoEstimado += ":00.000";
+                        string hora = horaEstimada + " " + tempoEstimado;
+
+                        DateTime tempo = DateTime.ParseExact(hora, "yyyy-MM-dd HH:mm:ss.fff", System.Globalization.CultureInfo.InvariantCulture);
+
+                        testData = new TestData()
+                        {
+                            Descricao = Request.Form.Get("DescricaoTestData"),
+                            IdStatus = Int32.Parse(Request.Form.Get("ListStatus")),
+                            IdScript_CondicaoScript = objeto.IdScript_CondicaoScript,
+                            IdDataPool = objeto.Id,
+                            CasoTesteRelativo = Request.Form.Get("CasoTesteRelativo"),
+                            GerarMigracao = Int32.Parse(Request.Form.Get("ListMigracao")) == 1 ? true : false,
+                            Observacao = Request.Form.Get("observacao"),
+                            IdUsuario = user.Id,
+                            ClassificacaoMassa = Int32.Parse(Request.Form.Get("listaClassificacao")),
+                            TempoEstimadoExecucao = tempo
+                        };
+
+                        db.TestData.Add(testData);
+                        db.SaveChanges();
+                        log.Debug(Util.ToString(objeto));
+                        log.Info("TestData adicionado com sucesso");
+                        //Salvar parametros
+                        SalvaParametros(testData.Id, testData.IdScript_CondicaoScript, editar);
+
+                        this.FlashSuccess("Massa de teste adicionada com sucesso.");
+                    }
+                }
             }
             catch (Exception ex)
             {
                 if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_TDM_Descricao"))
+                {
                     this.FlashError("Já existe uma Massa de Teste com essa descrição.");
+                    log.Error("Já existe uma Massa de Teste com essa descrição.", ex);
+                }
                 else
+                {
+                    log.Error(ex.Message, ex);
                     this.FlashError(ex.Message);
+                }
             }
 
             return RedirectToAction("Editar/" + objeto.Id, "DataPool");
@@ -220,17 +337,23 @@ namespace LaefazWeb.Controllers
             DbEntities db = new DbEntities();
 
             List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == scriptCondicaoScript).ToList();
-            List<ParametroValor> listParametroValor = new List<ParametroValor>();
-            List<ParametroVO> listParametroVO = new List<ParametroVO>();
+
+
 
             foreach (ParametroScript ps in listParametroScript)
             {
                 Parametro p = db.Parametro.Where(x => x.Id == ps.IdParametro).FirstOrDefault();
+
                 ParametroValor pv = null;
                 if (edicao)
                 {
+                    db = new DbEntities();
                     pv = db.ParametroValor.Where(x => x.IdTestData == idTestData && x.IdParametroScript == ps.Id).FirstOrDefault();
-                    pv.Valor = Request.Form.Get(p.Descricao) == null ? "" : Request.Form.Get(p.Descricao);
+
+                    if (ps.VisivelEmTela)
+                    {
+                        pv.Valor = Request.Form.Get(p.Descricao) == null ? "" : Request.Form.Get(p.Descricao);
+                    }                    
 
                     db.ParametroValor.Attach(pv);
                     db.Entry(pv).State = System.Data.Entity.EntityState.Modified;
@@ -238,22 +361,152 @@ namespace LaefazWeb.Controllers
                 }
                 else
                 {
+                    string valor = "";
+                    switch (ps.IdParametro)
+                    {
+                        //EVIDENCIA AMBIENTE
+                        case (int)EnumValoresDefault.Evidencia_Ambiente:
+                            valor = (from psc in db.ParametroScript
+                                     where psc.IdParametro == (int)EnumValoresDefault.Ambiente_Sistema
+                                     && psc.IdScript_CondicaoScript == scriptCondicaoScript
+                                     select psc.ValorDefault).FirstOrDefault();
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        //EVIDENCIA NOME DO CASO DE TESTE
+                        case (int)EnumValoresDefault.Evidencia_NomeDoCasoDeTeste:
+                            string nomeCasoTeste = (from td in db.TestData
+                                                    join scs in db.Script_CondicaoScript on td.IdScript_CondicaoScript equals scs.Id
+                                                    join s in db.Script on scs.IdScript equals s.Id
+                                                    where td.Id == idTestData
+                                                    select s.Descricao
+                                                ).FirstOrDefault();
+                            string num = (from td in db.TestData
+                                          join scs in db.Script_CondicaoScript on td.IdScript_CondicaoScript equals scs.Id
+                                          join s in db.Script on scs.IdScript equals s.Id
+                                          where td.Id == idTestData
+                                          select td.CasoTesteRelativo
+                                                ).FirstOrDefault();
+
+                            if (num == null || nomeCasoTeste == null)
+                            {
+                                valor = "";
+                            }
+                            else
+                            {
+                                valor = num + " - " + nomeCasoTeste;
+                            }
+                            break;
+                        //EVIDENCIA RESULTADO ESPERADO
+                        case (int)EnumValoresDefault.Evidencia_ResultadoEsperado:
+                            string nomeCT = "CASO DE TESTE ";
+                            nomeCT += (from td in db.TestData
+                                       join scs in db.Script_CondicaoScript on td.IdScript_CondicaoScript equals scs.Id
+                                       join s in db.Script on scs.IdScript equals s.Id
+                                       where td.Id == idTestData
+                                       select s.Descricao
+                                                    ).FirstOrDefault();
+
+                            nomeCT += " REALIZADO(A) COM SUCESSO!";
+                            valor = nomeCT;
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        //EVIDENCIA NUMERO CASO DE TESTE
+                        case (int)EnumValoresDefault.Evidencia_NumeroCasoTeste:
+                            valor = (from td in db.TestData
+                                     join scs in db.Script_CondicaoScript on td.IdScript_CondicaoScript equals scs.Id
+                                     join s in db.Script on scs.IdScript equals s.Id
+                                     where td.Id == idTestData
+                                     select td.CasoTesteRelativo
+                                                ).FirstOrDefault();
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        //EVIDENCIA TITULO
+                        case (int)EnumValoresDefault.Evidencia_Titulo:
+                            string titulo = (from td in db.TestData
+                                             join d in db.DataPool on td.IdDataPool equals d.Id
+                                             join de in db.Demanda on d.IdDemanda equals de.Id
+                                             where td.Id == idTestData && td.IdScript_CondicaoScript == scriptCondicaoScript
+                                             select d.Descricao
+                             ).First();
+
+                            valor = titulo;
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        //EVIDENCIA PRJ
+                        case (int)EnumValoresDefault.Evidencia_Prj:
+                            string prj = (from td in db.TestData
+                                          join d in db.DataPool on td.IdDataPool equals d.Id
+                                          join de in db.Demanda on d.IdDemanda equals de.Id
+                                          where td.Id == idTestData && td.IdScript_CondicaoScript == scriptCondicaoScript
+                                          select de.Descricao
+                             ).First();
+
+                            valor = prj;
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        //EVIDENCIA AUTOR
+                        case (int)EnumValoresDefault.Evidencia_Autor:
+                            string autor = (from td in db.TestData
+                                            join d in db.DataPool on td.IdDataPool equals d.Id
+                                            join de in db.Demanda on d.IdDemanda equals de.Id
+                                            where td.Id == idTestData && td.IdScript_CondicaoScript == scriptCondicaoScript
+                                            select td.GeradoPor
+                             ).First();
+
+                            valor = autor;
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        //EVIDENCIA FASE
+                        case (int)EnumValoresDefault.Evidencia_Fase:
+                            string fase = (from td in db.TestData
+                                           join d in db.DataPool on td.IdDataPool equals d.Id
+                                           join de in db.Demanda on d.IdDemanda equals de.Id
+                                           where td.Id == idTestData && td.IdScript_CondicaoScript == scriptCondicaoScript
+                                           select de.Descricao
+                             ).First();
+
+                            valor = fase;
+                            if (valor == null)
+                            {
+                                valor = "";
+                            }
+                            break;
+                        // DEFAULT
+                        default:
+                            valor = Request.Form.Get(p.Descricao) == null ? "" : Request.Form.Get(p.Descricao);
+                            break;
+                    }
+
                     pv = new ParametroValor
                     {
                         IdParametroScript = ps.Id,
                         IdTestData = idTestData,
-                        Valor = Request.Form.Get(p.Descricao) == null ? "" : Request.Form.Get(p.Descricao)
+                        Valor = valor
                     };
 
                     db.ParametroValor.Add(pv);
                     db.SaveChanges();
                 }
-
-                
             }
         }
-
-
 
         public JsonResult carregaCondicaoScript(string id)
         {
@@ -324,7 +577,7 @@ namespace LaefazWeb.Controllers
 
             try
             {
-                for (int i=0; i<ids.Count; i++)
+                for (int i = 0; i < ids.Count; i++)
                 {
                     int idAtual = Int32.Parse(ids[i]);
 
@@ -374,7 +627,7 @@ namespace LaefazWeb.Controllers
                         //this.FlashError("Não é possível disponibilizar massas com status diferente de Disponível e Reservada.");
                     }
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -429,6 +682,7 @@ namespace LaefazWeb.Controllers
                         GerarMigracao = TestData.GerarMigracao,
                         CasoTesteRelativo = TestData.CasoTesteRelativo,
                         Observacao = TestData.Observacao,
+                        TempoEstimadoExecucao = TestData.TempoEstimadoExecucao
                     };
 
                     db.TestData.Add(TesteDataTemp);
@@ -470,7 +724,7 @@ namespace LaefazWeb.Controllers
             int scriptCondicaoScript = Int32.Parse(idScriptCondicaoScript);
             int id = Int32.Parse(idTestData);
 
-            List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == scriptCondicaoScript).ToList();
+            List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == scriptCondicaoScript && x.VisivelEmTela == true).ToList();
             List<ParametroValorVO> listParametroValorVO = new List<ParametroValorVO>();
 
             int IdStatus = db.TestData.Where(x => x.Id == id).FirstOrDefault().IdStatus;
@@ -483,11 +737,11 @@ namespace LaefazWeb.Controllers
                 ParametroValor pv = db.ParametroValor.Where(x => x.IdParametroScript == ps.Id && x.IdTestData == id).FirstOrDefault();
                 if (pv == null)
                 {
-                    listParametroValorVO.Add(new ParametroValorVO { IdStatusTestData = IdStatus, Valor = "", Id = 0, IdParametroScript = ps.Id, Descricao = p.Descricao, Tipo = p.Tipo, IdParametro = p.Id, IdTipoParametro = ps.IdTipoParametro, Obrigatorio = ps.Obrigatorio });
+                    listParametroValorVO.Add(new ParametroValorVO { IdStatusTestData = IdStatus, Valor = "", Id = 0, IdParametroScript = ps.Id, Descricao = p.Descricao, Tipo = p.Tipo, IdParametroValor = p.Id, IdTipoParametro = ps.IdTipoParametro, Obrigatorio = ps.Obrigatorio });
                 }
                 else
                 {
-                    listParametroValorVO.Add(new ParametroValorVO { IdStatusTestData = IdStatus, Valor = pv.Valor, Id = pv.Id, IdParametroScript = ps.Id, Descricao = p.Descricao, Tipo = p.Tipo, IdParametro = p.Id, IdTipoParametro = ps.IdTipoParametro, Obrigatorio = ps.Obrigatorio });
+                    listParametroValorVO.Add(new ParametroValorVO { IdStatusTestData = IdStatus, Valor = pv.Valor, Id = pv.Id, IdParametroScript = ps.Id, Descricao = p.Descricao, Tipo = p.Tipo, IdParametroValor = p.Id, IdTipoParametro = ps.IdTipoParametro, Obrigatorio = ps.Obrigatorio });
                 }
             }
 
@@ -496,41 +750,54 @@ namespace LaefazWeb.Controllers
             return Json(json, JsonRequestBehavior.AllowGet);
         }
 
-            public JsonResult CarregarParametros(string idScriptCondicaoScript, string idTestData)
+        public JsonResult CarregarParametros(string idScriptCondicaoScript, string idTestData)
         {
             DbEntities db = new DbEntities();
             int scriptCondicaoScript = Int32.Parse(idScriptCondicaoScript);
             int id = Int32.Parse(idTestData);
 
-            List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == scriptCondicaoScript).ToList();
+            List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == scriptCondicaoScript && x.VisivelEmTela == true).ToList();
             List<ParametroValorVO> listParametroValorVO = new List<ParametroValorVO>();
             List<ParametroVO> listParametroVO = new List<ParametroVO>();
 
+            ViewBag.ListaValoresDefault = (from ps in db.ParametroScript
+                                           where ps.IdScript_CondicaoScript == scriptCondicaoScript
+                                           && ps.ValorDefault != null
+                                           select new
+                                           {
+                                               id = ps.IdParametro,
+                                               valor = ps.ValorDefault
+                                           }
+                                           ).ToList();
+
             foreach (ParametroScript ps in listParametroScript)
             {
-                Parametro p = db.Parametro.Where(x => x.Id == ps.IdParametro).FirstOrDefault();
+                string valor = "";
+                Parametro p = (from pp in db.Parametro
+                               where ps.IdParametro == pp.Id
+                               //&& !pp.Descricao.Contains("EVIDENCIA")
+                               select pp
+                               ).FirstOrDefault();
 
-                listParametroVO.Add(new ParametroVO { IdParametro = p.Id, Descricao = p.Descricao, IdParametroScript = ps.Id, Tipo = p.Tipo, IdTipoParametro = ps.IdTipoParametro });
+                if (p != null)
+                {
+                    ParametroScript psc = (from p_s in db.ParametroScript
+                                           where p_s.IdParametro == p.Id && p_s.IdScript_CondicaoScript == scriptCondicaoScript
+                                           select p_s
+                      ).First();
 
+                    if (psc.ValorDefault != null)
+                    {
+                        valor = psc.ValorDefault;
+                    }
+
+                    listParametroVO.Add(new ParametroVO { IdParametro = p.Id, Descricao = p.Descricao, IdParametroScript = ps.Id, Tipo = p.Tipo, IdTipoParametro = ps.IdTipoParametro, Obrigatorio = ps.Obrigatorio, ValorParametroDefault = valor });
+                }
             }
 
             string json = JsonConvert.SerializeObject(listParametroVO, Formatting.Indented);
-                       
+
             return Json(json, JsonRequestBehavior.AllowGet);
-
         }
-
-
-      
-
-
     }
-
-   
-
-
-
-
-
-
-    }
+}

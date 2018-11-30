@@ -1,20 +1,18 @@
 ﻿using LaefazWeb.Models;
 using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.OleDb;
-using System.Data.SqlClient;
-using System.Diagnostics;
 using System.Linq;
+using System.Text;
+using System.Web;
 using TDMWeb.Exceptions;
 //using TDMWeb.Enumerators;
 //using TDMWeb.Exceptions;
-using TDMWeb.Models;
 
 namespace TDMWeb.Extensions
 {
-    public static class Util
+    public class Util
     {
 
 #if (DEBUG)
@@ -110,7 +108,6 @@ namespace TDMWeb.Extensions
             
             DbEntities db = new DbEntities();
             DataPool dp = db.DataPool.Where(x => x.Id == idDataPool).FirstOrDefault();
-            
            
 
             if(!dp.AUT.Descricao.Equals(sistema, StringComparison.InvariantCultureIgnoreCase))
@@ -133,5 +130,52 @@ namespace TDMWeb.Extensions
             
             return retorno;
         }
+
+
+        public static Usuario GetUsuarioLogado()
+        {
+            return (Usuario) HttpContext.Current.Session["ObjUsuario"];
+        }
+
+
+        public static String ToString(object obj, StringBuilder sb = null)
+        {
+            if (sb == null)
+            {
+
+                sb = new StringBuilder();
+            }
+
+            sb.Append(obj.GetType().Name + "[" + "{");
+
+            foreach (var item in obj.GetType().GetProperties())
+            {
+                Console.WriteLine(item.ToString());
+                if (!item.ToString().Contains("Model"))
+                {
+                    sb.Append("'" + item.Name + "':'" + item.GetValue(obj) + "',");
+                }
+                else
+                {
+                    object objeto = item.GetValue(obj);
+                    if (objeto != null)
+                    {
+                        ToString(objeto, new StringBuilder(sb.ToString()));
+                    }
+                    else
+                    {
+                        sb.Append("'" + item.Name + "':'NULL',");
+                    }
+
+                }
+
+            }
+            sb.Append("}]");
+
+            return sb.ToString();
+        }
+
     }
+
+   
 }

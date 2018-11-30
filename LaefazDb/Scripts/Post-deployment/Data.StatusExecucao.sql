@@ -12,9 +12,12 @@ Post-Deployment Script Template
 
 IF NOT EXISTS (SELECT * FROM StatusExecucao)
 BEGIN
-	INSERT INTO StatusExecucao (Id, Descricao) VALUES (1, 'Aguardando Processamento');
-	INSERT INTO StatusExecucao (Id, Descricao) VALUES (2, 'Em Processamento');
-	INSERT INTO StatusExecucao (Id, Descricao) VALUES (3, 'Processando Log Tosca');
-	INSERT INTO StatusExecucao (Id, Descricao) VALUES (4, 'Sucesso');
-	INSERT INTO StatusExecucao (Id, Descricao) VALUES (5, 'Falha');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Aguardando Processamento');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Em Processamento');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Processando Log Tosca');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Sucesso');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Falha');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Cancelamento');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Em Cancelamento');
+	INSERT INTO StatusExecucao (Descricao) VALUES ('Agendada');
 END

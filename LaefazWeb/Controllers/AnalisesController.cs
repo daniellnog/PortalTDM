@@ -10,7 +10,7 @@ using TDMWeb.Lib;
 
 namespace TDMWeb.Controllers
 {
-    [UsuarioLogado]
+	[UsuarioLogado]
 	public class AnalisesController : Controller
 	{
 		private DbEntities db = new DbEntities();
@@ -21,7 +21,7 @@ namespace TDMWeb.Controllers
 
 		public ActionResult Index()
 		{
-            return View(/*db.Analise.ToList()*/);
+			return View(/*db.Analise.ToList()*/);
 		}
 
 		//
@@ -30,9 +30,9 @@ namespace TDMWeb.Controllers
 		public ActionResult Adicionar()
 		{
 			/*ViewBag.ListaSistema = db.Sistema.ToList();
-            ViewBag.ListaTipoMassa = db.TipoMassa.ToList();*/
+			ViewBag.ListaTipoMassa = db.TipoMassa.ToList();*/
 
-            return View();
+			return View();
 		}
 
 		[HttpPost]
@@ -73,7 +73,7 @@ namespace TDMWeb.Controllers
 
 		public ActionResult Editar(int idAnalise)
 		{
-            return View(/*db.Analise.FirstOrDefault(a => a.Id == idAnalise)*/);
+			return View(/*db.Analise.FirstOrDefault(a => a.Id == idAnalise)*/);
 		}
 
 		public ActionResult SalvarEdicao(/*Analise analise*/)
@@ -93,51 +93,51 @@ namespace TDMWeb.Controllers
 		[HttpPost]
 		public ActionResult Salvar(/*Analise Analise, bool editar = false*/)
 		{
-            /*
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    var msg = string.Empty;
-                    ModelState.Values.SelectMany(v => v.Errors).ForEach(m => msg = string.Concat(m.ErrorMessage.ToString(), @"\n"));
-                    if (!msg.IsNullOrWhiteSpace())
-                        this.FlashWarning(msg);
-                    ViewBag.ListaAnalises = db.Analise.ToList();
-                    return View("Adicionar", Analise);
-                }
+			/*
+			try
+			{
+				if (!ModelState.IsValid)
+				{
+					var msg = string.Empty;
+					ModelState.Values.SelectMany(v => v.Errors).ForEach(m => msg = string.Concat(m.ErrorMessage.ToString(), @"\n"));
+					if (!msg.IsNullOrWhiteSpace())
+						this.FlashWarning(msg);
+					ViewBag.ListaAnalises = db.Analise.ToList();
+					return View("Adicionar", Analise);
+				}
 
-                Analise analise;
+				Analise analise;
 
-                if (editar)
-                {
-                    analise = Analise;
-                }
-                else
-                {
-                    analise = new Analise()
-                    {
-                        IdSistema = Int32.Parse(Request.Form.Get("analise_sistema")),
-                        IdTipoMassa = Int32.Parse(Request.Form.Get("analise_tipo_massa")),
-                        Descricao = Request.Form.Get("analise_observacoes"),
-                        QtdSolicitada = Int32.Parse(Request.Form.Get("analise_qtd_solicitada")),
-                    };
+				if (editar)
+				{
+					analise = Analise;
+				}
+				else
+				{
+					analise = new Analise()
+					{
+						IdSistema = Int32.Parse(Request.Form.Get("analise_sistema")),
+						IdTipoMassa = Int32.Parse(Request.Form.Get("analise_tipo_massa")),
+						Descricao = Request.Form.Get("analise_observacoes"),
+						QtdSolicitada = Int32.Parse(Request.Form.Get("analise_qtd_solicitada")),
+					};
 
-                    db.Analise.Add(analise);
-                    db.SaveChanges();
+					db.Analise.Add(analise);
+					db.SaveChanges();
 
-                    this.FlashSuccess("Análise adicionada.");
-                }
-                
-            }
-            catch (Exception ex)
-            {
-                if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_Analise_Descricao"))
-                    this.FlashError("Já existe uma análise com essa descrição.");
-                else
-                    this.FlashError(ex.Message);
-            }
-            */
-            return RedirectToAction("Index");
+					this.FlashSuccess("Análise adicionada.");
+				}
+				
+			}
+			catch (Exception ex)
+			{
+				if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_Analise_Descricao"))
+					this.FlashError("Já existe uma análise com essa descrição.");
+				else
+					this.FlashError(ex.Message);
+			}
+			*/
+			return RedirectToAction("Index");
 		}
 
 		

@@ -145,6 +145,15 @@ namespace LaefazWeb.Controllers
                     db.Entry(objeto).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
 
+                    //TDM_Usuario tdmUsuario = new TDM_Usuario()
+                    //{
+                    //    IdTDM = objeto.Id,
+                    //    IdUsuario = Util.GetUsuarioLogado().Id
+                    //};
+
+                    //db.TDM_Usuario.Add(tdmUsuario);
+                    //db.SaveChanges();
+
                     this.FlashSuccess("TDM editado com sucesso!");
                 }
                 else
@@ -158,7 +167,7 @@ namespace LaefazWeb.Controllers
                     tdm = new TDM()
                     {
                         Descricao = Request.Form.Get("tdm_descricao"),
-                        //TdmPublico = bOption,
+                        TdmPublico = false,
                     };
 
                     // Criando o objeto TDM Usuario e realizando a inserção no banco com os dados do Usuário responsável pela criação do TDM.

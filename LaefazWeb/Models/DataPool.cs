@@ -31,6 +31,7 @@ namespace LaefazWeb.Models
         public System.DateTime DataSolicitacao { get; set; }
         public Nullable<System.DateTime> DataInicioExecucao { get; set; }
         public Nullable<System.DateTime> DataTermino { get; set; }
+        public bool ConsiderarRotinaDiaria { get; set; }
     
         public virtual AUT AUT { get; set; }
         public virtual Demanda Demanda { get; set; }

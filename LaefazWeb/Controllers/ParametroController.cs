@@ -25,6 +25,7 @@ namespace LaefazWeb.Controllers
 
         public ActionResult Adicionar()
         {
+            ViewBag.TipoDadoParametro = db.TipoDadoParametro.ToList();
             return View();
         }
 
@@ -53,7 +54,10 @@ namespace LaefazWeb.Controllers
         
     public ActionResult Editar(int id)
     {
-        return View(db.Parametro.FirstOrDefault(a => a.Id == id));
+
+        ViewBag.TipoDadoParametro = db.TipoDadoParametro.ToList();
+        Parametro p = db.Parametro.FirstOrDefault(a => a.Id == id);
+        return View(p);
     }
     
         
@@ -91,6 +95,7 @@ namespace LaefazWeb.Controllers
 
                 if (editar)
                 {
+                    objeto.Tipo = Request.Form.Get("tipo_dado_parametro");
                     db.Entry(objeto).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                 }
@@ -99,7 +104,10 @@ namespace LaefazWeb.Controllers
                     parametro = new Parametro()
                     {
                         Descricao = Request.Form.Get("descricao"),
-                    };
+                        ColunaTecnicaTosca = Request.Form.Get("colunaTecnicaTosca"),
+                        Tipo = Request.Form.Get("tipo_dado_parametro")
+                        
+                };
 
                     db.Parametro.Add(parametro);
                     db.SaveChanges();
@@ -111,6 +119,8 @@ namespace LaefazWeb.Controllers
             {
                 if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_Parametro_Descricao"))
                     this.FlashError("Já existe um Parâmetro com essa descrição.");
+                else if(ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_Parametro_ColunaTecnicaTosca"))
+                    this.FlashError("Já existe um Parâmetro com esse Nome Técnico Tosca.");
                 else
                     this.FlashError(ex.Message);
             }

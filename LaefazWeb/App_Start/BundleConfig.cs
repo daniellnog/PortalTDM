@@ -1,4 +1,5 @@
-﻿using System.Web.Optimization;
+﻿
+using System.Web.Optimization;
 
 namespace TDMWeb
 {
@@ -22,6 +23,10 @@ namespace TDMWeb
 
             bundles.Add(new StyleBundle("~/Asset/Vendor/Select2/css")
                                 .Include("~/Assets/Vendor/Select2/css/select2.css"));
+
+            bundles.Add(new StyleBundle("~/Asset/Vendor/multi-select/css")
+                                .Include("~/Assets/Vendor/multi-select/css/multi-select.css"));
+
 
             bundles.Add(new StyleBundle("~/Asset/Vendor/ColorSelect/css")
                                 .Include("~/Assets/Vendor/ColorSelect/css/bootstrap-colorselector.css"));
@@ -47,13 +52,16 @@ namespace TDMWeb
                                 .Include("~/Assets/Vendor/bootstrap/js/bootstrap.js"));
 
             bundles.Add(new ScriptBundle("~/Asset/Vendor/js")
-                                .Include("~/Assets/Vendor/jquery-2.2.3.js")
+                                //.Include("~/Assets/Vendor/jquery-2.2.3.js")
                                 .Include("~/Assets/Vendor/jquery.validate.js")
                                 .Include("~/Assets/Vendor/jquery.validate.messages_pt_BR.js")
                                 .Include("~/Assets/Vendor/jquery.slimscroll.js")
                                 .Include("~/Assets/Vendor/additional-methods.js")
                                 .Include("~/Assets/Vendor/fastclick.js")
                                 .Include("~/Assets/Vendor/modernizr-2.6.2.js"));
+
+            bundles.Add(new ScriptBundle("~/bundles/jquery_3_3_1").Include("~/Assets/Vendor/jquery-3.3.1.min.js"));
+            bundles.Add(new ScriptBundle("~/bundles/jquery_2_2_3").Include("~/Assets/Vendor/jquery-2.2.3.js"));
 
             bundles.Add(new ScriptBundle("~/Script/Jquery")
                 .Include("~/Scripts/jquery-2.2.3.intellisense.js")
@@ -62,8 +70,6 @@ namespace TDMWeb
 
             bundles.Add(new ScriptBundle("~/Asset/Vendor/bootstrap-daterangepicker")
                 .Include("~/Assets/Vendor/bootstrap-daterangepicker/daterangepicker.css"));
-            
-            
 
             bundles.Add(new ScriptBundle("~/Asset/Vendor/AdminLTE/js")
                                 .Include("~/Assets/Vendor/AdminLTE/js/app.js"));
@@ -82,6 +88,9 @@ namespace TDMWeb
             bundles.Add(new ScriptBundle("~/Asset/Vendor/Select2/js")
                                 .Include("~/Assets/Vendor/Select2/js/select2.full.js"));
 
+            bundles.Add(new ScriptBundle("~/Asset/Vendor/multi-select/js")
+                                .Include("~/Assets/Vendor/multi-select/js/jquery.multi-select.js"));
+
             bundles.Add(new ScriptBundle("~/Asset/Vendor/ColorSelect/js")
                     .Include("~/Assets/Vendor/ColorSelect/js/bootstrap-colorselector.js"));
 
@@ -93,6 +102,15 @@ namespace TDMWeb
                                 .Include("~/Assets/Scripts/LAEFaz.js")
                                 .Include("~/Assets/Scripts/moment.min.js")
                                 .Include("~/Assets/Scripts/heatmap.js"));
+
+            //scripts e css do calendario
+            bundles.Add(new ScriptBundle("~/Asset/Vendor/fullcalendar-3.9.0")
+                                .Include("~/Assets/Vendor/fullcalendar-3.9.0/fullcalendar.js"));
+            bundles.Add(new StyleBundle("~/Asset/Vendor/fullcalendar-3.9.0")
+                               .Include("~/Assets/Vendor/fullcalendar-3.9.0/fullcalendar.print.css")
+                               .Include("~/Assets/Vendor/fullcalendar-3.9.0/fullcalendar.css"));
+
+
         }
     }
 }

@@ -23,13 +23,19 @@ namespace LaefazWeb.Models
         public int Id { get; set; }
         public Nullable<int> IdScript_CondicaoScript_Ambiente { get; set; }
         public Nullable<int> IdTestData { get; set; }
+        public Nullable<int> IdAgendamento { get; set; }
         public int IdStatusExecucao { get; set; }
         public int IdTipoFaseTeste { get; set; }
         public string Usuario { get; set; }
         public Nullable<int> SituacaoAmbiente { get; set; }
+        public Nullable<System.DateTime> DataAgendamento { get; set; }
+        public Nullable<System.DateTime> InicioExecucao { get; set; }
+        public Nullable<System.DateTime> TerminoExecucao { get; set; }
         public string ToscaInput { get; set; }
         public string ToscaOutput { get; set; }
+        public bool EnvioTelegram { get; set; }
     
+        public virtual Agendamento Agendamento { get; set; }
         public virtual Script_CondicaoScript_Ambiente Script_CondicaoScript_Ambiente { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TestData> TestData { get; set; }

@@ -18,7 +18,13 @@
             <thead>
                 <tr>
                     <th>
-                        @Html.DisplayNameFor(model => model.Descricao)
+                        @Html.DisplayName("Descrição")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Nome Técnico Tosca")
+                    </th>
+                    <th>
+                        @Html.DisplayName("Tipo de Dado")
                     </th>
                 </tr>
             </thead>
@@ -30,6 +36,13 @@
                             @Html.DisplayFor(modelItem => item.Descricao)
                             @Html.HiddenFor(modelItem => item.Id, new { @class = "hidden-id" })
                         </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.ColunaTecnicaTosca)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Tipo)
+                        </td>
+
                     </tr>
                 }
             </tbody>
@@ -124,9 +137,18 @@
                 columnDefs: [
                     {
                         targets: [0],
-                        sortable: true,
-                        width: '100%'
+                        sortable: true
+                    },
+                    {
+                        targets: [1],
+                        sortable: true
+                    },
+                    {
+                        targets: [2],
+                        sortable: true
                     }
+
+
                 ],
                 order: [[0, "asc"]],
                 oLanguage: {

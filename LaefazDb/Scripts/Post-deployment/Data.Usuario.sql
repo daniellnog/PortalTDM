@@ -13,6 +13,7 @@ Post-Deployment Script Template
 -- Cadastro de Usuário Administrador
 IF NOT EXISTS (SELECT * FROM Usuario)
 BEGIN
+INSERT INTO Usuario(Login, Senha)VALUES('administrador','senha');
 INSERT INTO Usuario(Login, Senha)VALUES('walter','senha');
 INSERT INTO Usuario(Login, Senha)VALUES('bruce','senha');
 INSERT INTO Usuario(Login, Senha)VALUES('rapha','senha');

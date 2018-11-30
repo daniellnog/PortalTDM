@@ -17,6 +17,7 @@ namespace LaefazWeb.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public ParametroScript()
         {
+            this.ParametroScript_Valor = new HashSet<ParametroScript_Valor>();
             this.ParametroValor = new HashSet<ParametroValor>();
         }
     
@@ -25,10 +26,14 @@ namespace LaefazWeb.Models
         public int IdScript_CondicaoScript { get; set; }
         public int IdTipoParametro { get; set; }
         public bool Obrigatorio { get; set; }
+        public string ValorDefault { get; set; }
+        public bool VisivelEmTela { get; set; }
     
         public virtual Parametro Parametro { get; set; }
         public virtual Script_CondicaoScript Script_CondicaoScript { get; set; }
         public virtual TipoParametro TipoParametro { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<ParametroScript_Valor> ParametroScript_Valor { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ParametroValor> ParametroValor { get; set; }
     }

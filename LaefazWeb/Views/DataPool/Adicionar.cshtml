@@ -10,6 +10,11 @@
         .form-control[readonly] {
             background-color: white;
         }
+
+        .required:after {
+                content:" *"; 
+                color: #ff0000;
+            }
     </style>
 }
 
@@ -128,6 +133,15 @@
                 <div class="col-xs-4 form-group">
                     @Html.Label("qtd_necessaria", "Qtd. Necessária")
                     @Html.TextBoxFor(m => m.QtdSolicitada, new { @class = "form-control", required = "required", pattern = "[0-9]+$", onkeypress = "return Onlynumbers(event)", type="number", min="1" })
+                </div>
+
+                <div class="col-xs-4 form-group">
+                    @Html.Label("rot-diaria", "Considerar Execução Diária")
+                    <select name="considerarRotinaDiaria" class="form-control" required="required" id="selectRotinaDiaria">
+                        <option value=""></option>
+                        <option value='1'>Sim</option>
+                        <option value='0'>Não</option>
+                    </select>
                 </div>
             </div>
             <div class="row">

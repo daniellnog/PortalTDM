@@ -12,6 +12,11 @@
             background-color: gainsboro;
             cursor: not-allowed;
         }
+
+        .required:after {
+            content: " *";
+            color: #ff0000;
+        }
     </style>
 }
 <link rel="stylesheet" href="~/Assets/Vendor/datepicker/css/bootstrap-datepicker.min.css">
@@ -25,6 +30,8 @@
         <div class="box-header with-border">
             <h3 class="box-title">DataPool: @Model.DataPool.Descricao</h3>
         </div>
+
+        <input type="hidden" id="arrayAlteracoesParametros" name="ParametrosEntrada" value="">
         <div class="box-body">
             @*@Html.HiddenFor(m => m.Descricao, new { Id = "hidden-descricao" })*@
             @Html.Hidden("hidden-descricao", @Model.Descricao)
@@ -35,7 +42,7 @@
             @Html.HiddenFor(m => m.IdDataPool, new { Id = "hidden-data-pool-id" })
             @*@Html.HiddenFor(m => m.GerarMigracao, new { Id = "hidden-gerar-migracao" })*@
             @Html.Hidden("hidden-gerar-migracao", @Model.GerarMigracao)
-           @* @Html.HiddenFor(m => m.IdStatus, new { Id = "hidden-id-status" })*@
+            @* @Html.HiddenFor(m => m.IdStatus, new { Id = "id-status" })*@
             @Html.HiddenFor(m => m.IdScript_CondicaoScript, new { Id = "hidden-id-script-condicao" })
             @*@Html.HiddenFor(m => m.GeradoPor, new { Id = "hidden-gerado-por" })*@
             @Html.HiddenFor(m => m.DataGeracao, new { Id = "hidden-dt-geracao" })
@@ -83,7 +90,7 @@
             </div>
             @*campo migração de codigo*@
             <div class="row">
-                <div class="col-xs-4 form-group">
+                <div class="col-xs-3 form-group">
                     @Html.Label("migracao", "Gerar antes de migração de código?")
                     @Html.DropDownList("listMigracao", new SelectList(ViewBag.listaChaveVO, "key", "value"), null, new
                {
@@ -98,7 +105,7 @@
                 </div>
 
                 @*campo script*@
-                <div class="col-xs-4 form-group">
+                <div class="col-xs-3 form-group">
                     @Html.Label("script", "Script")
                     @Html.DropDownList("listScript", new SelectList(ViewBag.listScript, "Id", "Descricao"), null, new
                {
@@ -113,7 +120,7 @@
                 </div>
 
                 @*campo condicao script*@
-                <div class="col-xs-4 form-group">
+                <div class="col-xs-3 form-group">
                     @Html.Label("script", "Condição")
                     @Html.DropDownList("listCondicaoScript", new SelectList(ViewBag.listCondicaoScript, "Id", "Descricao"), null, new
                {
@@ -122,26 +129,30 @@
                    @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
 
                }
-                        )
+                    )
                 </div>
-
+                <div class="col-xs-3 form-group">
+                    @Html.Label("tempo_estimado", "Tempo estimado (h:m)")
+                    @Html.HiddenFor(m => m.TempoEstimadoExecucao, new { Id = "tempo_execucao" })
+                    <input type="text" class="form-control pull-right timepicker" id="tempo-estimado">
+                </div>
             </div>
 
             @*caso de teste relativo*@
             <div class="row">
-                <div class="col-xs-4 form-group">
+                <div class="col-xs-3 form-group">
                     @Html.Label("CasoTesteRelativo", "Nº Caso de Teste")
                     @Html.TextBoxFor(m => m.CasoTesteRelativo, new { @class = "form-control", required = "required", @id = "CasoTesteRelativo" })
                 </div>
 
                 @*campo gerado por*@
-                <div class="col-xs-4 form-group">
+                <div class="col-xs-3 form-group">
                     @Html.Label("lbl-gerado-por", "Gerado por")
                     @Html.TextBoxFor(m => m.GeradoPor, new { @id = "GeradoPor", @class = "form-control", @disabled = true })
                 </div>
 
                 @*campo data geracao*@
-                <div class="col-xs-4 form-group">
+                <div class="col-xs-3 form-group">
 
                     @Html.Label("data-geracao", "Data de geração")
                     <div class="input-group date">
@@ -152,7 +163,19 @@
                     </div>
                 </div>
 
+                @*campo Classificação da massa*@
+                <div class="col-xs-3 form-group">
+                    @Html.Label("classificacao", "Classificação da Massa")
+                    @Html.DropDownListFor(m => m.ClassificacaoMassa, new SelectList(ViewBag.ListaClassificacao, "key", "value"), null, new
+               {
+                   @class = "form-control",
+                   @id = "list-classificacao-massa",
+                   @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                   @required = "required",
 
+               }
+                        )
+                </div>
             </div>
 
 
@@ -169,6 +192,23 @@
             </div>
         </div>
     </div>
+
+    <table id="POITable" name="NamePOITable" border="1" hidden="true">
+        <tr>
+            <th>Interação</th>
+            <th>Campo</th>
+            <th>Início</th>
+            <th>Término</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td><i class="srno"></i></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
 
     <div class="box box-primary" id="box-parametros-entrada">
         <div class="box-header with-border">
@@ -201,9 +241,36 @@
             ativaDesativaCampos();
             selecionaValorComboStatus();
             loadFields();
+
+            $('#POITable').on('change', 'select.search_type', function (e) {
+                var selectedval = $(this).val();
+                $(this).closest('td').next().html(selectedval);
+            });
+
             onsubmitForm();
 
         });
+
+        var tempoSelecionado = $('#tempo_execucao').val();
+        tempoSelecionado = tempoSelecionado.substring(11, 16);
+
+        var options = {
+            now: tempoSelecionado, //hh:mm 24 hour format only, defaults to current time
+            twentyFour: true, //Display 24 hour format, defaults to false
+            upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS
+            downArrow: 'wickedpicker__controls__control-down', //The down arrow class selector to use, for custom CSS
+            close: 'wickedpicker__close', //The close class selector to use, for custom CSS
+            hoverState: 'hover-state', //The hover state class to use, for custom CSS
+            title: 'Tempo estimado de execução', //The Wickedpicker's title,
+            showSeconds: false, //Whether or not to show seconds,
+            secondsInterval: 1, //Change interval for seconds, defaults to 1  ,
+            minutesInterval: 15, //Change interval for minutes, defaults to 1
+            beforeShow: null, //A function to be called before the Wickedpicker is shown
+            show: null, //A function to be called when the Wickedpicker is shown
+            clearable: false, //Make the picker's input clearable (has clickable "x")
+        };
+
+        $('#tempo-estimado').wickedpicker(options);
 
         //$(function () {
 
@@ -241,10 +308,6 @@
                    $("#list-script-condicao").attr("required", true);
                    $("#list-script-condicao").removeAttr("disabled");
                }
-
-
-
-               console.log(result);
 
            },
            error: function (erro) {
@@ -300,7 +363,7 @@
         }
 
         function selecionaValorComboStatus() {
-            var id = $("#hidden-id-status").attr("value");
+            var id = $("#id-status").attr("value");
             var $option = $('#list-status').children('option[value="' + id + '"]');
             $option.attr('selected', true);
 
@@ -325,6 +388,7 @@
                 $('#list-script-condicao').attr("disabled", true);
                 $('#CasoTesteRelativo').attr("disabled", true);
                 $('#Observacao').attr("disabled", true);
+                $('#list-classificacao-massa').attr("disabled", true);
 
                 if (id == 6 || id == 4)
                     $('#btnSalvar').attr("disabled", true);
@@ -338,12 +402,13 @@
                 $('#Observacao').removeAttr("disabled");
                 $('#list-script').attr("disabled", true);
                 $('#list-script-condicao').attr("disabled", true);
+                $('#list-classificacao-massa').removeAttr("disabled");
             }
         }
 
 
         function AlteraStatus() {
-            var idAnterior = $("#hidden-id-status").val();
+            var idAnterior = $("#id-status").val();
             var idStatus = $("#list-status option:selected").val();
             var btnNao = false;
             //$('#list-script').focus().select();
@@ -370,6 +435,49 @@
 
                 });
             }
+        }
+
+        function AddZero(num) {
+            return (num >= 0 && num < 10) ? "0" + num : num + "";
+        }
+
+        function Alterou(y, campo) {
+            var campoAlterado = document.getElementById(campo.id);
+
+            var now = new Date();
+            var strDateTime = [[AddZero(now.getDate()),
+                AddZero(now.getMonth() + 1),
+                now.getFullYear()].join("/"),
+                [AddZero(now.getHours()),
+                AddZero(now.getMinutes()),
+                AddZero(now.getSeconds())].join(":"),
+                now.getHours() >= 12 ? "PM" : "AM"].join(" ");
+
+            if (y == 1) {
+                //document.getElementById("tempoInicio").value = "Tempo Início: " + strDateTime;
+                insRow($(campo).attr("idvalor"), campo, strDateTime, "")
+            }
+            if (y == 2) {
+                //document.getElementById("tempoFim").value = "Tempo Fim: " + strDateTime;
+                insRow($(campo).attr("idvalor"), campo, "", strDateTime)
+            }
+        }
+        var len = 1;
+        var stringAlteracoesParams = "";
+        var array = new Array();
+        function insRow(campoId, campo, dataInicio, dataTermino) {
+            var chave = len;
+
+            if (len % 2 == 0) {
+                chave = len - 1;
+            }
+
+            var ps = $(campo).attr("idparametroscript");
+            var obj = { chave: chave, incremento: len, idCampo: campoId, inicio: dataInicio, termino: dataTermino, valor: campo.value, idParamScript: ps };
+            //stringAlteracoesParams += len + ',' + campoId + ',' + dataInicio + ',' + dataTermino + ',' + campo.value + '|';
+            array.push(obj);
+            len++;
+
         }
 
         function loadFields() {
@@ -409,24 +517,30 @@
                     var camposEntrada = [];
                     var camposSaida = [];
                     var readOnly = "";
+                    var asteristico = "";
 
 
                     if ($("#list-status").val() != 1) {
                         readOnly = "readonly";
                     }
 
-
                     obj.forEach(function (o, index) {
+
+                        if (o.Obrigatorio == true) {
+                            asteristico = "required";
+                        } else {
+                            asteristico = "";
+                        }
 
                         switch (o.Tipo) {
                             case "NUMBER":
-                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><input "+readOnly+" IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" onkeypress=\"if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;\" value=\"" + o.Valor + "\" class=\"form-control\" id=\"" + o.Descricao + "\"  " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
+                                input = "<div class=\"col-xs-4 form-group\"><label class=" + asteristico + ">" + o.Descricao + "</label><input onfocus='Alterou(1, this)' onblur='Alterou(2, this)' " + readOnly + " IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" onkeypress=\"if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;\" value=\"" + o.Valor + "\" class=\"form-control\" id=\"" + o.Descricao + "\"  " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
                                 break;
                             case "DATE":
-                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><div class=\"input-group date\"><div class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></div><input  " + readOnly + "  IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" class=\"form-control pull-right\" data-val=\"true\" data-val-date=\"The field DataSolicitacao must be a date.\" data-val-required=\"The DataSolicitacao field is required.\" name=\"DataSolicitacao\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " type=\"text\" data-mask=\"00/00/0000\" id=\"data-parametro\" value=\"" + o.Valor + "\" aria-required=\"true\"  aria-invalid=\"false\"></div></div>";
+                                input = "<div class=\"col-xs-4 form-group\"><label class=" + asteristico + ">" + o.Descricao + "</label><div onfocus='Alterou(1, this)' onblur='Alterou(2, this)' class=\"input-group date\"><div class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></div><input  " + readOnly + "  IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" class=\"form-control pull-right\" data-val=\"true\" data-val-date=\"The field DataSolicitacao must be a date.\" data-val-required=\"The DataSolicitacao field is required.\" name=\"DataSolicitacao\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " type=\"text\" data-mask=\"00/00/0000\" id=\"data-parametro\" value=\"" + o.Valor + "\" aria-required=\"true\"  aria-invalid=\"false\"></div></div>";
                                 break;
                             default:
-                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><input " + readOnly + "  IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" value=\"" + o.Valor + "\" class=\"form-control\" id=\"" + o.Descricao + "\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
+                                input = "<div class=\"col-xs-4 form-group\"><label class=" + asteristico + ">" + o.Descricao + "</label><input onfocus='Alterou(1, this)' onblur='Alterou(2, this)' " + readOnly + "  IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" value=\"" + o.Valor + "\" class=\"form-control\" id=\"" + o.Descricao + "\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
                                 break;
                         }
 
@@ -548,6 +662,14 @@
                 if ($("#form-test-data").valid()) {
                     $("#list-status").removeAttr("disabled");
                 }
+
+                //stringAlteracoesParams.substr(0, stringAlteracoesParams.length - 1);
+
+                var alteracoes = JSON.stringify(array);
+
+                $('#arrayAlteracoesParametros').val(alteracoes);
+
+                $("<input/>", { type: 'hidden', name: 'tempoEstimado' }).val($('#tempo-estimado').val()).appendTo("form");
             });
         }
 

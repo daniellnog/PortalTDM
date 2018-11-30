@@ -17,6 +17,8 @@ namespace LaefazWeb.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public TestData()
         {
+            this.Agendamento_TestData = new HashSet<Agendamento_TestData>();
+            this.Encadeamento_TestData = new HashSet<Encadeamento_TestData>();
             this.ParametroValor = new HashSet<ParametroValor>();
         }
     
@@ -30,13 +32,17 @@ namespace LaefazWeb.Models
         public bool GerarMigracao { get; set; }
         public string CasoTesteRelativo { get; set; }
         public string Observacao { get; set; }
-        public Nullable<System.DateTime> InicioExecucao { get; set; }
-        public Nullable<System.DateTime> TerminoExecucao { get; set; }
         public string GeradoPor { get; set; }
         public Nullable<System.DateTime> DataGeracao { get; set; }
         public string CaminhoEvidencia { get; set; }
+        public System.DateTime TempoEstimadoExecucao { get; set; }
+        public int ClassificacaoMassa { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Agendamento_TestData> Agendamento_TestData { get; set; }
         public virtual DataPool DataPool { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Encadeamento_TestData> Encadeamento_TestData { get; set; }
         public virtual Execucao Execucao { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ParametroValor> ParametroValor { get; set; }

@@ -17,12 +17,18 @@
             position: relative;
         }
 
-            .progress span {
-                position: absolute;
-                display: block;
-                width: 100%;
-                color: black;
-            }
+        .required:after {
+            content:" *"; 
+            color: #ff0000;
+        }
+
+        .progress span {
+            position: absolute;
+            display: block;
+            width: 100%;
+            color: black;
+        }
+        
     </style>
 }
 
@@ -80,7 +86,7 @@
 
                 <div class="row">
                     @*campo migração de codigo*@
-                    <div class="col-xs-4 form-group">
+                    <div class="col-xs-3 form-group">
                         @Html.Label("migracao", "Gerar antes de migração de código?")
                         @Html.DropDownList("ListMigracao", new SelectList(ViewBag.listaChaveVO, "key", "value"), null, new
                    {
@@ -94,21 +100,25 @@
 
                     </div>
                     @*caso de teste relativo*@
-                    <div class="col-xs-4 form-group">
-                        @Html.Label("CasoTesteRelativo", "Caso Teste Relativo")
+                    <div class="col-xs-3 form-group">
+                        @Html.Label("CasoTesteRelativo", "Nº Caso de Teste")
                         @Html.TextBox("casoTesteRelativo", null, new { @class = "form-control", required = "required" })
                     </div>
 
                     @*campo gerado por*@
-                    <div class="col-xs-4 form-group">
+                    <div class="col-xs-3 form-group">
                         @Html.Label("lbl-gerado-por", "Gerado por")
                         @Html.TextBox("gerado-por", null, new { @class = "form-control", @readonly = true, @disabled = true })
+                    </div>
+                    <div class="col-xs-3 form-group">
+                        @Html.Label("tempo_estimado", "Tempo estimado (h:m)")
+                        <input type="text" class="form-control pull-right timepicker" id="tempo-estimado">
                     </div>
                 </div>
 
                 <div class="row">
                     @*campo script*@
-                    <div class="col-xs-6 form-group">
+                    <div class="col-xs-4 form-group">
                         @Html.Label("script", "Script")
                         @Html.DropDownList("listScript", new SelectList(ViewBag.listScript, "Id", "Descricao"), null, new
                    {
@@ -124,7 +134,7 @@
                     </div>
 
                     @*campo condicao script*@
-                    <div class="col-xs-6 form-group">
+                    <div class="col-xs-4 form-group">
                         @Html.Label("script", "Condição")
                         @Html.DropDownList("listCondicaoScript", new SelectList(ViewBag.listCondicaoScript, "Id", "Descricao"), null, new
                    {
@@ -135,6 +145,21 @@
                        @disabled = "true",
 
                    }
+                        )
+                    </div>
+
+
+                    @*campo Classificação da massa*@
+                    <div class="col-xs-4 form-group">
+                        @Html.Label("classificacao", "Classificação da Massa")
+                        @Html.DropDownList("listaClassificacao", new SelectList(ViewBag.ListaClassificacao, "key", "value"), null, new
+                       {
+                           @class = "form-control",
+                           @id = "list-classificacao-massa",
+                           @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                           @required = "required",
+
+                       }
                         )
                     </div>
 
@@ -197,6 +222,24 @@
 
 
         });
+
+        var options = {
+            now: "00:00", //hh:mm 24 hour format only, defaults to current time 
+            twentyFour: true, //Display 24 hour format, defaults to false 
+            upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS 
+            downArrow: 'wickedpicker__controls__control-down', //The down arrow class selector to use, for custom CSS 
+            close: 'wickedpicker__close', //The close class selector to use, for custom CSS 
+            hoverState: 'hover-state', //The hover state class to use, for custom CSS 
+            title: 'Tempo estimado de execução', //The Wickedpicker's title, 
+            showSeconds: false, //Whether or not to show seconds, 
+            secondsInterval: 1, //Change interval for seconds, defaults to 1  , 
+            minutesInterval: 15, //Change interval for minutes, defaults to 1 
+            beforeShow: null, //A function to be called before the Wickedpicker is shown 
+            show: null, //A function to be called when the Wickedpicker is shown 
+            clearable: false, //Make the picker's input clearable (has clickable "x")  
+        };
+
+        $('#tempo-estimado').wickedpicker(options);
 
         function calendarioDataGeracaoSolicitada() {
             $('#dtGeracaoSolicitada').daterangepicker({
@@ -318,19 +361,32 @@
                     var camposEntrada = [];
                     var camposSaida = [];
                     var readOnly = "";
+                    var asteristico = "";
+
 
                     obj.forEach(function (o, index) {
+                        if (o.Obrigatorio == true) {
+                            asteristico = "required";
+                        } else {
+                            asteristico = "";
+                        }
+
+                        if (o.IdParametro == 14) {
+                            disabled = "disabled";
+                        } else {
+                            disabled = "";
+                        }
 
                         switch (o.Tipo) {
                             case "NUMBER":
-                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><input IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" onkeypress=\"if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;\" value=\"\" class=\"form-control\" id=\"" + o.Descricao + "\"  " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
+                                input = "<div class=\"col-xs-4 form-group\"><label class=" + asteristico + ">" + o.Descricao + "</label><input " + disabled + " IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" onkeypress=\"if (!isNaN(String.fromCharCode(window.event.keyCode))) return true; else return false;\" value=\"" + o.ValorParametroDefault + "\" class=\"form-control\" id=\"" + o.Descricao + "\"  " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
                                 break;
                             case "DATE":
-                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><div class=\"input-group date\"><div class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></div><input IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" class=\"form-control pull-right\" data-val=\"true\" data-val-date=\"The field DataSolicitacao must be a date.\" data-val-required=\"The DataSolicitacao field is required.\" name=\"DataSolicitacao\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " type=\"text\" data-mask=\"00/00/0000\" id=\"data-parametro\" value=\"\" aria-required=\"true\"  aria-invalid=\"false\"></div></div>";
+                                input = "<div class=\"col-xs-4 form-group\"><label class=" + asteristico + ">" + o.Descricao + "</label><div class=\"input-group date\"><div class=\"input-group-addon\"><i class=\"fa fa-calendar\"></i></div><input " + disabled + " IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" class=\"form-control pull-right\" data-val=\"true\" data-val-date=\"The field DataSolicitacao must be a date.\" data-val-required=\"The DataSolicitacao field is required.\" name=\"DataSolicitacao\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " type=\"text\" data-mask=\"00/00/0000\" id=\"data-parametro\" value=\"" + o.ValorParametroDefault + "\" aria-required=\"true\"  aria-invalid=\"false\"></div></div>";
                                 break;
                             default:
                                 //var desc = o.Descricao == "USUARIO"? o.Descricao+"01": o.Descricao;
-                                input = "<div class=\"col-xs-4 form-group\"><label>" + o.Descricao + "</label><input IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" value=\"\" class=\"form-control\" id=\"" + o.Descricao + "\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
+                                input = "<div class=\"col-xs-4 form-group\"><label class=" + asteristico + ">" + o.Descricao + "</label><input " + disabled + " IdParametroScript=" + o.IdParametroScript + " idValor=" + o.Id + " tipo=\"parametro\" name=\"" + o.Descricao + "\" type=\"text\" value=\"" + o.ValorParametroDefault + "\" class=\"form-control\" id=\"" + o.Descricao + "\" " + (o.IdTipoParametro == 1 ? "" : "readonly") + " /></div>";
                                 break;
                         }
 
@@ -448,10 +504,6 @@
 
         function onsubmitForm() {
 
-         
-
-
-
 
             $("#form-test-data").submit(function (event) {
                 var dataAtual = $.datepicker.formatDate('dd/mm/yy', new Date());
@@ -465,6 +517,8 @@
                 if ($("#form-test-data").valid()) {
                     $("#list-status").removeAttr("disabled");
                 }
+
+                $("<input/>", { type: 'hidden', name: 'tempoEstimado' }).val($('#tempo-estimado').val()).appendTo("form");
             });
         }
 

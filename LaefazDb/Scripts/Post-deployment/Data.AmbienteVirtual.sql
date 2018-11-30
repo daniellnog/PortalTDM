@@ -11,13 +11,13 @@ Post-Deployment Script Template
 */
 
 -- Cadastro de Ambiente Virtual 'VDI01'
-IF NOT EXISTS (SELECT * FROM AmbienteVirtual WHERE Descricao = 'VDI01')
+IF NOT EXISTS (SELECT * FROM AmbienteVirtual WHERE Descricao = 'VDI 141')
 BEGIN
-	INSERT INTO AmbienteVirtual (Descricao, IP) VALUES ('VDI01', '10.43.6.141');
+	INSERT INTO AmbienteVirtual (Descricao, IP) VALUES ('VDI 141', '10.43.6.141');
 END
 
 -- Cadastro de Ambiente Virtual 'VDI02'
-IF NOT EXISTS (SELECT * FROM AmbienteVirtual WHERE Descricao = 'VDI02')
+IF NOT EXISTS (SELECT * FROM AmbienteVirtual WHERE Descricao = 'VDI 219')
 BEGIN
-	INSERT INTO AmbienteVirtual (Descricao, IP) VALUES ('VDI02', '10.43.6.219');
+	INSERT INTO AmbienteVirtual (Descricao, IP) VALUES ('VDI 219', '10.43.6.219');
 END

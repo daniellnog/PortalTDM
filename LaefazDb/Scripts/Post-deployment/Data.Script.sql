@@ -35,9 +35,7 @@ INSERT INTO Script (IdAUT, Descricao)
 INSERT INTO Script (IdAUT, Descricao)
 (SELECT Id, 'INCLUSÃO DE CLIENTE PF NO STC' FROM AUT WHERE Descricao = 'STC');
              
-INSERT INTO Script (IdAUT, Descricao)
+INSERT INTO Script (IdAUT, Descricao )
 (SELECT Id, 'AJA - CADASTRA - ALTERAR CLIENTE' FROM AUT WHERE Descricao = 'SAC');
-
-
 
 END

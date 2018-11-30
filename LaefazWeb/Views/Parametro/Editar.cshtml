@@ -21,23 +21,52 @@
             <h3 class="box-title">Editar Parâmetro</h3>
         </div>
         <div class="box-body">
-            <div class="form-group">
-                @Html.Label("descricao", "Descrição")
-                @Html.TextBoxFor(m => m.Descricao, new { @class = "form-control", required = "required" })
-                @Html.HiddenFor(m => m.Id, new { Id ="id" })
+            <div class="row">
+                <div class="col-xs-4 form-group">
+                    @Html.Label("descricao", "Descrição")
+                    @Html.TextBoxFor(m => m.Descricao, new { @class = "form-control", required = "required" })
+                    @Html.HiddenFor(m => m.Id, new { Id = "id" })
+                </div>
+                <div class="col-xs-4 form-group">
+                    @Html.Label("nome-tecnico-tosca", "Nome Técnico Tosca")
+                    @Html.TextBoxFor(m => m.ColunaTecnicaTosca, new { @class = "form-control", required = "required" })
+                </div>
+
+                <div class="col-xs-4 form-group">
+                    @Html.Label("tipo-de-dado", "Tipo de dado")
+                    @Html.HiddenFor(m => m.Tipo, new { Id = "tipo_dado_parametro" })
+                    @Html.DropDownList("tipo_dado_parametro", new SelectList(ViewBag.TipoDadoParametro, "Descricao", "Descricao"),null, new
+               {
+                   @class = "form-control",
+                   @id = "list_tipo_dado_parametro",
+                   @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                   @required = "required",
+                   
+               }
+         )
+                </div>
+            </div>
+            <div class="box-footer" align="right">
+                <a href="@Url.Action("Index", "Parametro")" class="btn btn-danger" id="cancelar">Cancelar</a>
+                <button type="submit" class="btn btn-primary">Salvar</button>
             </div>
         </div>
-        <div class="box-footer" align="right">
-            <a href="@Url.Action("Index", "Parametro")" class="btn btn-danger" id="cancelar">Cancelar</a>
-            <button type="submit" class="btn btn-primary">Salvar</button>
-        </div>
+
     </div>
 }
 @section scripts
 {
     <script type="text/javascript">
         $(document).ready(function () {
+            
+            // get the OPTION we want selected
+            var list = $('#list_tipo_dado_parametro').children('option[value="@Model.Tipo"]');
+            // and now set the option we want selected
+            list.attr('selected', true);
 
+          
+
+          
         });
     </script>
 }

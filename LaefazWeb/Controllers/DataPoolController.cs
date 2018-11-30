@@ -1,39 +1,34 @@
-﻿using LaefazWeb.Models;
+﻿using LaefazWeb.Enumerators;
+using LaefazWeb.Extensions;
+using LaefazWeb.Models;
 using LaefazWeb.Models.VOs;
 using Microsoft.Ajax.Utilities;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data;
+using System.Data.Entity.Validation;
 using System.Data.SqlClient;
+using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net;
-using System.Web;
+using System.Text;
 using System.Web.Mvc;
 using TDMWeb.Extensions;
-using WebGrease.Css.Extensions;
 using TDMWeb.Lib;
-using System.Web.Services;
-using LaefazWeb.Enumerators;
-using Newtonsoft.Json;
-using System.IO;
-using System.Data;
-using System.Globalization;
-using System.Data.Entity.Validation;
-using System.Web.Script.Serialization;
-using Newtonsoft.Json.Linq;
+using WebGrease.Css.Extensions;
 
 namespace LaefazWeb.Controllers
 {
     [UsuarioLogado]
     public class DataPoolController : Controller, IEquatable<DataPoolController>
     {
-#if (DEBUG)
-        public static string SqlConnectionString = @"Data Source=localhost;Database=TDM.Db;Trusted_Connection=true;Persist Security Info=True";
-#else
-        public static string SqlConnectionString = ConfigurationManager.ConnectionStrings["BulkInsert"].ConnectionString;
-#endif
-
-
         private DbEntities db = new DbEntities();
+
+        private static LogTDM log = new LogTDM(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
 
         public ActionResult Index()
         {
@@ -107,7 +102,7 @@ namespace LaefazWeb.Controllers
                         file.SaveAs(path);
 
                         SalvarImportacao(path, Convert.ToInt32(idDataPool));
-
+                        log.Info("Planilha importada: " + file.FileName + "IdUsuario: " + Util.GetUsuarioLogado().Id);
                         //Remove o arquivo
                         System.IO.File.Delete(path);
 
@@ -126,43 +121,60 @@ namespace LaefazWeb.Controllers
             }
             catch (Exception ex)
             {
+                log.Error("Erro ao importar a planilha {IdUsuario: " + Util.GetUsuarioLogado().Id + "}", ex);
                 result.Data = new { Result = ex.Message, Status = (int)WebExceptionStatus.UnknownError };
             }
 
             return result;
         }
 
-        
-        public void AlterarStatusTestData(string IdTestData)
+        public JsonResult AlterarStatusTestData(string IdTestData, string IdStatus)
         {
+            int idStatus = Int32.Parse(IdStatus);
             int testDataId = Int32.Parse(IdTestData);
             TestData testData = db.TestData.FirstOrDefault(a => a.Id == testDataId);
-            //alterando o status para UTILIZADA
-            testData.IdStatus = (int)EnumStatusTestData.Utilizada;
+
+            var caminhoEvidencia = testData.CaminhoEvidencia;
+
+            var result = new JsonResult
+            {
+                Data = caminhoEvidencia
+            };
+
+            if (idStatus == (int)EnumStatusTestData.Disponivel)
+            {
+                //alterando o status para UTILIZADA
+                testData.IdStatus = (int)EnumStatusTestData.Utilizada;
+            }
             // anexar objeto ao contexto
             db.TestData.Attach(testData);
             db.Entry(testData).State = System.Data.Entity.EntityState.Modified;
             db.SaveChanges();
+
+            string json = JsonConvert.SerializeObject(result, Formatting.Indented);
+
+            return (Json(json, JsonRequestBehavior.AllowGet));
+
         }
 
-        // método para atualizar os campos de Qtd Disponivel, Qtd Reservada, Qtd Utilizada
-        public JsonResult AtualizarQtdsMassasDatapool (string IdDatapool)
+        //método para atualizar os campos de Qtd Disponivel, Qtd Reservada, Qtd Utilizada
+        public JsonResult AtualizarQtdsMassasDatapool(string IdDatapool)
         {
             int idDataPool = Int32.Parse(IdDatapool);
 
             int[] qtds = new int[3];
 
             int qtdDisponivel = (from qtd in db.TestData
-                            where qtd.IdDataPool.Equals(idDataPool) && qtd.IdStatus.Equals((int)EnumStatusTestData.Disponivel)
-                            select qtd).ToList().Count();
+                                 where qtd.IdDataPool.Equals(idDataPool) && qtd.IdStatus.Equals((int)EnumStatusTestData.Disponivel)
+                                 select qtd).ToList().Count();
 
             int qtdUtilizada = (from qtd in db.TestData
-                            where qtd.IdDataPool.Equals(idDataPool) && qtd.IdStatus.Equals((int)EnumStatusTestData.Utilizada)
-                            select qtd).ToList().Count();
+                                where qtd.IdDataPool.Equals(idDataPool) && qtd.IdStatus.Equals((int)EnumStatusTestData.Utilizada)
+                                select qtd).ToList().Count();
 
             int qtdReservada = (from qtd in db.TestData
-                             where qtd.IdDataPool.Equals(idDataPool) && qtd.IdStatus.Equals((int)EnumStatusTestData.Reservada)
-                             select qtd).ToList().Count();
+                                where qtd.IdDataPool.Equals(idDataPool) && qtd.IdStatus.Equals((int)EnumStatusTestData.Reservada)
+                                select qtd).ToList().Count();
 
 
             Dictionary<string, int> dic = new Dictionary<string, int>();
@@ -181,7 +193,7 @@ namespace LaefazWeb.Controllers
         {
             DataTable dt;
 
-            if(!Util.ValidaPlanilhaExcel(path, idDataPool))
+            if (!Util.ValidaPlanilhaExcel(path, idDataPool))
             {
                 throw new Exception("Esta planilha não corresponde ao DataPool selecionado, favor verificar os campos 'Sistema','Script' e 'Condição' na planilha.");
             }
@@ -232,7 +244,8 @@ namespace LaefazWeb.Controllers
 
                             if (!retorno)
                             {
-                                throw new Exception("A coluna '"+ column.Caption + "' não está preenchida com valor numérico na linha "+ contRow);
+
+                                throw new Exception("A coluna '" + column.Caption + "' não está preenchida com valor numérico na linha " + contRow);
                             }
                         }
                         else if (Registro.Tipo == "DATE")
@@ -466,7 +479,7 @@ namespace LaefazWeb.Controllers
 
 
 
-        // Método para leitura do mapa de calor na visualização de Datapool
+        //Método para leitura do mapa de calor na visualização de Datapool
         [HttpPost]
         public void lerMapaCalor(string strX, string strY, string data, string res)
         {
@@ -474,7 +487,7 @@ namespace LaefazWeb.Controllers
             string[] arrY = strY.Split(',');
             string[] arrDate = data.Split(',');
 
-            Usuario user = (Usuario)Session["ObjUsuario"];            
+            Usuario user = (Usuario)Session["ObjUsuario"];
 
             for (int i = 0; i < arrX.Length; i++)
             {
@@ -491,7 +504,7 @@ namespace LaefazWeb.Controllers
                             Resolucao = "1920x1080"
                         };
                         db.MapaCalor.Add(mapa1920x1080);
-                        if (Int32.Parse(arrY[i])>910 || Int32.Parse(arrY[i]) < 150)
+                        if (Int32.Parse(arrY[i]) > 910 || Int32.Parse(arrY[i]) < 150)
                         {
                             MapaCalor mapa1600x900_1 = new MapaCalor
                             {
@@ -666,7 +679,7 @@ namespace LaefazWeb.Controllers
                         }
                         break;
                 }
-                
+
             }
 
             db.SaveChanges();
@@ -687,6 +700,9 @@ namespace LaefazWeb.Controllers
                     test.IdScript_CondicaoScript = pool.IdScript_CondicaoScript;
                     test.Descricao = pool.Descricao;
                     test.IdUsuario = user.Id;
+                    test.ClassificacaoMassa = (int)EnumClassificacaoMassa.CT;
+                    Script_CondicaoScript scs = db.Script_CondicaoScript.Where(x => x.Id == pool.IdScript_CondicaoScript).FirstOrDefault();
+                    test.TempoEstimadoExecucao = scs.TempoEstimadoExecucao;
 
                     foreach (DataColumn column in dr.Columns)
                     {
@@ -708,10 +724,16 @@ namespace LaefazWeb.Controllers
                     }
 
                     pool.TestData.Add(test);
+                    try
+                    {
+                        db.SaveChanges();
+                    }
+                    catch (Exception ex)
+                    {
+                        this.FlashError(ex.Message);
+                    }
                 }
             }
-
-            db.SaveChanges();
         }
 
         public JsonResult CarregarDataPool()
@@ -804,16 +826,16 @@ namespace LaefazWeb.Controllers
 
                     foreach (var item in DataPoolVOs)
                     {
-                        if ((actualDate.AddDays(14) < item.DataSolicitacao) ||  item.DataTermino < actualDate.Date)
+                        if ((actualDate.AddDays(14) < item.DataSolicitacao) || item.DataTermino < actualDate.Date)
                         {
                             item.Farol = (int)EnumFarol.Cinza;
                         }
-                        else if (item.QtdDisponivel < item.QtdSolicitada)
+                        else if ((item.QtdDisponivel + item.QtdUtilizada) < item.QtdSolicitada)
                         {
                             item.Farol = (int)EnumFarol.Vermelho;
 
                         }
-                        else if ((item.QtdDisponivel > item.QtdSolicitada) && (item.QtdDisponivel < (item.QtdSolicitada * 1.2)))
+                        else if (((item.QtdDisponivel + item.QtdUtilizada) > item.QtdSolicitada) && ((item.QtdDisponivel + item.QtdUtilizada) < (item.QtdSolicitada * 1.2)))
                         {
                             item.Farol = (int)EnumFarol.Amarelo;
 
@@ -822,6 +844,45 @@ namespace LaefazWeb.Controllers
                         {
                             item.Farol = (int)EnumFarol.Verde;
                         }
+
+                        int idDatapool = item.Id;
+
+                        int[] status = new int[2];
+                        status[0] = (int)EnumStatusExecucao.AguardandoProcessamento;
+                        status[1] = (int)EnumStatusExecucao.EmProcessamento;
+
+                        int qtdCancelamento = (from exe in db.Execucao
+                                               join td in db.TestData on exe.IdTestData equals td.Id
+                                               where td.IdDataPool == idDatapool && exe.IdStatusExecucao == (int)EnumStatusExecucao.EmCancelamento
+                                               select exe).ToList().Count();
+
+                        if (qtdCancelamento > 0)
+                        {
+                            item.emCancelamento = true;
+                        }
+                        else
+                        {
+                            item.emCancelamento = false;
+                        }
+
+
+                        int qtd = (from exe in db.Execucao
+                                   join td in db.TestData on exe.IdTestData equals td.Id
+                                   where td.IdDataPool == idDatapool && status.Contains(exe.IdStatusExecucao)
+                                   select exe).ToList().Count();
+
+                        if (qtd > 0)
+                        {
+                            item.emExecucao = true;
+                        }
+                        else
+                        {
+                            item.emExecucao = false;
+                        }
+
+
+
+
                     }
                 }
 
@@ -842,10 +903,66 @@ namespace LaefazWeb.Controllers
             return Json(new { draw = draw, recordsFiltered = TotalRows, recordsTotal = TotalRows, data = DataPoolVOs }, JsonRequestBehavior.AllowGet);
         }
 
+
+        public JsonResult PararExecucaoDataPool(string id)
+        {
+            int idDatapool = Int32.Parse(id);
+            bool stopValid = false;
+            List<TestData> listaTestDatas = db.TestData.Where(x => x.IdDataPool == idDatapool && x.IdStatus == (int)EnumStatusTestData.EmGeracao).ToList();
+
+            SqlParameter[] param =
+               {new SqlParameter("@IDDATAPOOL", idDatapool) };
+
+
+            List<TestDataEncadeamentoVO> listaTestDataEncadeamento = db.Database.SqlQuery<TestDataEncadeamentoVO>(
+                        "EXEC PR_LISTAR_TESTDATA_ENCADEAMENTO @IDDATAPOOL", param).ToList();
+
+            int?[] encadeamentos = listaTestDataEncadeamento.Select(X => X.IdEncadeamento).ToArray();
+
+            int qtdEncadeamento = encadeamentos.Distinct().Count();
+
+
+            if (qtdEncadeamento == 1)
+            {
+
+                foreach (TestData td in listaTestDatas)
+                {
+                    Execucao exe = db.Execucao.Where(y => y.IdTestData == td.Id && (y.IdStatusExecucao == 1 || y.IdStatusExecucao == 2)).FirstOrDefault();
+                    if (exe != null)
+                    {
+                        exe.IdStatusExecucao = (int)EnumStatusExecucao.EmCancelamento;
+                        exe.SituacaoAmbiente = 1;
+                        db.Execucao.Attach(exe);
+                        db.Entry(exe).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+
+                        if (exe.IdStatusExecucao == (int)EnumStatusExecucao.EmProcessamento)
+                        {
+                            td.IdStatus = (int)EnumStatusTestData.Falha;
+                        }
+                        else
+                        {
+                            td.IdStatus = (int)EnumStatusTestData.Cadastrada;
+                        }
+
+                        db.TestData.Attach(td);
+                        db.Entry(td).State = System.Data.Entity.EntityState.Modified;
+                        db.SaveChanges();
+                    }
+                }
+
+                stopValid = true;
+            }
+
+
+
+            return Json(stopValid, JsonRequestBehavior.AllowGet);
+        }
+
         public ActionResult CarregaDataPoolDemanda(string id, string IdDemamnda)
         {
             int Id = Int32.Parse(id);
-            int IdDemanda = IdDemamnda == null?0:Int32.Parse(IdDemamnda);
+            int IdDemanda = IdDemamnda == null ? 0 : Int32.Parse(IdDemamnda);
 
             Demanda Demanda = db.Demanda.FirstOrDefault(x => x.Id == IdDemanda);
 
@@ -857,7 +974,7 @@ namespace LaefazWeb.Controllers
             else
             {
 
-                
+
                 TempData["DescDemanda"] = Demanda.Descricao;
                 TempData["IdTDM"] = id;
             }
@@ -915,8 +1032,8 @@ namespace LaefazWeb.Controllers
         {
 
             ViewBag.ListaTDM = getListTDMByUser().Where(x => x.TdmPublico == false);
-            ViewBag.ListaDemanda = db.Demanda.ToList();
-            ViewBag.ListaAUT = db.AUT.ToList();
+            ViewBag.ListaDemanda = db.Demanda.ToList().OrderBy(x => x.Descricao);
+            ViewBag.ListaAUT = db.AUT.ToList().OrderBy(x => x.Descricao);
             ViewBag.listCondicaoScript = new List<CondicaoScript>();
             ViewBag.listScript = new List<Script>();
             ViewBag.IdCurrentTDM = id;
@@ -928,12 +1045,13 @@ namespace LaefazWeb.Controllers
         {
             var result = new JsonResult() { JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
-            for(int i = 0; i < ids.Count; i++)
+            for (int i = 0; i < ids.Count; i++)
             {
+                DataPool datapool = null;
                 try
                 {
                     int idAtual = Int32.Parse(ids[i]);
-                    DataPool datapool = db.DataPool.SingleOrDefault(a => a.Id == idAtual);
+                    datapool = db.DataPool.SingleOrDefault(a => a.Id == idAtual);
                     TDM TDM = db.TDM.SingleOrDefault(a => a.Id == datapool.IdTDM);
 
                     if (TDM.TdmPublico)
@@ -944,7 +1062,8 @@ namespace LaefazWeb.Controllers
                     {
                         db.DataPool.Remove(datapool);
                         db.SaveChanges();
-
+                        log.Info("DataPool excluído com sucesso!");
+                        log.Debug("DataPool: " + Util.ToString(datapool));
                         TempData["IdTDM"] = datapool.IdTDM;
                         result.Data = new { Result = "Datapool(s) removido(s) com sucesso.", Status = (int)WebExceptionStatus.Success };
                     }
@@ -952,17 +1071,24 @@ namespace LaefazWeb.Controllers
                 catch (Exception ex)
                 {
                     if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("FK_TestData_DataPool"))
-
+                    {
+                        log.Error("Esse registro contém dependência com outra entidade. ", ex);
+                        log.Debug("DataPool: " + Util.ToString(datapool));
                         result.Data = new { Result = "Esse registro contém dependência com outra entidade.", Status = (int)WebExceptionStatus.SendFailure };
+                    }
                     else
                         result.Data = new { Result = ex.Message, Status = (int)WebExceptionStatus.UnknownError };
+
+                    log.Error("Erro ao excluir o DataPool.", ex);
+                    log.Debug("DataPool: " + Util.ToString(datapool));
                 }
-            }            
+            }
             return result;
         }
 
         public ActionResult Editar(int id)
         {
+
             int qtdDisponivel;
             int qtdReservada;
             int qtdUtilizada;
@@ -971,6 +1097,7 @@ namespace LaefazWeb.Controllers
             ViewBag.ListaAUT = db.AUT.ToList();
             ViewBag.ListaTDM = getListTDMByUser();
             ViewBag.ListaDemanda = db.Demanda.ToList();
+            ViewBag.ListaDatapool = db.DataPool.ToList();
 
             qtdDisponivel = (from qtd in db.TestData
                              where qtd.IdDataPool.Equals(id) && qtd.IdStatus.Equals((int)EnumStatusTestData.Disponivel)
@@ -1003,17 +1130,20 @@ namespace LaefazWeb.Controllers
             ViewBag.Farol = 0;
             ViewBag.TdmPublico = DataPoolSelecionado.TDM.TdmPublico;
 
+            ViewBag.ListaAmbienteExec = "";
+            ViewBag.ListaAmbienteVirt = "";
+            ViewBag.ListaTipoFaseTeste = db.TipoFaseTeste.ToList();
 
             if ((actualDate.AddDays(14) < DataPoolSelecionado.DataSolicitacao) || DataPoolSelecionado.DataTermino < actualDate.Date)
             {
                 ViewBag.Farol = (int)EnumFarol.Cinza;
             }
-            else if (qtdDisponivel < DataPoolSelecionado.QtdSolicitada)
+            else if ((qtdDisponivel + qtdUtilizada) < DataPoolSelecionado.QtdSolicitada)
             {
                 ViewBag.Farol = (int)EnumFarol.Vermelho;
 
             }
-            else if ((qtdDisponivel > DataPoolSelecionado.QtdSolicitada) && (qtdDisponivel < (DataPoolSelecionado.QtdSolicitada * 1.2)))
+            else if (((qtdDisponivel + qtdUtilizada) > DataPoolSelecionado.QtdSolicitada) && ((qtdDisponivel + qtdUtilizada) < (DataPoolSelecionado.QtdSolicitada * 1.2)))
             {
                 ViewBag.Farol = (int)EnumFarol.Amarelo;
 
@@ -1037,6 +1167,7 @@ namespace LaefazWeb.Controllers
             dataVO.IdTDM = data.IdTDM;
             dataVO.QtdSolicitada = data.QtdSolicitada;
             dataVO.Observacao = data.Observacao;
+            dataVO.ConsiderarRotinaDiaria = data.ConsiderarRotinaDiaria;
 
             return View(dataVO);
         }
@@ -1067,6 +1198,7 @@ namespace LaefazWeb.Controllers
             try
             {
                 objeto.DataSolicitacao = DateTime.Now;
+                ModelState.Remove("ConsiderarRotinaDiaria");
                 if (!ModelState.IsValid)
                 {
                     var msg = string.Empty;
@@ -1086,6 +1218,17 @@ namespace LaefazWeb.Controllers
                     int idScript = Int32.Parse(Request.Form.Get("listScript"));
                     int idCondicaoScript;
                     Script_CondicaoScript script_CondicaoScript;
+                    DataPool datapoolAtual;
+
+                    Entities db1 = new Entities();
+                    datapoolAtual = db1.DataPool.Where(x => x.Id == objeto.Id).ToList().FirstOrDefault();
+
+                    DateTime dataAtual = new DateTime();
+
+                    if (datapoolAtual.DataTermino != objeto.DataTermino && objeto.DataTermino < dataAtual)
+                    {
+                        this.FlashError("Não é possível alterar a data término deste Datapool para uma data menor do que a data atual");
+                    }
 
                     //Verifica se o DataPool tem Condição scrípt
                     if (Request.Form.Get("listCondicaoScript") == null)
@@ -1101,9 +1244,6 @@ namespace LaefazWeb.Controllers
 
                     objeto.IdScript_CondicaoScript = script_CondicaoScript.Id;
 
-                        
-
-
                     int? IdDemanda = objeto.IdDemanda == null && !Request.Form.Get("demandaDatapool").IsNullOrWhiteSpace() ? Int32.Parse(Request.Form.Get("demandaDatapool")) : 0;
                     IdDemanda = IdDemanda == 0 ? null : IdDemanda;
                     //Validação se Já existe um DataPool com o mesmo Script e Condição
@@ -1111,7 +1251,7 @@ namespace LaefazWeb.Controllers
 
                     if (DataPool == null)
                     {
-
+                        string rotDiaria = Request.Form.Get("considerarRotinaDiaria");
 
                         //Atualizando os atributos dos objetos
                         objeto.IdAut = Int32.Parse(Request.Form.Get("sistemaDatapool"));
@@ -1119,12 +1259,14 @@ namespace LaefazWeb.Controllers
                         objeto.QtdSolicitada = Int32.Parse(Request.Form.Get("QtdSolicitada"));
                         objeto.DataSolicitacao = (DateTime)Convert.ToDateTime(Request.Form.Get("DataSolicitacao"));
                         objeto.Observacao = Request.Form.Get("Observacao");
+                        objeto.ConsiderarRotinaDiaria = rotDiaria.Contains("0") ? false : true;
                         if (Request.Form.Get("demandaDatapool") != "")
                             objeto.IdDemanda = Int32.Parse(Request.Form.Get("demandaDatapool"));
                         else
                             objeto.IdDemanda = null;
                         objeto.IdScript_CondicaoScript = script_CondicaoScript.Id;
 
+                        //db = new Entities();
                         // anexar objeto ao contexto
                         db.DataPool.Attach(objeto);
 
@@ -1133,7 +1275,8 @@ namespace LaefazWeb.Controllers
 
                         // informa que o obejto será modificado
                         db.SaveChanges();
-
+                        log.Info("DataPool editado com sucesso");
+                        log.Debug("DataPool: " + Util.ToString(objeto));
                         //Retorna uma mensagem de sucesso
                         this.FlashSuccess("DataPool editado com Sucesso.");
 
@@ -1141,6 +1284,8 @@ namespace LaefazWeb.Controllers
                     }
                     else
                     {
+                        log.Warn("O DataPool não pôde ser incluido pois existe um já cadastrado com a mesma condição, script e demanda.");
+                        log.Debug("DataPool = " + Util.ToString(objeto));
                         this.FlashWarning("O DataPool não pôde ser incluido pois existe um já cadastrado com a mesma condição, script e demanda.");
                     }
                 }
@@ -1170,6 +1315,8 @@ namespace LaefazWeb.Controllers
 
                     if (DataPool == null)
                     {
+                        string rotDiaria = Request.Form.Get("considerarRotinaDiaria");
+
                         objeto.IdAut = Int32.Parse(Request.Form.Get("sistemaDatapool"));
                         if (objeto.IdDemanda == null && !Request.Form.Get("demandaDatapool").IsNullOrWhiteSpace())
                         {
@@ -1178,29 +1325,140 @@ namespace LaefazWeb.Controllers
                         objeto.DataSolicitacao = (DateTime)Convert.ToDateTime(Request.Form.Get("DataSolicitacao"));
                         objeto.DataTermino = (DateTime)Convert.ToDateTime(Request.Form.Get("DataTermino"));
                         objeto.Observacao = Request.Form.Get("Observacao");
-                        db.DataPool.Add(objeto);
-                        db.SaveChanges();
+                        //objeto.ConsiderarRotinaDiaria = rotDiaria == "False" ? false : true;
+                        objeto.ConsiderarRotinaDiaria = rotDiaria.Contains("0") ? false : true;
 
+                        db.DataPool.Add(objeto);
+
+                        for (int w = 0; w < objeto.QtdSolicitada; w++)
+                        {
+                            int qtdParamScript_Valor = (from psv in db.ParametroScript_Valor
+                                                        join ps in db.ParametroScript on psv.IdParametroScript equals ps.Id
+                                                        join scs in db.Script_CondicaoScript on ps.IdScript_CondicaoScript equals scs.Id
+                                                        where scs.Id == objeto.IdScript_CondicaoScript && psv.Usada == false
+                                                        select psv
+                                                        ).Count();
+
+                            if (qtdParamScript_Valor > 0)
+                            {
+                                string horaEstimada = "2001-01-01 00:00:00.000";
+
+                                DateTime tempo = DateTime.ParseExact(horaEstimada, "yyyy-MM-dd HH:mm:ss.fff", System.Globalization.CultureInfo.InvariantCulture);
+
+                                TestData testData = new TestData()
+                                {
+                                    Descricao = "",
+                                    IdStatus = 1,
+                                    IdScript_CondicaoScript = objeto.IdScript_CondicaoScript,
+                                    IdDataPool = objeto.Id,
+                                    CasoTesteRelativo = "",
+                                    GerarMigracao = false,
+                                    Observacao = "",
+                                    IdUsuario = user.Id,
+                                    ClassificacaoMassa = 0,
+                                    TempoEstimadoExecucao = tempo
+                                };
+
+                                db.TestData.Add(testData);
+                                log.Debug(Util.ToString(objeto));
+                                log.Info("TestData adicionado com sucesso");
+
+                                db.SaveChanges();
+
+                                SalvaParametros(testData.Id, testData.IdScript_CondicaoScript, editar);
+                            }
+                            else
+                            {
+                                db.SaveChanges();
+                            }
+                        }
+
+                        log.Info("DataPool adicionado com sucesso");
+                        log.Debug("DataPool = " + Util.ToString(objeto));
                         this.FlashSuccess("DataPool adicionado com Sucesso.");
                         TempData["IdTDM"] = objeto.IdTDM;
                     }
                     else
                     {
+                        log.Warn("O DataPool não pôde ser incluido pois existe um já cadastrado com a mesma condição, script e demanda.");
+                        log.Debug("DataPool = " + Util.ToString(objeto));
                         this.FlashWarning("O DataPool não pôde ser incluido pois existe um já cadastrado com a mesma condição, script e demanda.");
                     }
                 }
             }
             catch (Exception ex)
             {
+                log.Error(ex);
                 if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_DataPool_Descricao"))
+                {
+                    log.Warn("Já existe um DataPool com essa descrição.");
+                    log.Debug("DataPool = " + Util.ToString(objeto));
                     this.FlashError("Já existe um DataPool com essa descrição.");
+                }
                 else
-                    //throw new Exception(ex.Message);
+                {
+                    log.Warn("Já existe um DataPool com essa descrição.");
+                    log.Debug("DataPool = " + Util.ToString(objeto));
                     this.FlashError(ex.Message);
+                }
 
             }
 
             return RedirectToAction("Index");
+        }
+
+        private void SalvaParametros(int idTestData, int scriptCondicaoScript, bool edicao)
+        {
+            DbEntities db = new DbEntities();
+
+            bool usado = false;
+
+            List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == scriptCondicaoScript).ToList();
+
+            for (int i = 0; i < listParametroScript.Count; i++)
+            {
+                ParametroScript ps = listParametroScript[i];
+                usado = false;
+
+                List<ParametroScript_Valor> listaParamScript_Valor = (from psv in db.ParametroScript_Valor
+                                                                      join ps1 in db.ParametroScript on psv.IdParametroScript equals ps1.Id
+                                                                      join scs in db.Script_CondicaoScript on ps1.IdScript_CondicaoScript equals scs.Id
+                                                                      where scs.Id == scriptCondicaoScript && psv.Usada == false
+                                                                      select psv
+                                                                    ).ToList();
+
+                for (int w = 0; w < listaParamScript_Valor.Count; w++)
+                {
+                    if (listaParamScript_Valor[w].IdParametroScript == ps.Id && usado == false)
+                    {
+                        Parametro p = db.Parametro.Where(x => x.Id == ps.IdParametro).FirstOrDefault();
+
+                        ParametroValor pv = null;
+                        if (!edicao)
+                        {
+                            pv = new ParametroValor
+                            {
+                                IdParametroScript = ps.Id,
+                                IdTestData = idTestData,
+                                Valor = listaParamScript_Valor[w].ValorSugerido
+                            };
+
+                            db.ParametroValor.Add(pv);
+
+                            int idParamScript_valor = listaParamScript_Valor[w].Id;
+
+                            ParametroScript_Valor psv = db.ParametroScript_Valor.Where(x => x.Id == idParamScript_valor).FirstOrDefault();
+                            psv.Usada = true;
+
+                            db.ParametroScript_Valor.Attach(psv);
+                            db.Entry(psv).State = System.Data.Entity.EntityState.Modified;
+
+                            usado = true;
+                            db.SaveChanges();
+                        }
+                    }
+                }
+            }
         }
 
         private void getMinhasDemandas()
@@ -1260,7 +1518,7 @@ namespace LaefazWeb.Controllers
                     listaCondicaoScript.Add(condicaoScript);
             }
 
-            ViewBag.listCondicaoScript = listaCondicaoScript;
+            ViewBag.listCondicaoScript = listaCondicaoScript.OrderBy(x => x.Descricao);
 
             Dictionary<string, string> ListaCondicao = new Dictionary<string, string>();
 
@@ -1278,7 +1536,7 @@ namespace LaefazWeb.Controllers
         {
             int IdSystem = Int32.Parse(id);
 
-            List<Script> Scripts = db.Script.Where(x => x.IdAUT == IdSystem).ToList();
+            List<Script> Scripts = db.Script.Where(x => x.IdAUT == IdSystem && x.IdScriptPai == null).OrderBy(x => x.Descricao).ToList();
 
             ViewBag.listScript = Scripts;
 
@@ -1308,11 +1566,127 @@ namespace LaefazWeb.Controllers
             foreach (TDM_Usuario tdmUsuario in listTDMByUser)
             {
                 listaTDM.AddRange(db.TDM.Where(x => x.Id == tdmUsuario.IdTDM).ToList());
-
             }
 
 
             return listaTDM;
+        }
+
+        public JsonResult GetTDMsByUser(string id)
+        {
+
+            Usuario user = (Usuario)Session["ObjUsuario"];
+
+            var tdms = (from tdm in db.TDM
+                        join tdm_u in db.TDM_Usuario on tdm.Id equals tdm_u.IdTDM
+                        where tdm_u.IdUsuario == user.Id && tdm.Id != 2
+                        select new
+                        {
+                            Id = tdm.Id,
+                            Descricao = tdm.Descricao
+                        }).ToList();
+
+            var dados = new { tdm = tdms };
+
+            string json = JsonConvert.SerializeObject(dados, Formatting.Indented);
+
+            return Json(json, JsonRequestBehavior.AllowGet);
+        }
+
+        public JsonResult TransferirTestDatas(List<TestDataVOTransfer> arrIds)
+        {
+            string msg = "";
+            try
+            {
+                var result = new JsonResult() { JsonRequestBehavior = JsonRequestBehavior.AllowGet };
+
+                int idTestData = arrIds[0].idTestData;
+
+                var testdataAnterior = (from t in db.TestData
+                                        where t.Id == idTestData
+                                        select new
+                                        {
+                                            t.IdDataPool
+                                        }).ToList();
+
+                int idDataPoolAnterior = testdataAnterior[0].IdDataPool;
+
+                var countTds = (from t in db.TestData
+                                where t.IdDataPool == idDataPoolAnterior
+                                select new
+                                {
+                                    t.Id
+                                }).ToList().Count();
+
+                for (int i = 0; i < arrIds.Count; i++)
+                {
+                    int idTD = arrIds[i].idTestData;
+                    int idDatapoolDestino = arrIds[i].idDatapool;
+
+                    TestData td = db.TestData.Where(x => x.Id == idTD).FirstOrDefault();
+                    td.IdDataPool = idDatapoolDestino;
+
+                    db.TestData.Attach(td);
+                    db.Entry(td).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+
+                    countTds--;
+
+                    // Caso não haja nenhum testdata no datapool público, o mesmo será excluído
+                    if (countTds == 0)
+                    {
+                        DataPool datapool = db.DataPool.SingleOrDefault(a => a.Id == idDataPoolAnterior);
+
+                        db.DataPool.Remove(datapool);
+                        db.SaveChanges();
+
+                        msg = "Datapool excluído com sucesso";
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                msg = "Erro";
+                this.FlashError(ex.Message);
+            }
+            var dados = new { datapools = msg };
+
+            string json = JsonConvert.SerializeObject(dados, Formatting.Indented);
+
+            return Json(json, JsonRequestBehavior.AllowGet);
+
+        }
+
+        public JsonResult GetDatapools(string idTDM, string idTestData)
+        {
+            int IdTdm = Int32.Parse(idTDM);
+
+            int testDataId = Int32.Parse(idTestData);
+
+            // pegando o id do Script/condicao/script referente ao testData Selecionado
+            int IdScriptCondicaoScript = (from td in db.TestData
+                                          join scs in db.Script_CondicaoScript on td.IdScript_CondicaoScript equals scs.Id
+                                          where td.Id == testDataId
+                                          select new
+                                          {
+                                              IdScriptCondicaoScript = td.IdScript_CondicaoScript
+                                          }).FirstOrDefault().IdScriptCondicaoScript;
+            // pegando a lista de datapools que possui o mesmo script/condicao/script do testdata selecionado
+            var dps = (from dp in db.DataPool
+                       join scs in db.Script_CondicaoScript on dp.IdScript_CondicaoScript equals scs.Id
+                       where dp.IdTDM == IdTdm && dp.IdScript_CondicaoScript == IdScriptCondicaoScript
+                       select new
+                       {
+                           Id = dp.Id,
+                           Descricao = dp.Descricao
+                       });
+
+            var dados = new { datapools = dps };
+
+            string json = JsonConvert.SerializeObject(dados, Formatting.Indented);
+
+            return Json(json, JsonRequestBehavior.AllowGet);
+
         }
 
         public JsonResult GetDadosModalPlay(string id)
@@ -1352,8 +1726,8 @@ namespace LaefazWeb.Controllers
             }
 
             // Recuperando todos os ambientes que possuem status disponível
-            ViewBag.ListaAmbienteVirt = QueryAmbientes.Where(i => i.Disponivel == true).Select(i => new { i.IdAmbienteVirtual, i.DescricaoAmbienteVirtual }).ToList();
-            ViewBag.ListaAmbienteExec = QueryAmbientes.Where(i => i.Disponivel == true).Select(i => new { i.IdAmbienteExecucao, i.DescricaoAmbienteExecucao }).ToList();
+            ViewBag.ListaAmbienteVirt = QueryAmbientes.Where(i => i.Disponivel == true).Select(i => new { i.IdAmbienteVirtual, i.DescricaoAmbienteVirtual }).ToList().Distinct();
+            ViewBag.ListaAmbienteExec = QueryAmbientes.Where(i => i.Disponivel == true).Select(i => new { i.IdAmbienteExecucao, i.DescricaoAmbienteExecucao }).ToList().Distinct();
 
             //string json = JsonConvert.SerializeObject(ViewBag.ListaAmbienteExec, Formatting.Indented);
 
@@ -1365,24 +1739,143 @@ namespace LaefazWeb.Controllers
             return Json(ambientes, JsonRequestBehavior.AllowGet);
         }
 
+        public JsonResult CancelaExecuca(IList<string> ids)
+        {
+            string retorno = "";
 
+            ids.ForEach(element =>
+            {
 
-        public ActionResult Play(string id, string idFaseTeste, string idMaquinaVirtual, string opcaoTelegram, string idAmbienteExecucao)
+                int id = Int32.Parse(element);
+
+                try
+                {
+
+                    Execucao exec = db.Execucao.Where(x => x.IdTestData == id && x.IdStatusExecucao == (int)EnumStatusExecucao.AguardandoProcessamento).FirstOrDefault();
+                    exec.IdStatusExecucao = (int)EnumStatusExecucao.Cancelada;
+                    db.Entry(exec).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+
+                    TestData td = db.TestData.Where(x => x.Id == id).FirstOrDefault();
+                    td.IdStatus = (int)EnumStatusTestData.Cadastrada;
+                    db.Entry(td).State = System.Data.Entity.EntityState.Modified;
+                    db.SaveChanges();
+
+                    retorno = "sucesso";
+
+                }
+                catch (Exception e)
+                {
+                    retorno = e.Message;
+                }
+
+            });
+
+            return Json(retorno, JsonRequestBehavior.AllowGet);
+
+        }
+
+        public JsonResult GetDadosModalPlayTestData(string id)
+
+        {
+
+            TestData TestData = db.TestData.Find(Int32.Parse(id));
+            DataPool datapool = db.DataPool.FirstOrDefault(x => x.Id == TestData.IdDataPool);
+
+            Script_CondicaoScript script_CondicaoScript = db.Script_CondicaoScript.Find(datapool.IdScript_CondicaoScript);
+
+            // Recuperando todos os ambientes execução e virtual possível para o Script+Condicao da tela
+            var QueryAmbientes =
+               (from av in db.AmbienteVirtual
+                join sca in db.Script_CondicaoScript_Ambiente on av.Id equals sca.IdAmbienteVirtual
+                join aexec in db.AmbienteExecucao on sca.IdAmbienteExecucao equals aexec.Id
+                where sca.IdScript_CondicaoScript == script_CondicaoScript.Id // pegar id da tela
+                select new AmbienteExecucao_Popup
+                {
+                    IdAmbienteVirtual = av.Id,
+                    DescricaoAmbienteVirtual = av.Descricao,
+                    IdAmbienteExecucao = aexec.Id,
+                    DescricaoAmbienteExecucao = aexec.Descricao,
+                    Disponivel = true
+
+                }).ToList().Distinct();
+
+            // Recuperando todos os ambientes execução que estão em uso
+            var QueryAmbienteVirtualDisponivel =
+                (from exec in db.Execucao
+                 where exec.SituacaoAmbiente == (int)Enumerators.EnumSituacaoAmbiente.EmUso
+                 select exec.Script_CondicaoScript_Ambiente.AmbienteVirtual.Id).ToList();
+
+            // Percorrendo todos os ambientes execução e virtual possíveis e atualizando o status (disponível)
+            foreach (var item in QueryAmbientes)
+            {
+                if (QueryAmbienteVirtualDisponivel.Contains(item.IdAmbienteVirtual))
+                    item.Disponivel = false;
+            }
+
+            // Recuperando todos os ambientes que possuem status disponível
+            ViewBag.ListaAmbienteVirt = QueryAmbientes.Where(i => i.Disponivel == true).Select(i => new { i.IdAmbienteVirtual, i.DescricaoAmbienteVirtual }).ToList().Distinct();
+            ViewBag.ListaAmbienteExec = QueryAmbientes.Where(i => i.Disponivel == true).Select(i => new { i.IdAmbienteExecucao, i.DescricaoAmbienteExecucao }).ToList().Distinct();
+
+            //string json = JsonConvert.SerializeObject(ViewBag.ListaAmbienteExec, Formatting.Indented);
+
+            string jsonAmbExec = JsonConvert.SerializeObject(ViewBag.ListaAmbienteExec, Formatting.Indented);
+            string jsonAmbVirtual = JsonConvert.SerializeObject(ViewBag.ListaAmbienteVirt, Formatting.Indented);
+
+            var ambientes = new { ambexec = jsonAmbExec, ambvirtu = jsonAmbVirtual };
+
+            return Json(ambientes, JsonRequestBehavior.AllowGet);
+        }
+
+        public ActionResult Play(string id, string idFaseTeste, string idMaquinaVirtual, bool opcaoTelegram, string idAmbienteExecucao, bool PlayTestData = false)
         {
             try
             {
+                Usuario user = (Usuario)Session["ObjUsuario"];
+                //baixarEvidencia("http:///10.43.6.160:8081//PortalTDM//Evidencias//10_05_2018//SIEBEL%208-ETRG-TRG_MAIO_2018-10_05_2018_03_33_53.ZIP");
                 string mensagem = "";
                 var testDatas = new List<int>();
-                int IdDatapool = Int32.Parse(id);
-                List<ListaTestDatas> listaTestDatas =
-                    (from dp in db.DataPool
-                     join td in db.TestData on dp.Id equals td.IdDataPool
-                     where dp.Id == IdDatapool
-                     select new ListaTestDatas
-                     {
-                         IdDatapool = dp.Id,
-                         IdTestData = td.Id
-                     }).ToList();
+                List<ListaTestDatas> listaTestDatas = new List<ListaTestDatas>();
+                int IdDatapool;
+                int[] ids = null;
+                //Verifica se o Play é da entidade DataPool ou da TestData
+                if (PlayTestData)
+                {
+                    Char delimiter = ',';
+                    ids = id.Split(delimiter).Select(n => Convert.ToInt32(n)).ToArray();
+                    int idTemp = ids[0];
+                    TestData TestData = db.TestData.FirstOrDefault(x => x.Id == idTemp);
+                    IdDatapool = db.DataPool.FirstOrDefault(x => x.Id == TestData.IdDataPool).Id;
+
+                    listaTestDatas =
+                        (from dp in db.DataPool
+                         join td in db.TestData on dp.Id equals td.IdDataPool
+                         where ids.Contains(td.Id)
+                         select new ListaTestDatas
+                         {
+                             IdDatapool = dp.Id,
+                             IdTestData = td.Id,
+                             IdStatus = td.IdStatus
+                         }).ToList();
+
+                    if (listaTestDatas.Where(x => x.IdStatus != (int)EnumStatusTestData.Cadastrada).ToList().Count() > 0)
+                        throw new Exception("Não é possível iniciar a execução de massas com o status diferente de CADASTRADA!");
+
+                }
+                else
+                {
+
+                    IdDatapool = Int32.Parse(id);
+                    listaTestDatas =
+                        (from dp in db.DataPool
+                         join td in db.TestData on dp.Id equals td.IdDataPool
+                         where dp.Id == IdDatapool
+                         select new ListaTestDatas
+                         {
+                             IdDatapool = dp.Id,
+                             IdTestData = td.Id
+                         }).ToList();
+                }
 
                 for (int i = 0; i < listaTestDatas.Count; i++)
                 {
@@ -1391,11 +1884,13 @@ namespace LaefazWeb.Controllers
                     (from pv in db.ParametroValor
                      join ps in db.ParametroScript on pv.IdParametroScript equals ps.Id
                      join p in db.Parametro on ps.IdParametro equals p.Id
-                     where pv.IdTestData == idTestDataAtual
+                     where pv.IdTestData == idTestDataAtual && ps.Obrigatorio == true
                      select new ParametrosValores
                      {
                          IdTestData = IdDatapool,
                          IdDatapool = idTestDataAtual,
+                         IdParametro = p.Id,
+                         IdParametroValor = pv.Id,
                          Descricao = p.Descricao,
                          Valor = pv.Valor,
                          Obrigatorio = ps.Obrigatorio
@@ -1403,57 +1898,201 @@ namespace LaefazWeb.Controllers
 
                     for (int w = 0; w < listaParametrosObrigatorios.Count; w++)
                     {
-                        if (listaParametrosObrigatorios[w].Valor == "")
+
+                        #region
+                        log.Debug("Indice de repetição: "+w);
+                        log.Debug("listaParametrosObrigatorios[w].IdParametro: "+ listaParametrosObrigatorios[w].IdParametro);
+                        log.Debug("idAmbienteExecucao: " + idAmbienteExecucao);
+
+                        #endregion
+
+                        //Verifico se o Script tem o parametro Ambiente sistema, caso tenha, o valor do parametro é atualizado com o valor que vem da tela do play
+                        if (listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Ambiente_Sistema || listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Ambiente)
                         {
-                            if (!testDatas.Contains(listaTestDatas[i].IdTestData))
+                            #region Debug
+                            log.Debug("Entrada na condição Verifico se o Script tem o parametro Ambiente sistema, caso tenha, o valor do parametro é atualizado com o valor que vem da tela do play.");
+                            #endregion
+
+                            int idAmbExec = Int32.Parse(idAmbienteExecucao);
+                            int? _idParamValor = listaParametrosObrigatorios[w].IdParametroValor;
+
+                            #region Debug
+                            log.Debug("idAmbExec: " + idAmbExec);
+                            log.Debug("_idParamValor: " + _idParamValor);
+                            #endregion
+
+                            if (_idParamValor != null)
                             {
-                                testDatas.Add(listaTestDatas[i].IdTestData);
+                                ParametroValor pv = db.ParametroValor.Where(x => x.Id == _idParamValor).FirstOrDefault();
+
+                                #region Debug
+                                log.DebugObject(pv);
+                                #endregion
+
+                                AmbienteExecucao ambExec = db.AmbienteExecucao.Where(x => x.Id == idAmbExec).FirstOrDefault();
+
+                                #region Debug 
+
+                                log.DebugObject(ambExec);
+                               
+                                log.Debug("idAmbExec: " + idAmbExec);
+                                log.Debug("_idParamValor: " + _idParamValor);
+                                #endregion
+
+                                if (ambExec.Id == (int)EnumAmbienteExec.Ti1_Siebel8 || ambExec.Id == (int)EnumAmbienteExec.Ti8_Siebel8)
+                                {
+                                    string amb = ambExec.Descricao.Substring(ambExec.Descricao.IndexOf("http"), ambExec.Descricao.Length - ambExec.Descricao.IndexOf("http"));
+
+                                    #region Debug 
+                                    log.Debug("amb: " + amb);
+                                    #endregion
+
+                                    pv.Valor = amb;
+                                    listaParametrosObrigatorios[w].Valor = amb;
+
+                                    #region Debug 
+                                    log.Debug("pv.Valor: " + pv.Valor);
+                                    log.Debug("listaParametrosObrigatorios[w].Valor: " + listaParametrosObrigatorios[w].Valor);
+
+                                    #endregion
+                                }
+                                else
+                                {
+                                    pv.Valor = ambExec.Descricao;
+                                    listaParametrosObrigatorios[w].Valor = ambExec.Descricao;
+                                }
+                                // anexar objeto ao contexto
+                                db.ParametroValor.Attach(pv);
+                                //Prepara a entidade para uma Edição
+                                db.Entry(pv).State = System.Data.Entity.EntityState.Modified;
+
+                                // informa que o obejto será modificado
+                                db.SaveChanges();
                             }
                         }
-                    }                    
+
+                        if (listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Dados_De_Entrada ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Dados_De_Saida ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Fase ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Nome_Do_Caso_De_Teste ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Numero_Do_Caso_De_Teste ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Prj ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Resultado_Esperado ||
+                            listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Titulo)
+                        {
+
+                           
+
+                            int? _idParamValor = listaParametrosObrigatorios[w].IdParametroValor;
+                            ParametroValor pv = db.ParametroValor.Where(x => x.Id == _idParamValor).FirstOrDefault();
+
+                            #region Debug 
+                            log.Debug("_idParamValor: " + _idParamValor);
+                            log.DebugObject(pv);
+
+                            #endregion
+
+                            if (!pv.Valor.Equals(""))
+                                pv.Valor = "TESTE";
+
+                            // anexar objeto ao contexto
+                            db.ParametroValor.Attach(pv);
+                            //Prepara a entidade para uma Edição
+                            db.Entry(pv).State = System.Data.Entity.EntityState.Modified;
+
+                            // informa que o obejto será modificado
+                            db.SaveChanges();
+
+                            listaParametrosObrigatorios[w].Valor = pv.Valor;
+                        }
+
+
+
+                        if (listaParametrosObrigatorios[w].IdParametro == (int)EnumParametro.Evidencia_Autor)
+                        {
+                            int? _idParamValor = listaParametrosObrigatorios[w].IdParametroValor;
+                            ParametroValor pv = db.ParametroValor.Where(x => x.Id == _idParamValor).FirstOrDefault();
+                            pv.Valor = user.Login;                           
+
+                            // anexar objeto ao contexto
+                            db.ParametroValor.Attach(pv);
+                            //Prepara a entidade para uma Edição
+                            db.Entry(pv).State = System.Data.Entity.EntityState.Modified;
+
+                            // informa que o obejto será modificado
+                            db.SaveChanges();
+
+                            listaParametrosObrigatorios[w].Valor = user.Login;
+                        }
+                        else
+                        {
+                            if (listaParametrosObrigatorios[w].Valor == "" || listaParametrosObrigatorios[w].Valor == null)
+                            {
+                                if (!testDatas.Contains(listaTestDatas[i].IdTestData))
+                                {
+                                    testDatas.Add(listaTestDatas[i].IdTestData);
+                                }
+                            }
+                        }
+                    }
                 }
 
                 if (testDatas.Count > 0)
                 {
                     string combindedString = string.Join(",", testDatas.ToArray());
-                    mensagem = "O(s) TestData(s): " + combindedString + " possui(em) parâmetro(s) obrigatório(s) - destacados em vermelho - que não foram preenchidos";
+                    string stringFinal = "";
+                    for (int i = 0; i < combindedString.Length; i++)
+                    {
+                        if (i % 100 == 0)
+                        {
+                            if (i == 0)
+                            {
+                                stringFinal += combindedString[i];
+                            }
+                            else
+                            {
+                                stringFinal += combindedString[i] + "<br >";
+                            }
+                        }
+                        else
+                        {
+                            stringFinal += combindedString[i];
+                        }
+                    }
+                    mensagem = "O(s) TestData(s): abaixo possui(em) parâmetro(s) obrigatório(s) - destacados em vermelho - que não foram preenchidos <br>" + stringFinal;
                 }
                 else
                 {
+                    bool EnvioTelegram = opcaoTelegram;
                     // Utilizando o Datapool da tela, substituir a query do script e salvar os dados na tabela de execução (Controle_Ambiente)
-                    ReplaceQuery(ObtemIdTestData(Int32.Parse(id)), Int32.Parse(idFaseTeste), Int32.Parse(idMaquinaVirtual), Int32.Parse(idAmbienteExecucao)); // enviar o Datapool da tela
 
-                    #region Realizar execução através de requisição Jenkins
+                    if (PlayTestData)
+                        ReplaceQuery(ids.OfType<int>().ToList(), Int32.Parse(idFaseTeste), Int32.Parse(idMaquinaVirtual), Int32.Parse(idAmbienteExecucao), EnvioTelegram); // enviar o Datapool da tela
+                    else
+                        ReplaceQuery(ObtemIdTestData(Int32.Parse(id)), Int32.Parse(idFaseTeste), Int32.Parse(idMaquinaVirtual), Int32.Parse(idAmbienteExecucao), EnvioTelegram); // enviar o Datapool da tela
+
+                    #region 
+                    //Realizar execução através de requisição Jenkins
+
                     string pAginaDoJob = null;
                     int idAmbv = Int32.Parse(idMaquinaVirtual);
                     AmbienteVirtual ambv = db.AmbienteVirtual.Where(x => x.Id == idAmbv).FirstOrDefault();
 
-                    if (ambv.Descricao == "VDI01")
+                    if (ambv.IP != null)
                     {
-                        pAginaDoJob = "http://10.43.6.160:8080/buildByToken/build?job=VDI141&?token=tdm141";
-                    }
-                    else if (ambv.Descricao == "VDI02")
-                    {
-                        pAginaDoJob = "http://10.43.6.160:8080/buildByToken/build?job=VDI219&?token=tdm219";
+                        mensagem = "Execução iniciada com sucesso!";
+                        pAginaDoJob = ConfigurationSettings.AppSettings[ambv.IP];
                     }
                     else
                     {
-                        this.FlashError("Não foi possível definir o Job do Jenkins.");
+                        mensagem = "Não foi possível definir o Job do Jenkins.";
                     }
 
-                    WebRequest wrIniciaJob;
+                    runJobJenkinsRemote(pAginaDoJob);
+                    log.Info("Execução iniciada.");
 
-                    wrIniciaJob = WebRequest.Create(pAginaDoJob);
-
-                    wrIniciaJob.Method = "POST";
-
-                    WebResponse response = wrIniciaJob.GetResponse();
-
-                    response.Close();
-
-                    #endregion
-
-                    mensagem = "Execução iniciada com sucesso!";
+                    //Usar esta opção para rodar local
+                    //runJobJenkinsLocal(pAginaDoJob, "brucilin.de.gouveia", "brucilin.de.gouveia");
                 }
 
                 return Json(new { Data = mensagem }, JsonRequestBehavior.AllowGet);
@@ -1465,11 +2104,62 @@ namespace LaefazWeb.Controllers
 
         }
 
+        private void runJobJenkinsLocal(string url, string user, string pass)
+        {
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(url);
+            string mergedCredentials = string.Format("{0}:{1}", user, pass);
+            byte[] byteCredentials = UTF8Encoding.UTF8.GetBytes(mergedCredentials);
+            string base64Credentials = Convert.ToBase64String(byteCredentials);
+            request.Headers.Add("Authorization", "Basic " + base64Credentials);
+            request.Method = "POST";
+            request.ContentType = "application/xml";
+
+            request.GetRequestStream();
+            HttpWebResponse response = request.GetResponse() as HttpWebResponse;
+            string result = string.Empty;
+            using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+            {
+                result = reader.ReadToEnd();
+            }
+        }
+
+
+        private void baixarEvidencia(string url)
+        {
+            Response.Clear();
+            Response.ContentType = "Application/Octet-Stream";
+            Response.AddHeader("Content-Disposition", string.Format("Attachment; FileName={0}", url));
+            Response.TransmitFile(url);
+            Response.End();
+
+            //WebClient webClient = new WebClient();
+            //webClient.Headers.Add("Accept: text/html, application/xhtml+xml, */*");
+            //webClient.Headers.Add("User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64; Trident/5.0)");
+            //webClient.DownloadFile(new Uri(url), "C:\\Users\\daniel.lima.nogueira\\Downloads\\test1.zip");
+
+        }
+
+
+        private void runJobJenkinsRemote(string url)
+        {
+            WebRequest wrIniciaJob;
+
+            wrIniciaJob = WebRequest.Create(url);
+
+            wrIniciaJob.Method = "POST";
+
+            WebResponse response = wrIniciaJob.GetResponse();
+
+            response.Close();
+        }
+
+
+
         private List<int> ObtemIdTestData(int id_datapool)
         {
 
             // Instancia a Entity
-            DbEntities db = new DbEntities();
+            Entities db = new Entities();
 
             // Query para buscar o id do TestData,passando o id do Datapool que será executado.
             var tdQuery =
@@ -1483,9 +2173,9 @@ namespace LaefazWeb.Controllers
 
 
 
-        private void ReplaceQuery(List<int> ids, int idFaseTeste, int idMaquinaVirtual, int idAmbienteExecucao)
+        private void ReplaceQuery(List<int> ids, int idFaseTeste, int idMaquinaVirtual, int idAmbienteExecucao, bool EnvioTelegram)
         {
-            DbEntities db = new DbEntities();
+            Entities db = new Entities();
             // validar ambiente disponível e setar a flag em uso antes de inserir a query
 
             //recuperando objeto testdata, para ter recuperar o IdScript_CondicaoScript
@@ -1496,43 +2186,31 @@ namespace LaefazWeb.Controllers
             string query = script_CondicaoScript.QueryTosca;
 
             string testdataList = "";
-            //construindo a lista de ids de TestData
-            for (int i = 0; i < ids.Count(); i++)
-            {
-                if (i == 0)
-                {
-                    testdataList = "" + ids[i];
-                }
-                else
-                {
-                    testdataList += "," + ids[i];
-                }
-            }
-
-            query = query.Replace("ptdTosca", testdataList);
 
             foreach (var item in ids)
             {
+                String queryTemp = query.Replace("ptdTosca", item.ToString());
+
                 Usuario user = (Usuario)Session["ObjUsuario"];
                 Execucao exec = new Execucao();
-                Script_CondicaoScript_Ambiente script_CondicaoScript_Ambiente = db.Script_CondicaoScript_Ambiente.Where(x => x.IdScript_CondicaoScript == testData.IdScript_CondicaoScript).Where(x => x.IdAmbienteVirtual == idMaquinaVirtual).FirstOrDefault();
+                Script_CondicaoScript_Ambiente script_CondicaoScript_Ambiente = db.Script_CondicaoScript_Ambiente.Where(x => x.IdScript_CondicaoScript == testData.IdScript_CondicaoScript).Where(x => x.IdAmbienteVirtual == idMaquinaVirtual).Where(x => x.IdAmbienteExecucao == idAmbienteExecucao).FirstOrDefault();
                 exec.IdScript_CondicaoScript_Ambiente = script_CondicaoScript_Ambiente.Id;
                 exec.IdTipoFaseTeste = idFaseTeste; // pegar via campo popup modal play
                 exec.IdStatusExecucao = (int)Enumerators.EnumStatusExecucao.AguardandoProcessamento;
                 exec.Usuario = user.Id.ToString();
                 exec.IdTestData = item; // pegar o id via tela
                 exec.SituacaoAmbiente = (int)Enumerators.EnumSituacaoAmbiente.EmUso;
-                exec.ToscaInput = query;
+                exec.ToscaInput = queryTemp;
+                exec.EnvioTelegram = EnvioTelegram;
                 db.Execucao.Add(exec);
 
-                DbEntities db1 = new DbEntities();
+                Entities db1 = new Entities();
                 TestData td1 = db1.TestData.Where(x => x.Id == item).FirstOrDefault();
                 td1.IdStatus = (int)Enumerators.EnumStatusTestData.EmGeracao;
-
+                td1.GeradoPor = Util.GetUsuarioLogado().Login;
                 db1.TestData.Attach(td1);
 
                 db1.Entry(td1).State = System.Data.Entity.EntityState.Modified;
-
 
                 try
                 {
@@ -1543,16 +2221,12 @@ namespace LaefazWeb.Controllers
                 {
                     this.FlashError(ex.Message);
                 }
-
             }
-
-
         }
-
 
         public JsonResult CarregarParametros(string idScriptCondicaoScript, string idDataPool)
         {
-            DbEntities db = new DbEntities();
+            Entities db = new Entities();
             int scriptCondicaoScript = Int32.Parse(idScriptCondicaoScript);
             int dataPool = Int32.Parse(idDataPool);
 
@@ -1576,7 +2250,7 @@ namespace LaefazWeb.Controllers
                 List<ParametroValorVO> listParametroValorVO = new List<ParametroValorVO>();
                 List<ParametroValor> valores = db.ParametroValor.Where(x => x.IdTestData == item.IdTestData).ToList();
 
-                List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == item.IdScriptCondicaoScript && x.IdTipoParametro == (int)EnumTipoParametro.Input).ToList();
+                List<ParametroScript> listParametroScript = db.ParametroScript.Where(x => x.IdScript_CondicaoScript == item.IdScriptCondicaoScript && x.IdTipoParametro == (int)EnumTipoParametro.Input && x.VisivelEmTela == true).ToList();
 
                 foreach (ParametroScript ps in listParametroScript)
                 {
@@ -1595,8 +2269,6 @@ namespace LaefazWeb.Controllers
                 item.valores = listParametroValorVO;
             }
 
-
-
             List<TestDataParametroVO> testDataParametroVO = new List<TestDataParametroVO>();
             testDataParametroVO.Add(new TestDataParametroVO { parametros = listParametros, testData = listTestData });
 
@@ -1608,7 +2280,7 @@ namespace LaefazWeb.Controllers
 
         public JsonResult atualizaParametroValor(string id, string valor, string idParametroScript, string idTestData, string idScriptCondicaoScript, string idParametro)
         {
-            DbEntities db = new DbEntities();
+            Entities db = new Entities();
 
             int idParametroValor = Int32.Parse(id);
             int parametroScriptId = Int32.Parse(idParametroScript);
@@ -1668,6 +2340,8 @@ namespace LaefazWeb.Controllers
         {
             throw new NotImplementedException();
         }
+
+
     }
 
     internal class AmbienteExecucao_Popup
@@ -1682,6 +2356,7 @@ namespace LaefazWeb.Controllers
     internal class ListaTestDatas
     {
         public int IdDatapool { get; set; }
+        public int IdStatus { get; internal set; }
         public int IdTestData { get; set; }
     }
 
@@ -1689,6 +2364,8 @@ namespace LaefazWeb.Controllers
     {
         public int IdDatapool { get; set; }
         public int IdTestData { get; set; }
+        public int? IdParametro { get; set; }
+        public int? IdParametroValor { get; set; }
 
         public bool Obrigatorio { get; set; }
 
@@ -1698,3 +2375,4 @@ namespace LaefazWeb.Controllers
     }
 
 }
+#endregion

@@ -35,6 +35,9 @@ Post-Deployment Script Template
 :r Data.StatusExecucao.sql
 :r Data.TDM_Usuario.sql
 :r Data.TelaMapaCalor.sql
+:r Data.TipoDadoParametro.sql
+:r Data.Encadeamento.sql
+--:r Data.Encadeamento_TestData.sql
 
 
 

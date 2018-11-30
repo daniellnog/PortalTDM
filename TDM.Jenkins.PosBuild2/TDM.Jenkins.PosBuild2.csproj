@@ -73,6 +73,9 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+    <None Include="TDM.Jenkins.PosBuild2.exe.config" />
+    <None Include="TDM.Jenkins.PosBuild2.vshost.exe.config" />
+    <None Include="TDM.Jenkins.PosBuild2.vshost.exe.manifest" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LaefazWeb\TDM.Web.csproj">
@@ -89,6 +92,48 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Antlr3.Runtime.dll" />
+    <Content Include="EntityFramework.dll" />
+    <Content Include="EntityFramework.SqlServer.dll" />
+    <Content Include="EntityFramework.SqlServer.xml" />
+    <Content Include="EntityFramework.SqlServerCompact.dll" />
+    <Content Include="EntityFramework.SqlServerCompact.xml" />
+    <Content Include="EntityFramework.xml" />
+    <Content Include="LaefazWeb.dll" />
+    <Content Include="LaefazWeb.pdb" />
+    <Content Include="Microsoft.Web.Infrastructure.dll" />
+    <Content Include="Newtonsoft.Json.dll" />
+    <Content Include="Newtonsoft.Json.xml" />
+    <Content Include="System.Data.SqlServerCe.dll" />
+    <Content Include="System.Net.Http.Formatting.dll" />
+    <Content Include="System.Web.Http.dll" />
+    <Content Include="System.Web.Http.WebHost.dll" />
+    <Content Include="System.Web.Http.WebHost.xml" />
+    <Content Include="System.Web.Http.xml" />
+    <Content Include="System.Web.Mvc.dll" />
+    <Content Include="System.Web.Mvc.xml" />
+    <Content Include="System.Web.Optimization.dll" />
+    <Content Include="System.Web.Razor.dll" />
+    <Content Include="System.Web.Razor.xml" />
+    <Content Include="System.Web.WebPages.Deployment.dll" />
+    <Content Include="System.Web.WebPages.Deployment.xml" />
+    <Content Include="System.Web.WebPages.dll" />
+    <Content Include="System.Web.WebPages.Razor.dll" />
+    <Content Include="System.Web.WebPages.Razor.xml" />
+    <Content Include="System.Web.WebPages.xml" />
+    <Content Include="TDM.Jenkins.PosBuild.exe" />
+    <Content Include="TDM.Jenkins.PosBuild.pdb" />
+    <Content Include="TDM.Jenkins.PosBuild2.exe" />
+    <Content Include="TDM.Jenkins.PosBuild2.pdb" />
+    <Content Include="TDM.Jenkins.PosBuild2.vshost.exe" />
+    <Content Include="Telegram.Bot.dll" />
+    <Content Include="WebGrease.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="amd64\" />
+    <Folder Include="x86\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

@@ -32,10 +32,30 @@
             <h3 class="box-title">Adicionar Parâmetro</h3>
         </div>
         <div class="box-body">
-            <div class="form-group">
-                @Html.Label("descricao", "Descrição")
-                @Html.TextBox("descricao", null, new { @class = "form-control", required = "required" })
+            <div class="row">
+                <div class="col-xs-4 form-group">
+                    @Html.Label("descricao", "Descrição")
+                    @Html.TextBox("descricao",null, new { @class = "form-control", required = "required" })
+
+                </div>
+                <div class="col-xs-4 form-group">
+                    @Html.Label("nome-tecnico-tosca", "Nome Técnico Tosca")
+                    @Html.TextBox("colunaTecnicaTosca",null, new { @class = "form-control", required = "required" })
+                </div>
+                <div class="col-xs-4 form-group">
+                    @Html.Label("tipo-de-dado", "Tipo de dado")
+                    @Html.DropDownList("tipo_dado_parametro", new SelectList(ViewBag.TipoDadoParametro, "Descricao", "Descricao"), null, new
+               {
+                   @class = "form-control",
+                   @id = "list_tipo_dado_parametro",
+                   @style = "width: 100%; padding-right: 12px; padding-left: 12px; border-right-width: 1px;",
+                   @required = "required",
+
+               }
+         )
+                </div>
             </div>
+
         </div>
         <div class="box-footer" align="right">
             <a href="@Url.Action("Index", "Parametro")" class="btn btn-danger" id="cancelar">Cancelar</a>

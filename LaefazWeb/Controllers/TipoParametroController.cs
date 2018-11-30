@@ -23,46 +23,46 @@ namespace LaefazWeb.Controllers
             return View(db.TipoParametro.ToList());
         }
 
-       /* public ActionResult Adicionar()
+        public ActionResult Adicionar()
         {
             return View();
-        }*/
+        }
 
-        /*[HttpPost]
+        [HttpPost]
         public ActionResult Remover(int id)
         {
             var result = new JsonResult() { JsonRequestBehavior = JsonRequestBehavior.AllowGet };
 
             try
             {
-                Parametro parametro = db.Parametro.SingleOrDefault(a => a.Id == id);
+                TipoParametro tipoParametro = db.TipoParametro.SingleOrDefault(a => a.Id == id);
 
-                db.Parametro.Remove(parametro);
+                db.TipoParametro.Remove(tipoParametro);
                 db.SaveChanges();
 
-                result.Data = new { Result = "Parâmetro removido com sucesso.", Status = (int)WebExceptionStatus.Success };
+                result.Data = new { Result = "Tipo de Parâmetro removido com sucesso.", Status = (int)WebExceptionStatus.Success };
             }
             catch (Exception ex)
             {
                 result.Data = new { Result = ex.Message, Status = (int)WebExceptionStatus.UnknownError };
             }
             return result;
-        }*/
-        
+        }
 
-        
-    /*public ActionResult Editar(int id)
-    {
-        return View(db.Parametro.FirstOrDefault(a => a.Id == id));
-    }*/
-    
-        /*
-        public ActionResult SalvarEdicao(Parametro objeto)
+
+
+        public ActionResult Editar(int id)
+        {
+            return View(db.TipoParametro.FirstOrDefault(x => x.Id == id));
+        }
+
+
+        public ActionResult SalvarEdicao(TipoParametro objeto)
         {
             try
             {
                 Salvar(objeto, true);
-                this.FlashSuccess("Parâmetro editado com sucesso.");
+                this.FlashSuccess("Tipo de Parâmetro editado com sucesso.");
             }
             catch (Exception ex)
             {
@@ -70,10 +70,10 @@ namespace LaefazWeb.Controllers
             }
             return RedirectToAction("Index");
         }
-        
-        
+
+
         [HttpPost]
-        public ActionResult Salvar(Parametro objeto, bool editar = false)
+        public ActionResult Salvar(TipoParametro objeto, bool editar = false)
         {
             try
             {
@@ -87,37 +87,37 @@ namespace LaefazWeb.Controllers
                     return View("Adicionar", objeto);
                 }
 
-                Parametro parametro;
+                TipoParametro tipoParametro;
 
                 if (editar)
                 {
-
+                    
                     db.Entry(objeto).State = System.Data.Entity.EntityState.Modified;
                     db.SaveChanges();
                 }
                 else
                 {
-                    parametro = new Parametro()
+                    tipoParametro = new TipoParametro()
                     {
-                        Descricao = Request.Form.Get("descricao"),
+                        Descricao = Request.Form.Get("tipo_parametro_descricao"),
                     };
 
-                    db.Parametro.Add(parametro);
+                    db.TipoParametro.Add(tipoParametro);
                     db.SaveChanges();
 
-                    this.FlashSuccess("Parâmetro adicionado com sucesso!.");
+                    this.FlashSuccess("Tipo de Parâmetro adicionado com sucesso!.");
                 }
             }
             catch (Exception ex)
             {
                 if (ex.InnerException != null && ex.InnerException.InnerException != null && ex.InnerException.InnerException.Message.ToString().Contains("AK_Parametro_Descricao"))
-                    this.FlashError("Já existe um Parâmetro com essa descrição.");
+                    this.FlashError("Já existe um Tipo de Parâmetro com essa descrição.");
                 else
                     this.FlashError(ex.Message);
             }
 
             return RedirectToAction("Index");
-        }*/
-    
+        }
+
     }
 }

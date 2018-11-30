@@ -17,6 +17,7 @@ namespace LaefazWeb.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Usuario()
         {
+            this.Historico = new HashSet<Historico>();
             this.MapaCalor = new HashSet<MapaCalor>();
             this.TDM_Usuario = new HashSet<TDM_Usuario>();
             this.TestData = new HashSet<TestData>();
@@ -26,6 +27,8 @@ namespace LaefazWeb.Models
         public string Login { get; set; }
         public string Senha { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Historico> Historico { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MapaCalor> MapaCalor { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

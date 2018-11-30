@@ -8,12 +8,12 @@
 <!-- /.box -->
 <div class="box box-info">
     <button type="button" class="btn btn-primary" id="hiddenRemover" style="display: none;">Remover</button>
-     <!--<div class="box-header">
+     <div class="box-header">
        <a href="@Url.Action("Adicionar", "TipoParametro")" class="btn btn-block btn-success pull-right" style="width: 100px;">Criar</a>
         <input type="button" class="btn btn-block btn-info pull-right" style="width: 100px; margin-top: 0px; margin-right: 10px;" value="Editar" id="btnEditar"/>
         <input type="button" class="btn btn-block btn-default pull-right" style="width: 100px; margin-top: 0px; margin-right: 10px;" value="Excluir" id="btnExcluir" />
     </div>
-    -->
+    
     <div class="box-body">
         <table id="grid" class="display table table-bordered table-striped dataTable" style="width: 100%;">
             <thead>
@@ -96,7 +96,7 @@
                     return;
                 }
 
-                window.location = '/Parametro/editar?id=' + id;
+                window.location = '/TipoParametro/editar?id=' + id;
             });
 
             $('#btnExcluir').click(function () {

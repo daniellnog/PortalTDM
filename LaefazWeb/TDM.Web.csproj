@@ -8,7 +8,7 @@
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{B76D5E5D-A2C6-4B99-B32C-A492BADF63C2}</ProjectGuid>
-    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>LaefazWeb</RootNamespace>
@@ -38,22 +38,40 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
+    <Optimize>false</Optimize>
     <OutputPath>bin\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.3.1.7705, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
-      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Interop.TaskScheduler, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\Users\daniel.lima.nogueira\Desktop\AgendarTarefa\AgendarTarefa\obj\x86\Debug\Interop.TaskScheduler.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=2.0.8.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
+      <HintPath>..\packages\log4net.2.0.8\lib\net45-full\log4net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.3.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
       <Private>True</Private>
@@ -64,6 +82,14 @@
     </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.1\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Win32.TaskScheduler, Version=2.8.5.0, Culture=neutral, PublicKeyToken=c416bc1b32d97233, processorArchitecture=MSIL">
+      <HintPath>..\packages\TaskScheduler.2.8.5\lib\net40\Microsoft.Win32.TaskScheduler.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -78,8 +104,9 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.IO.Compression.FileSystem" />
-    <Reference Include="System.Linq.Dynamic">
+    <Reference Include="System.Linq.Dynamic, Version=1.0.5840.25917, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Linq.Dynamic.1.0.6\lib\net40\System.Linq.Dynamic.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
@@ -93,12 +120,44 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Optimization, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Providers, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Xml.Linq" />
@@ -110,47 +169,13 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
-    </Reference>
     <Reference Include="System.Net.Http">
     </Reference>
     <Reference Include="System.Net.Http.WebRequest">
     </Reference>
-    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Optimization">
-      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Providers">
-      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <Private>True</Private>
-      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="WebGrease">
-      <Private>True</Private>
+    <Reference Include="WebGrease, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
-    </Reference>
-    <Reference Include="Antlr3.Runtime">
       <Private>True</Private>
-      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -160,38 +185,13 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AmbienteController.cs" />
     <Compile Include="Controllers\AnalisesController.cs" />
-    <Compile Include="Controllers\Coluna.cs" />
-    <Compile Include="Controllers\MapaCalorController.cs" />
-    <Compile Include="Controllers\ParametroController.cs" />
-    <Compile Include="Controllers\DemandaController.cs" />
-    <Compile Include="Controllers\StatusController.cs" />
-    <Compile Include="Controllers\ExecucaoController.cs" />
-    <Compile Include="Controllers\TestDataController.cs" />
-    <Compile Include="Controllers\TipoFaseTesteController.cs" />
-    <Compile Include="Controllers\AutenticacaoController.cs" />
-    <Compile Include="Controllers\IndexController.cs" />
-    <Compile Include="Controllers\DataPoolController.cs" />
-    <Compile Include="Controllers\AUTController.cs" />
-    <Compile Include="Controllers\TDMController.cs" />
-    <Compile Include="Controllers\TipoParametroController.cs" />
-    <Compile Include="Enumerators\EnumStatusExecucao.cs" />
-    <Compile Include="Enumerators\EnumStatusTestData.cs" />
-    <Compile Include="Enumerators\EnumStatusDataPool.cs" />
-    <Compile Include="Enumerators\EnumFarol.cs" />
-    <Compile Include="Enumerators\EnumSituacaoAmbiente.cs" />
-    <Compile Include="Enumerators\EnumTelaMapaCalor.cs" />
-    <Compile Include="Enumerators\EnumTipoParametro.cs" />
-    <Compile Include="Enumerators\EnumTipoParametroScript.cs" />
-    <Compile Include="Exceptions\AnaliseDuplicatedException.cs" />
-    <Compile Include="Exceptions\SheetFailedException.cs" />
-    <Compile Include="Exceptions\UnificacaoInvalidaException.cs" />
-    <Compile Include="Extensions\ControllerExtensions.cs" />
-    <Compile Include="Extensions\EnumerableExtensions.cs" />
-    <Compile Include="Extensions\Util.cs" />
-    <Compile Include="Global.asax.cs">
-      <DependentUpon>Global.asax</DependentUpon>
+    <Compile Include="Controllers\AgendamentoController.cs" />
+    <Compile Include="Models\Agendamento.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Lib\UsuarioLogado.cs" />
+    <Compile Include="Models\Agendamento_TestData.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\AmbienteExecucao.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -210,9 +210,113 @@
     <Compile Include="Models\Demanda.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Encadeamento.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Encadeamento_TestData.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Execucao.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Historico.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Parametro.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParametroScript.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParametroScript_Valor.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParametroValor.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ParametroValor_Historico.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Script.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Script_CondicaoScript.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Script_CondicaoScript_Ambiente.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Status.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TDM.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TDM_Usuario.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TestData.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoDadoParametro.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoFaseTeste.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TipoParametro.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Usuario.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\VOs\AgendamentoVO.cs" />
+    <Compile Include="Models\VOs\Coluna.cs" />
+    <Compile Include="Controllers\EncadeamentoController.cs" />
+    <Compile Include="Controllers\ScriptController.cs" />
+    <Compile Include="Controllers\MapaCalorController.cs" />
+    <Compile Include="Controllers\ParametroController.cs" />
+    <Compile Include="Controllers\DemandaController.cs" />
+    <Compile Include="Controllers\StatusController.cs" />
+    <Compile Include="Controllers\ExecucaoController.cs" />
+    <Compile Include="Controllers\TestDataController.cs" />
+    <Compile Include="Controllers\TipoFaseTesteController.cs" />
+    <Compile Include="Controllers\AutenticacaoController.cs" />
+    <Compile Include="Controllers\IndexController.cs" />
+    <Compile Include="Controllers\DataPoolController.cs" />
+    <Compile Include="Controllers\AUTController.cs" />
+    <Compile Include="Controllers\TDMController.cs" />
+    <Compile Include="Controllers\UsuarioController.cs" />
+    <Compile Include="Controllers\TipoParametroController.cs" />
+    <Compile Include="Enumerators\EnumAmbienteExec.cs" />
+    <Compile Include="Enumerators\EnumParametro.cs" />
+    <Compile Include="Enumerators\EnumValoresDefault.cs" />
+    <Compile Include="Enumerators\EnumDirecao.cs" />
+    <Compile Include="Enumerators\EnumEnvioTelegram.cs" />
+    <Compile Include="Enumerators\EnumObrigatoriedadeParametro.cs" />
+    <Compile Include="Enumerators\EnumTipoStatus.cs" />
+    <Compile Include="Enumerators\EnumStatusExecucao.cs" />
+    <Compile Include="Enumerators\EnumClassificacaoMassa.cs" />
+    <Compile Include="Enumerators\EnumStatusTestData.cs" />
+    <Compile Include="Enumerators\EnumStatusDataPool.cs" />
+    <Compile Include="Enumerators\EnumFarol.cs" />
+    <Compile Include="Enumerators\EnumSituacaoAmbiente.cs" />
+    <Compile Include="Enumerators\EnumTelaMapaCalor.cs" />
+    <Compile Include="Enumerators\EnumTipoParametro.cs" />
+    <Compile Include="Enumerators\EnumTipoParametroScript.cs" />
+    <Compile Include="Exceptions\AnaliseDuplicatedException.cs" />
+    <Compile Include="Exceptions\SheetFailedException.cs" />
+    <Compile Include="Exceptions\UnificacaoInvalidaException.cs" />
+    <Compile Include="Extensions\ControllerExtensions.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Extensions\ILogTDM.cs" />
+    <Compile Include="Extensions\LogTDM.cs" />
+    <Compile Include="Extensions\Util.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Lib\UsuarioLogado.cs" />
+    <Compile Include="Models\Entities.cs" />
     <Compile Include="Models\MapaCalor.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
@@ -231,59 +335,34 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Models\Parametro.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ParametroScript.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\ParametroValor.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Script.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Script_CondicaoScript.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Script_CondicaoScript_Ambiente.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Status.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
     <Compile Include="Models\StatusExecucao.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TDM.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TDM_Usuario.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\TelaMapaCalor.cs">
       <DependentUpon>Model.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TestData.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TipoFaseTeste.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TipoParametro.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Usuario.cs">
-      <DependentUpon>Model.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Models\VOs\AmbienteExecucaoVO.cs" />
     <Compile Include="Models\VOs\Arquivo.cs" />
+    <Compile Include="Models\VOs\AmbienteVirtualVO.cs" />
+    <Compile Include="Models\VOs\EncadeamentoVO.cs" />
+    <Compile Include="Models\VOs\DadosExecucaoVO.cs" />
+    <Compile Include="Models\VOs\Alteracao.cs" />
+    <Compile Include="Models\VOs\StatusVO.cs" />
     <Compile Include="Models\VOs\ChaveVO.cs" />
     <Compile Include="Models\VOs\DataPoolVO.cs" />
+    <Compile Include="Models\VOs\HistoricoVO.cs" />
     <Compile Include="Models\VOs\MapaCalorVO.cs" />
     <Compile Include="Models\VOs\ExecucaoVO.cs" />
+    <Compile Include="Models\VOs\ScriptVO.cs" />
+    <Compile Include="Models\VOs\Script_CondicaoScriptVO.cs" />
     <Compile Include="Models\VOs\ParametroValorVO.cs" />
     <Compile Include="Models\VOs\ParametroVO.cs" />
+    <Compile Include="Models\VOs\TestDataParametroValorVO.cs" />
+    <Compile Include="Models\VOs\TestDataEncadeamentoVO.cs" />
     <Compile Include="Models\VOs\TestDataParametroVO.cs" />
+    <Compile Include="Models\VOs\Encadeamento_TestDataVO.cs" />
+    <Compile Include="Models\VOs\TDMVO.cs" />
+    <Compile Include="Models\VOs\TestDataVOTransfer.cs" />
     <Compile Include="Models\VOs\TestDataVO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Extensions\HtmlHelpers.cs" />
@@ -291,6 +370,50 @@
     <Compile Include="Views\Default1Controller.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="admin-lte\css\AdminLTE.css" />
+    <Content Include="admin-lte\css\AdminLTE.min.css" />
+    <Content Include="admin-lte\css\skins\skin-black.css" />
+    <Content Include="admin-lte\css\skins\skin-black.min.css" />
+    <Content Include="admin-lte\css\skins\skin-blue.css" />
+    <Content Include="admin-lte\css\skins\skin-blue.min.css" />
+    <Content Include="admin-lte\css\skins\skin-green.css" />
+    <Content Include="admin-lte\css\skins\skin-green.min.css" />
+    <Content Include="admin-lte\css\skins\skin-purple.css" />
+    <Content Include="admin-lte\css\skins\skin-purple.min.css" />
+    <Content Include="admin-lte\css\skins\skin-red.css" />
+    <Content Include="admin-lte\css\skins\skin-red.min.css" />
+    <Content Include="admin-lte\css\skins\skin-yellow.css" />
+    <Content Include="admin-lte\css\skins\skin-yellow.min.css" />
+    <Content Include="admin-lte\css\skins\_all-skins.css" />
+    <Content Include="admin-lte\css\skins\_all-skins.min.css" />
+    <Content Include="admin-lte\js\app.js" />
+    <Content Include="admin-lte\js\app.min.js" />
+    <Content Include="admin-lte\sample.html" />
+    <Content Include="Assets\assets\css\bootstrap.min.css" />
+    <Content Include="Assets\assets\css\demo.css" />
+    <Content Include="Assets\assets\css\paper-bootstrap-wizard.css" />
+    <Content Include="Assets\assets\css\themify-icons-demo.css" />
+    <Content Include="Assets\assets\css\themify-icons.css" />
+    <Content Include="Assets\assets\fonts\themify.svg" />
+    <Content Include="Assets\assets\img\apple-icon.png" />
+    <Content Include="Assets\assets\img\default-avatar.jpg" />
+    <Content Include="Assets\assets\img\favicon.png" />
+    <Content Include="Assets\assets\img\new_logo.png" />
+    <Content Include="Assets\assets\img\paper-1.jpeg" />
+    <Content Include="Assets\assets\img\paper-2.jpeg" />
+    <Content Include="Assets\assets\img\paper-3.jpeg" />
+    <Content Include="Assets\assets\img\thumb_list_boat.png" />
+    <Content Include="Assets\assets\img\thumb_list_place.png" />
+    <Content Include="Assets\assets\img\thumb_register.png" />
+    <Content Include="Assets\assets\img\tim_80x80.png" />
+    <Content Include="Assets\assets\img\wizard-boat.jpg" />
+    <Content Include="Assets\assets\img\wizard-city.jpg" />
+    <Content Include="Assets\assets\img\wizard.jpg" />
+    <Content Include="Assets\assets\js\bootstrap.min.js" />
+    <Content Include="Assets\assets\js\jquery-2.2.4.min.js" />
+    <Content Include="Assets\assets\js\jquery.bootstrap.wizard.js" />
+    <Content Include="Assets\assets\js\jquery.validate.min.js" />
+    <Content Include="Assets\assets\js\paper-bootstrap-wizard.js" />
     <Content Include="Assets\Images\Attachment.png" />
     <Content Include="Assets\Images\collapse.png" />
     <Content Include="Assets\Images\logo_tdm-2.png" />
@@ -299,6 +422,8 @@
     <Content Include="Assets\Images\logo_tdm-3.png" />
     <Content Include="Assets\Images\logo_tdm.png" />
     <Content Include="Assets\Images\media_play_green.png" />
+    <Content Include="Assets\Images\media_stop.png" />
+    <Content Include="Assets\Images\media_stop_2.png" />
     <Content Include="Assets\Images\TelaDatapool1366x768.PNG" />
     <Content Include="Assets\Images\TelaDatapool1600x900.PNG" />
     <Content Include="Assets\Images\TelaDatapool1920x1080.PNG" />
@@ -524,16 +649,143 @@
     <Content Include="Assets\Vendor\Fonts\Source-Sans-Pro-italic\Source-Sans-Pro-italic.svg" />
     <Content Include="Assets\Vendor\Fonts\Source-Sans-Pro-regular\LICENSE.txt" />
     <Content Include="Assets\Vendor\Fonts\Source-Sans-Pro-regular\Source-Sans-Pro-regular.svg" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\CHANGELOG.txt" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\CONTRIBUTING.txt" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\agenda-views.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\background-events.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\basic-views.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\default.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\external-dragging.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\gcal.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\json.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\js\theme-chooser.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\list-views.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\locales.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\selectable.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\themes.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\timezones.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\week-numbers.html" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\fullcalendar.css" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\fullcalendar.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\fullcalendar.min.css" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\fullcalendar.min.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\fullcalendar.print.css" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\fullcalendar.print.min.css" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\gcal.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\gcal.min.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\lib\jquery-ui.min.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\lib\jquery.min.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\lib\moment.min.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\LICENSE.txt" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale-all.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\af.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar-dz.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar-kw.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar-ly.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar-ma.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar-sa.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar-tn.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ar.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\bg.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\bs.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ca.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\cs.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\da.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\de-at.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\de-ch.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\de.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\el.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\en-au.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\en-ca.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\en-gb.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\en-ie.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\en-nz.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\es-do.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\es-us.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\es.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\et.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\eu.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\fa.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\fi.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\fr-ca.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\fr-ch.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\fr.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\gl.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\he.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\hi.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\hr.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\hu.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\id.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\is.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\it.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ja.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ka.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\kk.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ko.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\lb.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\lt.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\lv.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\mk.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ms-my.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ms.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\nb.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\nl-be.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\nl.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\nn.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\pl.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\pt-br.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\pt.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ro.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\ru.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\sk.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\sl.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\sq.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\sr-cyrl.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\sr.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\sv.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\th.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\tr.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\uk.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\vi.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\zh-cn.js" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\locale\zh-tw.js" />
     <Content Include="Assets\Vendor\Ionicons\css\ionicons.css" />
     <Content Include="Assets\Vendor\Ionicons\fonts\ionicons.svg" />
     <Content Include="Assets\Vendor\jquery-2.2.3.js" />
+    <Content Include="Assets\Vendor\jquery-3.3.1.min.js" />
     <Content Include="Assets\Vendor\jquery-upload-file\jquery.uploadfile.css" />
     <Content Include="Assets\Vendor\jquery-upload-file\jquery.uploadfile.js" />
     <Content Include="Assets\Vendor\jquery.slimscroll.js" />
     <Content Include="Assets\Vendor\jquery.validate.js" />
     <Content Include="Assets\Vendor\jquery.validate.messages_pt_BR.js" />
+    <Content Include="Assets\Vendor\multi-select\css\multi-select.css" />
+    <Content Include="Assets\Vendor\multi-select\css\multi-select.dev.css" />
+    <Content Include="Assets\Vendor\multi-select\css\multi-select.dist.css" />
+    <Content Include="Assets\Vendor\multi-select\Gruntfile.js" />
+    <Content Include="Assets\Vendor\multi-select\img\switch.png" />
+    <Content Include="Assets\Vendor\multi-select\js\jquery.multi-select.js" />
+    <Content Include="Assets\Vendor\multi-select\LICENSE.txt" />
+    <Content Include="Assets\Vendor\multi-select\samples\callbacks.html" />
+    <Content Include="Assets\Vendor\multi-select\samples\index.html" />
+    <Content Include="Assets\Vendor\multi-select\samples\Pre-selected-options.html" />
+    <Content Include="Assets\Vendor\multi-select\test\lib\jasmine-1.2.0\jasmine-html.js" />
+    <Content Include="Assets\Vendor\multi-select\test\lib\jasmine-1.2.0\jasmine.css" />
+    <Content Include="Assets\Vendor\multi-select\test\lib\jasmine-1.2.0\jasmine.js" />
+    <Content Include="Assets\Vendor\multi-select\test\lib\jasmine-jquery.js" />
+    <Content Include="Assets\Vendor\multi-select\test\SpecRunner.html" />
+    <Content Include="Assets\Vendor\multi-select\test\spec\multiSelectSpec.js" />
+    <Content Include="Assets\Vendor\multi-select\test\spec\SpecHelper.js" />
+    <Content Include="Assets\Vendor\multi-select\test\src\jquery.js" />
     <Content Include="Assets\Vendor\Select2\css\select2.css" />
     <Content Include="Assets\Vendor\Select2\js\select2.full.js" />
+    <Content Include="Assets\Vendor\timepicker\.gitignore" />
+    <Content Include="Assets\Vendor\timepicker\dist\wickedpicker.min.css" />
+    <Content Include="Assets\Vendor\timepicker\dist\wickedpicker.min.js" />
+    <Content Include="Assets\Vendor\timepicker\fonts\fontello.svg" />
+    <Content Include="Assets\Vendor\timepicker\gulpfile.js" />
+    <Content Include="Assets\Vendor\timepicker\spec\wickedpickerSpec.js" />
+    <Content Include="Assets\Vendor\timepicker\src\wickedpicker.js" />
+    <Content Include="Assets\Vendor\timepicker\stylesheets\wickedpicker.css" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -577,6 +829,7 @@
     <Content Include="Content\themes\base\theme.css" />
     <Content Include="Content\themes\base\tooltip.css" />
     <Content Include="Download\README.txt" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Assets\Vendor\modernizr-2.6.2.js" />
     <Content Include="Icon.png" />
@@ -590,13 +843,6 @@
       <DependentUpon>Model.edmx</DependentUpon>
       <LastGenOutput>Model.cs</LastGenOutput>
     </Content>
-    <Content Include="Scripts\bootstrap.js" />
-    <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
-    <Content Include="Content\fonts\fontawesome-webfont.woff" />
-    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
-    <Content Include="Content\fonts\fontawesome-webfont.eot" />
-    <Content Include="Content\fonts\FontAwesome.otf" />
     <Content Include="packages.config" />
     <Content Include="Assets\Vendor\FontAwesome\fonts\fontawesome-webfont.eot" />
     <Content Include="Assets\Vendor\FontAwesome\fonts\fontawesome-webfont.ttf" />
@@ -671,6 +917,9 @@
     <Content Include="Assets\Vendor\datepicker\css\bootstrap-datepicker.standalone.css.map" />
     <Content Include="Assets\Vendor\datepicker\css\bootstrap-datepicker3.css.map" />
     <Content Include="Assets\Vendor\datepicker\css\bootstrap-datepicker3.standalone.css.map" />
+    <Content Include="log4net.config">
+      <SubType>Designer</SubType>
+    </Content>
     <EntityDeploy Include="Models\Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
@@ -678,13 +927,83 @@
     <Content Include="Models\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </Content>
+    <Content Include="Assets\Vendor\timepicker\bower.json" />
+    <Content Include="Assets\Vendor\timepicker\fonts\fontello.eot" />
+    <Content Include="Assets\Vendor\timepicker\fonts\fontello.ttf" />
+    <Content Include="Assets\Vendor\timepicker\fonts\fontello.woff" />
+    <Content Include="Assets\Vendor\timepicker\LICENSE.md" />
+    <Content Include="Assets\Vendor\timepicker\package.json" />
+    <Content Include="Assets\Vendor\timepicker\README.md" />
+    <Content Include="Assets\Vendor\timepicker\sass\wickedpicker.scss" />
+    <Content Include="Assets\assets\css\.DS_Store" />
+    <Content Include="Assets\assets\fonts\themify.eot" />
+    <Content Include="Assets\assets\fonts\themify.ttf" />
+    <Content Include="Assets\assets\fonts\themify.woff" />
+    <Content Include="Assets\assets\img\.DS_Store" />
+    <Content Include="Assets\assets\js\.DS_Store" />
+    <Content Include="Assets\assets\scss\.DS_Store" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\mixins\_buttons.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\mixins\_inputs.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\mixins\_labels.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\mixins\_transparency.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\mixins\_vendor-prefixes.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_buttons.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_card.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_footers.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_inputs.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_labels-progress-bar.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_misc.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_mixins.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_navs-pagination.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_responsive.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_tooltips.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_typography.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_variables.scss" />
+    <Content Include="Assets\assets\scss\paper-bootstrap-wizard\_wizard-card.scss" />
+    <Content Include="Assets\assets\.DS_Store" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\json\events.json" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\php\get-events.php" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\php\get-timezones.php" />
+    <Content Include="Assets\Vendor\fullcalendar-3.9.0\demos\php\utils.php" />
+    <Content Include="Content\fonts\FontAwesome.otf" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Assets\Vendor\multi-select\.gitignore" />
+    <Content Include="Assets\Vendor\multi-select\bower.json" />
+    <Content Include="Assets\Vendor\multi-select\css\multi-select.dev.css.map" />
+    <Content Include="Assets\Vendor\multi-select\multi-select.jquery.json" />
+    <Content Include="Assets\Vendor\multi-select\package.json" />
+    <Content Include="Assets\Vendor\multi-select\README.markdown" />
+    <Content Include="Assets\Vendor\multi-select\scss\multi-select.scss" />
+    <Content Include="Assets\Vendor\multi-select\test\lib\jasmine-1.2.0\MIT.LICENSE" />
     <None Include="Properties\PublishProfiles\DeployLocal.pubxml" />
     <None Include="Properties\PublishProfiles\laefaz.pubxml" />
     <None Include="Scripts\jquery-2.2.3.intellisense.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-2.2.3.js" />
     <Content Include="Scripts\jquery-2.2.3.min.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.js" />
     <Content Include="Scripts\jquery-ui-1.11.4.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\npm.js" />
     <Content Include="Uploads\README.txt" />
     <Content Include="Web.config">
@@ -708,9 +1027,6 @@
     <Content Include="Assets\Vendor\bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="Views\Analises\Index.cshtml" />
     <Content Include="Views\Analises\Adicionar.cshtml" />
-    <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Content\bootstrap.css.map" />
-    <Content Include="Scripts\jquery-2.2.3.min.map" />
     <Content Include="Views\Analises\Editar.cshtml" />
     <Content Include="Views\Autenticacao\Index.cshtml" />
     <Content Include="Views\TDM\Index.cshtml" />
@@ -751,10 +1067,25 @@
     <Content Include="Views\TestData\Index.cshtml" />
     <Content Include="Views\MapaCalor\Index.cshtml" />
     <Content Include="Views\MapaCalor\TestData.cshtml" />
+    <Content Include="Views\TipoParametro\Adicionar.cshtml" />
+    <Content Include="Views\TipoParametro\Editar.cshtml" />
+    <Content Include="Views\Usuario\Adicionar.cshtml" />
+    <Content Include="Views\Usuario\Editar.cshtml" />
+    <Content Include="Views\Usuario\Index.cshtml" />
+    <Content Include="Views\Script\Adicionar.cshtml" />
+    <Content Include="Views\Script\Editar.cshtml" />
+    <Content Include="Views\Script\Index.cshtml" />
+    <Content Include="Views\Encadeamento\Index.cshtml" />
+    <Content Include="Views\Encadeamento\AcompanharExecucoes.cshtml" />
+    <Content Include="Views\Encadeamento\Adicionar.cshtml" />
+    <Content Include="Views\Agendamento\Index.cshtml" />
+    <Content Include="Scripts\jquery-2.2.3.min.map" />
+    <Content Include="Views\Encadeamento\Editar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Content\themes\base\minified\images\" />
+    <Folder Include="css\" />
     <Folder Include="Views\Planilhas\" />
     <Folder Include="Views\Relatorios\" />
   </ItemGroup>

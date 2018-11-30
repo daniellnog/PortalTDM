@@ -11,6 +11,7 @@
 	[DataSolicitacao] DATETIME NOT NULL, 
     [DataInicioExecucao] DATETIME NULL,
     [DataTermino] DATETIME NULL, 
+    [ConsiderarRotinaDiaria] BIT NOT NULL DEFAULT 0, 
     CONSTRAINT [FK_DataPool_TDM] FOREIGN KEY ([IdTDM]) REFERENCES [TDM]([Id]), 
     CONSTRAINT [FK_DataPool_Aut] FOREIGN KEY ([IdAut]) REFERENCES [AUT]([Id]), 
     CONSTRAINT [FK_DataPool_Demanda] FOREIGN KEY ([IdDemanda]) REFERENCES [Demanda]([Id]),

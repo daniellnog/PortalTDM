@@ -30,6 +30,8 @@ namespace LaefazWeb.Models
         public string ListaExecucaoTosca { get; set; }
         public string CaminhoArquivoTCS { get; set; }
         public string DiretorioRelatorio { get; set; }
+        public System.DateTime TempoEstimadoExecucao { get; set; }
+        public string NomeTecnicoScript { get; set; }
     
         public virtual CondicaoScript CondicaoScript { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

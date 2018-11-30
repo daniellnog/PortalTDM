@@ -17,12 +17,15 @@ namespace LaefazWeb.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public AmbienteExecucao()
         {
+            this.Encadeamento_TestData = new HashSet<Encadeamento_TestData>();
             this.Script_CondicaoScript_Ambiente = new HashSet<Script_CondicaoScript_Ambiente>();
         }
     
         public int Id { get; set; }
         public string Descricao { get; set; }
     
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Encadeamento_TestData> Encadeamento_TestData { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Script_CondicaoScript_Ambiente> Script_CondicaoScript_Ambiente { get; set; }
     }

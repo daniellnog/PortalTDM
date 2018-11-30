@@ -20,7 +20,7 @@
     <form id="form-processar-tdm">
         <div class="box box-primary" id="panelCollapse">
             <div class="box-header with-border">
-                <h3 id="TDMProcessar" class="box-title">Projeto TDM</h3>
+                <h3 id="TDMProcessar" class="box-title">Projeto ATMP</h3>
             </div>
 
             <div class="box-body with-border">
@@ -58,8 +58,8 @@
                                     
                                     <div class="box-header">
                                         <svg height="20" width="20" title="Geração de massa não iniciada ou finalizada" style="align-items"><circle cx="10" cy="10" r="5" stroke="gray" stroke-width="5" fill="gray" /></svg>
-                                        <svg height="20" width="20" title="Qtd. de massas (solicitadas + contingência) foi atendida"><circle cx="10" cy="10" r="5" stroke="green" stroke-width="5" fill="green" /></svg>
-                                        <svg height="20" width="20" title="Qtd. de massas solicitadas <= qtd. de massas disponíveis <= qtd. de massas solicitadas + contingência"><circle cx="10" cy="10" r="5" stroke="yellow" stroke-width="5" fill="yellow" /></svg>
+                                        <svg height="20" width="20" title="Qtd. de massas (solicitadas + contingência) foi atendida"><circle cx="10" cy="10" r="5" stroke="#33cc00" stroke-width="5" fill="#33cc00" /></svg>
+                                        <svg height="20" width="20" title="Qtd. de massas solicitada foi atendida, mas a qtd. de massas de contingência não"><circle cx="10" cy="10" r="5" stroke="yellow" stroke-width="5" fill="yellow" /></svg>
                                         <svg height="20" width="20" title="Qtd. de massas solicitada não foi atendida"><circle cx="10" cy="10" r="5" stroke="red" stroke-width="5" fill="red" /></svg>
                                         <a href="@Url.Action("Adicionar", "DataPool")" class="btn btn-block btn-success pull-right" id="Criar" style="width: 100px;">Criar</a>
                                         <input type="button" class="btn btn-block btn-info pull-right" style="width: 100px; margin-top: 0px; margin-right: 10px;" value="Editar" id="btnEditar" />
@@ -74,7 +74,7 @@
                                         <thead>
                                             <tr>
                                                 <th>
-                                                    @Html.DisplayName("Projeto TDM")
+                                                    @Html.DisplayName("Projeto ATMP")
                                                 </th>
                                                 <th>
                                                     @Html.DisplayName("Demanda")
@@ -233,7 +233,7 @@
                     $("#btnExcluir").attr("disabled", "true");
                     $("#Criar").attr("disabled", "true");
                     $("#Criar").removeAttr("href");
-                    $("#btnEditar").attr("value", "Visualisar");
+                    $("#btnEditar").attr("value", "Visualizar");
                     $("#grid").DataTable().column("0").visible(false);
 
                 }
@@ -412,7 +412,7 @@
                                    if (row.Farol == 0) {
                                        return '<center><svg height="20" width="20"><circle cx="10" cy="10" r="5" stroke="gray" stroke-width="3" fill="gray" />...</svg></center>';
                                    } else if (row.Farol == 1) {
-                                       return '<center><svg height="20" width="20"><circle cx="10" cy="10" r="5" stroke="green" stroke-width="3" fill="green" />...</svg></center>';
+                                       return '<center><svg height="20" width="20"><circle cx="10" cy="10" r="5" stroke="#33cc00" stroke-width="3" fill="#33cc00" />...</svg></center>';
                                    } else if (row.Farol == 2) {
                                        return '<center><svg height="20" width="20"><circle cx="10" cy="10" r="5" stroke="yellow" stroke-width="3" fill="yellow" />...</svg></center>';
                                    } else if (row.Farol == 3) {
@@ -430,7 +430,20 @@
                            name: "Play",
                            render: function (data, type, row) {
                                if (type === 'display') {
-                                   return '<img src="@Url.Content("~/Assets/Images/media_play_green.png")" height="20" id="btnPlay" value="' + row.Id + '" onclick="ModalPlay(' + row.Id + ')"/>';
+
+                                   if (row.emCancelamento == true) {
+
+                                       if (row.emExecucao == true) {
+                                           return '<center><img src="@Url.Content("~/Assets/Images/media_stop.png")" height="20" id="btnPlay" value="' + row.Id + '" onclick="paraExecucaoDatapool(' + row.Id + ')"/></center>';
+
+                                       } else {
+                                           return '<center><img src="@Url.Content("~/Assets/Images/media_stop_2.png")" height="20" id="btnPlay" title="Cancelamento em andamento" value="' + row.Id + '" onclick=""/></center>';
+                                       }
+
+                                   } else {
+                                       return '<center><img src="@Url.Content("~/Assets/Images/media_play_green.png")" height="20" id="btnPlay" value="' + row.Id + '" onclick="ModalPlay(' + row.Id + ')"/></center>';
+                                   }
+
                                }
 
                                return "";
@@ -485,8 +498,6 @@
                             sortable: false,
                             width: '3%',
                         },
-
-
                     ],
                     aoColumnDef: [
                         null,
@@ -776,7 +787,7 @@
                     $("#btnExcluir").attr("disabled", "true");
                     $("#Criar").attr("disabled", "true");
                     $("#Criar").removeAttr("href");
-                    $("#btnEditar").attr("value", "Visualisar");
+                    $("#btnEditar").attr("value", "Visualizar");
 
                 } else {
 
@@ -847,6 +858,45 @@
 
             }
 
+            function paraExecucaoDatapool(id) {
+
+                $.MessageBoxSimNao({
+                    titulo: "Cancelar Execução",
+                    mensagem: "Confirma cancelamento da(s) execucão(ões)?",
+                    height: "auto",
+                    width: "auto",
+                    funcaoBotaoSim: function () {
+                        $.ajax({
+                            url: '@Url.Action("PararExecucaoDataPool", "DataPool")',
+                            type: 'POST',
+                            data: "{id:" + id + "}",
+                            contentType: 'application/json; charset=utf-8',
+                            success: function (data) {
+                                if (data == true) {
+                                    $.MessageBoxOK({ mensagem: "O cancelamento foi solicitado com sucesso, favor aguardar!" });
+                                } else {
+                                    $.MessageBoxOK({ mensagem: "Não foi possível realiza o cancelamento, pois existe mais de um fluxo executando. Favor cancelar via TestData." });
+                                }
+
+                            },
+                            error: function (jqXHR, textStatus, errorThrown) {
+                                console.log('jqXHR:');
+                                console.log(jqXHR);
+                                console.log('textStatus:');
+                                console.log(textStatus);
+                                console.log('errorThrown:');
+                                console.log(errorThrown);
+
+                                $.MessageBoxOK({ mensagem: "Não foi possível cancelar a execução. Devido ao erro: " + jqXHR.responseText + " | " + textStatus + " | " + errorThrown });
+                            }
+                        });
+                    }
+                });
+
+
+
+            }
+
 
             function play() {
 
@@ -856,7 +906,7 @@
 
                var idFaseTeste = $('#list_escolher_tipo_fase_teste').val();
 
-               var notificacaoTelegram = $('#opcaoNotificacaoTelegram').val();
+               var notificacaoTelegram = $('#opcaoNotificacaoTelegram').val() == 1?true:false;
 
                var idMaquinaVirtual = $('#list_escolher_maquina_virtual').val();
 
