@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Alter
+       [dbo].[DataPool] (Table)
+       [dbo].[PR_LISTAR_AMBIENTE_EXECUCAO] (Procedure)
+
+** Supporting actions
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL_COM_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL_SEM_USUARIO] (Procedure)
+       [dbo].[PR_LISTAR_PARAMETRO_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_TEST_DATA] (Procedure)
+       [dbo].[PR_LISTAR_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_TESTDATA_SEM_ENCADEAMENTO] (Procedure)

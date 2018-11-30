@@ -1,0 +1,33 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Encadeamento_TestData]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Encadeamento_TestData] (Table)
+     Create
+       [dbo].[FK_AmbienteExecucao_TestData_Encadeamento] (Foreign Key)
+     Alter
+       [dbo].[Pr_listar_ambiente_execucao] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+     Create
+       [dbo].[Encadeamento_TestData].[IX_Encadeamento_TestData_IdTestData] (Index)
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_PARAMETRO_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_TEST_DATA] (Procedure)
+       [dbo].[PR_LISTAR_TESTDATA_SEM_ENCADEAMENTO] (Procedure)

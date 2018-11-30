@@ -1,0 +1,21 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Agendamento] (Table)
+       [dbo].[Agendamento_TestData] (Table)
+       [dbo].[Agendamento_TestData].[IX_Agendamento_TestData_IdTestData] (Index)
+       [dbo].[FK_Agendamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Agendamento] (Foreign Key)
+     Alter
+       [dbo].[PR_LISTAR_DATAPOOL_SEM_USUARIO] (Procedure)
+
+** Supporting actions

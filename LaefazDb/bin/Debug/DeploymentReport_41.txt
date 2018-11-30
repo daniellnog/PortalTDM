@@ -1,0 +1,27 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[ParametroValor]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[ParametroValor] (Table)
+     Alter
+       [dbo].[PR_LISTAR_PARAMETRO_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_ParametroValor_ParametroValor] (Foreign Key)
+       [dbo].[FK_ParametroValor_TestData] (Foreign Key)
+       [dbo].[FK_ParametroValor_ParametroScript] (Foreign Key)
+     Create
+       [dbo].[FK_ParametroValor_ParametroValor] (Foreign Key)
+       [dbo].[FK_ParametroValor_TestData] (Foreign Key)
+       [dbo].[FK_ParametroValor_ParametroScript] (Foreign Key)

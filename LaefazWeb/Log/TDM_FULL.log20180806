@@ -1,0 +1,23 @@
+06-08-2018 10:10:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 10:10:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'0','Descricao':'teste',}]
+06-08-2018 10:12:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 10:12:23 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'3','Descricao':'teste',}]
+06-08-2018 10:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 10:14:23 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'4','Descricao':'teste 2',}]
+06-08-2018 10:27:10 [ERROR] (LaefazWeb.Controllers.EncadeamentoController - line 66) - System.Data.Entity.Validation.DbEntityValidationException: Validation failed for one or more entities. See 'EntityValidationErrors' property for more details.
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.EncadeamentoController.Salvar(Encadeamento objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\EncadeamentoController.cs:linha 80
+06-08-2018 10:27:10 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Já existe um Encadeamento com essa descrição.
+06-08-2018 10:27:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'0','Descricao':'',}]
+06-08-2018 10:54:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 10:54:40 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'5','Descricao':'daniel',}]
+06-08-2018 10:56:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 10:56:22 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'6','Descricao':'daniel',}]
+06-08-2018 11:00:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 11:00:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'7','Descricao':'daniel',}]
+06-08-2018 11:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 11:16:35 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'8','Descricao':'daniel',}]
+06-08-2018 18:33:07 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+06-08-2018 18:33:07 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - Encadeamento = Encadeamento[{'Id':'54','Descricao':'aaaa',}]

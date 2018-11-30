@@ -1,0 +1,75 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Encadeamento_TestData]
+       [dbo].[Execucao]
+       [dbo].[Agendamento]
+       [dbo].[Script_CondicaoScript]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Encadeamento_TestData].[IdAgendamento] is being dropped, data loss could occur.
+       The column [dbo].[Execucao].[DataAgendamento] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Encadeamento_TestData].[IdAgendamento] (Column)
+       [dbo].[Encadeamento_TestData].[IdTestData] (Column)
+     Drop
+       unnamed constraint on [dbo].[Execucao] (Default Constraint)
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+       [dbo].[UQ__Script_C__F25B168309746778] (Unique Constraint)
+     Table rebuild
+       [dbo].[Encadeamento_TestData] (Table)
+       [dbo].[Execucao] (Table)
+       [dbo].[Agendamento] (Table)
+       [dbo].[Script_CondicaoScript] (Table)
+     Create
+       [dbo].[Encadeamento_TestData].[IX_Encadeamento_TestData_IdTestData] (Index)
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+     Alter
+       [dbo].[PR_LISTAR_DATAPOOL_SEM_USUARIO] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+       [dbo].[FK_DataPool_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_ParametroScript_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_CondicaoScript] (Foreign Key)
+       [dbo].[FK_TestData_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Script] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_CondicaoScript] (Foreign Key)
+     Create
+       [dbo].[Script_CondicaoScript].[IX_Script_CondicaoScript] (Index)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+       [dbo].[FK_DataPool_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_ParametroScript_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_CondicaoScript] (Foreign Key)
+       [dbo].[FK_TestData_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Script] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_CondicaoScript] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_PARAMETRO_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_TEST_DATA] (Procedure)
+       [dbo].[PR_LISTAR_TESTDATA_SEM_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+
+The column [dbo].[Encadeamento_TestData].[IdAgendamento] is being dropped, data loss could occur.
+The column [dbo].[Execucao].[DataAgendamento] is being dropped, data loss could occur.
+

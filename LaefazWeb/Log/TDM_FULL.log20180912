@@ -1,0 +1,54 @@
+12-09-2018 16:19:44 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1005
+12-09-2018 16:21:29 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1005
+12-09-2018 16:23:34 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+12-09-2018 16:23:35 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'2','IdAUT':'1','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 16:24:03 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1057
+12-09-2018 16:24:28 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1057
+12-09-2018 16:25:04 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+12-09-2018 16:25:04 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'4','IdAUT':'6','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 16:25:45 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1057
+12-09-2018 16:27:33 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+12-09-2018 16:27:33 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'2','IdAUT':'3','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 16:30:22 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+12-09-2018 16:30:22 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'3','IdAUT':'3','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 16:32:21 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.MakeQueryTosca() na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 384
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1066
+12-09-2018 16:34:46 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.MakeQueryTosca() na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 384
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1066
+12-09-2018 16:35:03 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+12-09-2018 16:35:03 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'2','IdAUT':'6','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 16:41:58 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1057
+12-09-2018 17:10:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+12-09-2018 17:10:37 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'6','IdAUT':'6','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 17:35:46 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 996
+12-09-2018 17:36:44 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 996
+12-09-2018 17:57:40 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+12-09-2018 17:57:40 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'3','IdAUT':'2','Descricao':'LOGAR NO SAC','AUT':'NULL','Script2':'NULL',}]
+12-09-2018 18:05:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+12-09-2018 18:05:43 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'abb','AUT':'NULL','Script2':'NULL',}]

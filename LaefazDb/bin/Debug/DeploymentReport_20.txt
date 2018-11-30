@@ -1,0 +1,71 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[AmbienteExecucao] (Table)
+       [dbo].[AmbienteVirtual] (Table)
+       [dbo].[AUT] (Table)
+       [dbo].[CondicaoScript] (Table)
+       [dbo].[CondicaoScript].[IX_CondicaoScript_Descricao] (Index)
+       [dbo].[DataPool] (Table)
+       [dbo].[Demanda] (Table)
+       [dbo].[Execucao] (Table)
+       [dbo].[MapaCalor] (Table)
+       [dbo].[Parametro] (Table)
+       [dbo].[ParametroScript] (Table)
+       [dbo].[ParametroValor] (Table)
+       [dbo].[Script] (Table)
+       [dbo].[Script].[IX_Script_Descricao] (Index)
+       [dbo].[Script_CondicaoScript] (Table)
+       [dbo].[Script_CondicaoScript].[IX_Script_CondicaoScript] (Index)
+       [dbo].[Script_CondicaoScript_Ambiente] (Table)
+       [dbo].[Status] (Table)
+       [dbo].[StatusExecucao] (Table)
+       [dbo].[TDM] (Table)
+       [dbo].[TDM_Usuario] (Table)
+       [dbo].[TelaMapaCalor] (Table)
+       [dbo].[TestData] (Table)
+       [dbo].[TipoFaseTeste] (Table)
+       [dbo].[TipoParametro] (Table)
+       [dbo].[Usuario] (Table)
+       Default Constraint: unnamed constraint on [dbo].[TDM] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[TestData] (Default Constraint)
+       [dbo].[FK_DataPool_TDM] (Foreign Key)
+       [dbo].[FK_DataPool_Aut] (Foreign Key)
+       [dbo].[FK_DataPool_Demanda] (Foreign Key)
+       [dbo].[FK_DataPool_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_MapaCalor_Monitoramento_MapaCalor] (Foreign Key)
+       [dbo].[FK_MapaCalor_Monitoramento_Usuario] (Foreign Key)
+       [dbo].[FK_ParametroScript_Script_CondicaoScript] (Foreign Key)
+       [dbo].[FK_ParametroScript_Parametro] (Foreign Key)
+       [dbo].[FK_ParametroScript_TipoParametro] (Foreign Key)
+       [dbo].[FK_ParametroValor_TestData] (Foreign Key)
+       [dbo].[FK_ParametroValor_ParametroScript] (Foreign Key)
+       [dbo].[FK_Script_AUT] (Foreign Key)
+       [dbo].[FK_Script_ScriptPai] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Script] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_CondicaoScript] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_AmbienteVirtual] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_AmbienteExeucao] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_CondicaoScript] (Foreign Key)
+       [dbo].[FK_TDM_Usuario_Usuario] (Foreign Key)
+       [dbo].[FK_TDM_Usuario_TDM] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_DataPool] (Foreign Key)
+       [dbo].[FK_TestData_Status] (Foreign Key)
+       [dbo].[FK_TestData_Usuario] (Foreign Key)
+       [dbo].[FK_TestData_Script_CondicaoScript] (Foreign Key)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+
+** Supporting actions

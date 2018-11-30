@@ -1,0 +1,32 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Agendamento]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Agendamento] (Table)
+     Alter
+       [dbo].[Script_CondicaoScript] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+     Create
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL_SEM_USUARIO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)
+
+The column TempoEstimadoExecucao on table [dbo].[Script_CondicaoScript] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

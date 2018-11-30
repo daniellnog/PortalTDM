@@ -1,0 +1,23 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Execucao].[DataAgendamento] is being dropped, data loss could occur.
+
+** User actions
+     Alter
+       [dbo].[Agendamento] (Table)
+       [dbo].[Execucao] (Table)
+
+** Supporting actions
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)
+
+The column [dbo].[Execucao].[DataAgendamento] is being dropped, data loss could occur.
+

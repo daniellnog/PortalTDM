@@ -1,0 +1,2 @@
+13-11-2018 11:13:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - DataPool editado com sucesso
+13-11-2018 11:13:48 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - DataPool: DataPool[{'Id':'94','IdTDM':'4','IdAut':'2','IdDemanda':'5','IdScript_CondicaoScript':'14','Descricao':'ABRIR OS ATIVACAO FIXO','QtdSolicitada':'10','Observacao':'','DataSolicitacao':'16/08/2018 00:00:00','DataInicioExecucao':'','DataTermino':'16/08/2018 00:00:00','ConsiderarRotinaDiaria':'False','AUT':'NULL','Demanda':'NULL','TDM':'NULL',}]

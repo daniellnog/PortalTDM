@@ -1,0 +1,2 @@
+15-05-2018 17:37:55 [DEBUG] (LaefazWeb.Controllers.TestDataController - line 24) - TestData[{'Id':'1','IdExecucao':'','IdDataPool':'0','IdStatus':'0','IdUsuario':'','IdScript_CondicaoScript':'8','Descricao':'','GerarMigracao':'False','CasoTesteRelativo':'teste','Observacao':'','GeradoPor':'','DataGeracao':'','CaminhoEvidencia':'','ClassificacaoMassa':'0','DataPool':'NULL','Execucao':'NULL','Script_CondicaoScript':'NULL','Status':'NULL','Usuario':'NULL',}]
+15-05-2018 17:37:55 [INFO ] (LaefazWeb.Controllers.TestDataController - line 66) - TestData adicionado com sucesso

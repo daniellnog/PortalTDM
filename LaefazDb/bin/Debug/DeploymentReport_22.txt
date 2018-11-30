@@ -1,0 +1,72 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Execucao]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[TestData].[InicioExecucao] is being dropped, data loss could occur.
+       The column [dbo].[TestData].[TerminoExecucao] is being dropped, data loss could occur.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[TestData] (Default Constraint)
+     Alter
+       [dbo].[AmbienteExecucao] (Table)
+       [dbo].[AmbienteVirtual] (Table)
+       [dbo].[AUT] (Table)
+       [dbo].[CondicaoScript] (Table)
+       [dbo].[DataPool] (Table)
+       [dbo].[Demanda] (Table)
+       [dbo].[MapaCalor] (Table)
+       [dbo].[Parametro] (Table)
+       [dbo].[Script] (Table)
+       [dbo].[Script_CondicaoScript] (Table)
+       [dbo].[Status] (Table)
+       [dbo].[TDM] (Table)
+       [dbo].[TDM_Usuario] (Table)
+       [dbo].[TelaMapaCalor] (Table)
+       [dbo].[TestData] (Table)
+       [dbo].[TipoFaseTeste] (Table)
+       [dbo].[TipoParametro] (Table)
+       [dbo].[Usuario] (Table)
+     Table rebuild
+       [dbo].[Execucao] (Table)
+     Create
+       [dbo].[Historico] (Table)
+       Default Constraint: unnamed constraint on [dbo].[TestData] (Default Constraint)
+       [dbo].[FK_Historico_Usuario] (Foreign Key)
+
+** Supporting actions
+     Drop
+       [dbo].[CondicaoScript].[IX_CondicaoScript_Descricao] (Index)
+       [dbo].[Script].[IX_Script_Descricao] (Index)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+       [dbo].[AK_AUT_Descricao] (Unique Constraint)
+       [dbo].[AK_Demanda_Descricao] (Unique Constraint)
+       [dbo].[AK_Parametro_Descricao] (Unique Constraint)
+       [dbo].[AK_Status_Column] (Unique Constraint)
+       [dbo].[AK_TDM_Descricao] (Unique Constraint)
+     Create
+       [dbo].[AK_AUT_Descricao] (Unique Constraint)
+       [dbo].[CondicaoScript].[IX_CondicaoScript_Descricao] (Index)
+       [dbo].[AK_Demanda_Descricao] (Unique Constraint)
+       [dbo].[AK_Parametro_Descricao] (Unique Constraint)
+       [dbo].[Script].[IX_Script_Descricao] (Index)
+       [dbo].[AK_Status_Column] (Unique Constraint)
+       [dbo].[AK_TDM_Descricao] (Unique Constraint)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+
+The column [dbo].[TestData].[InicioExecucao] is being dropped, data loss could occur.
+The column [dbo].[TestData].[TerminoExecucao] is being dropped, data loss could occur.
+The column ClassificacaoMassa on table [dbo].[TestData] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

@@ -1,0 +1,10 @@
+C:\Portal TDM\Portal\TDM.Scheduler\obj\Debug\TDM.TaskScheduler.csprojResolveAssemblyReference.cache
+C:\Portal TDM\Portal\TDM.Scheduler\obj\Debug\Interop.TaskScheduler.dll
+C:\Portal TDM\Portal\TDM.Scheduler\obj\Debug\TDM.TaskScheduler.csproj.ResolveComReference.cache
+C:\Portal TDM\Portal\TDM.Scheduler\obj\Debug\TDM.Scheduler.exe
+C:\Portal TDM\Portal\TDM.Scheduler\obj\Debug\TDM.Scheduler.pdb
+C:\Portal TDM\Portal\TDM.Scheduler\bin\Debug\TDM.Scheduler.exe.config
+C:\Portal TDM\Portal\TDM.Scheduler\bin\Debug\TDM.Scheduler.exe
+C:\Portal TDM\Portal\TDM.Scheduler\bin\Debug\TDM.Scheduler.pdb
+C:\Portal TDM\Portal\TDM.Scheduler\bin\Debug\Quartz.pdb
+C:\Portal TDM\Portal\TDM.Scheduler\bin\Debug\Quartz.xml

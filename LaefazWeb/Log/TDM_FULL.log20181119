@@ -1,0 +1,503 @@
+19-11-2018 10:43:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 10:43:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 33) - A opção Editar é False
+19-11-2018 10:43:38 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 10:43:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Usuário Logado capturado:
+19-11-2018 10:43:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 10:43:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 10:43:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 10:43:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 50) - Object: Encadeamento[{'Id':'1','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+19-11-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 10:47:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 10:47:54 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 10:47:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 10:47:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'2','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+19-11-2018 10:48:23 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 10:48:23 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 10:48:23 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 10:48:23 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 10:48:23 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 10:48:23 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 10:48:23 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 10:48:23 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'3','Descricao':'dann','Object':'Encadeamento_TestData',}]
+19-11-2018 10:54:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 10:54:43 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 10:54:43 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 10:54:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 10:54:43 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 10:54:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 10:54:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 10:54:43 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'4','Descricao':'dan','Object':'Encadeamento_TestData',}]
+19-11-2018 11:01:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:01:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:01:54 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:01:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:01:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:01:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:01:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:01:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'5','Descricao':'tarcisio encadeamento','Object':'Encadeamento_TestData',}]
+19-11-2018 11:02:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 11:02:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 11:02:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 11:02:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método AssociarTestData da entidade encadeamento.
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Verifica se a operação com o TestData é apenas uma associação.
+19-11-2018 11:02:09 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - O TestData atual é apenas uma associação.
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - A ordem do Encadeamento será 1ª posição.
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Salvando a associação do Encadeamento com TestData...
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Associação de Encadeamento com TestData adicionado com sucesso!
+19-11-2018 11:02:09 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento_TestData[{'Id':'1','IdTestData':'5','IdEncadeamento':'5','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 1], [IdTestData => 5]
+19-11-2018 11:02:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+19-11-2018 11:02:13 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 11:02:13 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 11:02:13 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 11:02:13 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método AssociarTestData da entidade encadeamento.
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Verifica se a operação com o TestData é apenas uma associação.
+19-11-2018 11:02:15 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - O TestData atual é apenas uma associação.
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - A ordem do Encadeamento será 2ª posição.
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Salvando a associação do Encadeamento com TestData...
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Associação de Encadeamento com TestData adicionado com sucesso!
+19-11-2018 11:02:15 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento_TestData[{'Id':'2','IdTestData':'20','IdEncadeamento':'5','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 2], [IdTestData => 20]
+19-11-2018 11:02:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+19-11-2018 11:02:50 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+19-11-2018 11:02:50 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 5], [IdTestData => 0]
+19-11-2018 11:02:50 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 42 registros.
+19-11-2018 11:09:38 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:09:38 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:09:38 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:09:38 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:09:38 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:09:38 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:09:38 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:09:38 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'6','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+19-11-2018 11:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:17:45 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:17:45 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:17:45 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:17:45 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'7','Descricao':'tarcisio encadeamento','Object':'Encadeamento_TestData',}]
+19-11-2018 11:21:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:21:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:21:54 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:21:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:21:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:21:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:21:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:21:54 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'8','Descricao':'458458214872','Object':'Encadeamento_TestData',}]
+19-11-2018 11:23:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:23:59 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:23:59 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:23:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:23:59 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:23:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:23:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:23:59 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'9','Descricao':'dasd','Object':'Encadeamento_TestData',}]
+19-11-2018 11:24:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:24:10 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:24:10 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:24:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:24:10 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:24:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:24:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:24:10 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'10','Descricao':'dasd','Object':'Encadeamento_TestData',}]
+19-11-2018 11:24:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:24:27 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:24:28 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:24:28 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:24:28 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:24:28 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:24:28 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:24:28 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'11','Descricao':'dasd','Object':'Encadeamento_TestData',}]
+19-11-2018 11:27:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:27:51 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:27:51 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:27:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:27:51 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:27:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:27:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:27:51 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'12','Descricao':'5925252','Object':'Encadeamento_TestData',}]
+19-11-2018 11:28:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 11:28:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 11:28:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 11:28:09 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método AssociarTestData da entidade encadeamento.
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Verifica se a operação com o TestData é apenas uma associação.
+19-11-2018 11:28:11 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - O TestData atual é apenas uma associação.
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - A ordem do Encadeamento será 1ª posição.
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Salvando a associação do Encadeamento com TestData...
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Associação de Encadeamento com TestData adicionado com sucesso!
+19-11-2018 11:28:11 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento_TestData[{'Id':'3','IdTestData':'13','IdEncadeamento':'12','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 1], [IdTestData => 13]
+19-11-2018 11:28:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+19-11-2018 11:30:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 11:30:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 11:30:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 11:30:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 17 registros.
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método AssociarTestData da entidade encadeamento.
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Verifica se a operação com o TestData é apenas uma associação.
+19-11-2018 11:30:46 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - O TestData atual é apenas uma associação.
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - A ordem do Encadeamento será 2ª posição.
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Salvando a associação do Encadeamento com TestData...
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Associação de Encadeamento com TestData adicionado com sucesso!
+19-11-2018 11:30:46 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento_TestData[{'Id':'4','IdTestData':'10','IdEncadeamento':'12','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 1], [IdTestData => 10]
+19-11-2018 11:30:46 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+19-11-2018 11:30:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:30:53 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:30:53 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:30:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:30:53 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:30:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:30:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:30:53 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'13','Descricao':'5925252','Object':'Encadeamento_TestData',}]
+19-11-2018 11:31:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:31:56 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:31:56 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:31:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:31:56 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:31:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:31:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:31:56 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'14','Descricao':'5925252','Object':'Encadeamento_TestData',}]
+19-11-2018 11:32:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método de Salvar Encadeamento
+19-11-2018 11:32:06 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - A opção Editar é False
+19-11-2018 11:32:06 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 115) - Não foi possível detalhar um objeto.
+19-11-2018 11:32:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Usuário Logado capturado:
+19-11-2018 11:32:06 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+19-11-2018 11:32:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - O método Salvar foi chamado para uma Criação de Encadeamento.
+19-11-2018 11:32:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Encadeamento adicionado com sucesso
+19-11-2018 11:32:06 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento[{'Id':'15','Descricao':'5925252','Object':'Encadeamento_TestData',}]
+19-11-2018 11:32:34 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 11:32:34 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 11:32:34 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 11:32:34 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método AssociarTestData da entidade encadeamento.
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Verifica se a operação com o TestData é apenas uma associação.
+19-11-2018 11:32:36 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - O TestData atual é apenas uma associação.
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - A ordem do Encadeamento será 1ª posição.
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Salvando a associação do Encadeamento com TestData...
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Associação de Encadeamento com TestData adicionado com sucesso!
+19-11-2018 11:32:36 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento_TestData[{'Id':'5','IdTestData':'15','IdEncadeamento':'15','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 1], [IdTestData => 15]
+19-11-2018 11:32:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+19-11-2018 11:32:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 11:32:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 11:32:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 11:32:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 17 registros.
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método AssociarTestData da entidade encadeamento.
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Verifica se a operação com o TestData é apenas uma associação.
+19-11-2018 11:32:43 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 33) - O TestData atual é apenas uma associação.
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - A ordem do Encadeamento será 2ª posição.
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Salvando a associação do Encadeamento com TestData...
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Associação de Encadeamento com TestData adicionado com sucesso!
+19-11-2018 11:32:43 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 50) - Object: Encadeamento_TestData[{'Id':'6','IdTestData':'17','IdEncadeamento':'15','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 1], [IdTestData => 17]
+19-11-2018 11:32:43 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+19-11-2018 13:31:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 13:31:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 13:31:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 13:31:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 13:35:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 13:35:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 13:35:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 13:35:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 13:58:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 13:58:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 13:58:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 13:58:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:00:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:00:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:00:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:00:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:07:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:07:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:07:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:07:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:10:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:10:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:10:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:10:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:25:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:25:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:25:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:25:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:25:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:25:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 
+19-11-2018 14:25:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:25:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:25:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:25:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:29:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:29:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:29:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:29:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:49:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:49:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:49:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:49:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:51:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:51:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:51:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:51:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 14:59:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 14:59:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 14:59:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 14:59:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:00:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:00:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 15:00:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:00:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:03:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:03:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 15:03:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:03:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:04:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:04:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 1
+19-11-2018 15:04:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 15:04:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 15:05:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:05:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 15:05:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:05:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:06:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:06:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 15:06:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:06:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:07:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:07:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 15:07:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:07:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:12:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:12:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Id do DataPool: 2
+19-11-2018 15:12:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:12:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:16:48 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:16:48 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:16:48 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:16:48 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:20:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:20:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 15:20:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 15:20:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 15:21:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:21:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 15:21:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 15:21:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 15:23:08 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:23:08 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:23:08 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:23:08 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:23:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:23:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:23:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:23:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:27:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:27:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:27:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:27:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:29:00 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:29:00 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 15:29:00 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 15:29:00 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 15:29:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:29:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:29:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:29:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:46:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:46:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 15:46:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 15:46:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 15:47:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:47:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:47:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:47:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:51:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:51:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 15:51:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 15:51:32 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 15:51:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 15:51:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 15:51:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 15:51:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:12:21 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:12:21 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:12:21 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:12:21 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:12:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:12:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:12:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:12:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:14:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:14:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:14:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:14:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:14:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:14:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:14:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:14:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:15:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:15:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:15:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:15:10 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:15:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:15:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:15:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:15:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:39:24 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:39:24 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:39:24 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:39:24 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:39:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:39:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:39:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:39:29 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:40:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:40:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:40:54 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:40:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:40:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:40:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:40:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:40:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:43:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:43:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:43:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:43:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:43:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:43:28 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:43:28 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:43:28 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:43:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:43:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:43:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:43:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:43:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:43:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:43:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:43:56 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:45:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:45:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:45:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:45:57 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:46:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:46:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:46:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:46:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:50:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:50:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:50:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:50:03 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:50:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:50:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:50:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:50:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:53:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:53:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:53:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:53:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:53:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:53:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:53:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:53:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:55:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:55:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:55:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:55:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 16:55:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:55:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:55:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:55:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:58:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:58:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 16:58:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 16:58:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 16:58:30 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 16:58:30 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 16:58:30 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 16:58:30 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:00:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:00:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:00:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:00:59 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:01:04 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:01:04 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:01:04 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:01:04 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:03:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:03:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:03:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:03:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:03:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:03:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:03:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:03:41 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:06:33 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:06:33 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:06:33 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:06:33 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:06:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:06:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:06:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:06:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:08:18 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:08:18 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:08:18 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:08:18 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:11:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:11:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:11:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:11:47 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:11:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:11:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:11:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:11:53 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:11:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:11:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:11:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:11:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:14:19 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:14:19 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:14:19 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:14:19 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:14:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:14:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:14:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:14:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:14:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:14:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:14:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:14:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:17:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:17:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:17:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:17:36 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:17:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:17:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:17:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:17:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:17:51 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:20:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:20:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:20:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:20:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.
+19-11-2018 17:21:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:21:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 2
+19-11-2018 17:21:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 2
+19-11-2018 17:21:15 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 6 registros.
+19-11-2018 17:21:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Entrada no método listarTestDatas do Encadeamento.
+19-11-2018 17:21:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Id do DataPool: 1
+19-11-2018 17:21:26 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 1
+19-11-2018 17:21:27 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 101) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 18 registros.

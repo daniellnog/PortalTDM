@@ -1,0 +1,66 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Encadeamento_TestData]
+       [dbo].[Execucao]
+       [dbo].[Agendamento]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[Encadeamento_TestData].[IdAgendamento] is being dropped, data loss could occur.
+       The column [dbo].[Encadeamento_TestData].[IdEncadeamento] on table [dbo].[Encadeamento_TestData] must be added, but the
+         column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work.
+         To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the
+         generation of smart-defaults as a deployment option.
+       The column [dbo].[Execucao].[DataAgendamento] is being dropped, data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[Encadeamento_TestData].[IdAgendamento] (Column)
+       [dbo].[Encadeamento_TestData].[IdTestData] (Column)
+     Drop
+       unnamed constraint on [dbo].[Execucao] (Default Constraint)
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+     Table rebuild
+       [dbo].[Encadeamento_TestData] (Table)
+       [dbo].[Execucao] (Table)
+       [dbo].[Agendamento] (Table)
+     Create
+       [dbo].[Encadeamento_TestData].[IX_Encadeamento_TestData_IdTestData] (Index)
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+     Alter
+       [dbo].[Script_CondicaoScript] (Table)
+       [dbo].[PR_LISTAR_DATAPOOL_SEM_USUARIO] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+     Create
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_PARAMETRO_TESTDATA] (Procedure)
+       [dbo].[PR_LISTAR_TEST_DATA] (Procedure)
+       [dbo].[PR_LISTAR_TESTDATA_SEM_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+
+The column [dbo].[Encadeamento_TestData].[IdAgendamento] is being dropped, data loss could occur.
+The column [dbo].[Encadeamento_TestData].[IdEncadeamento] on table [dbo].[Encadeamento_TestData] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The column [dbo].[Execucao].[DataAgendamento] is being dropped, data loss could occur.
+The column TempoEstimadoExecucao on table [dbo].[Script_CondicaoScript] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+

@@ -1,0 +1,429 @@
+08-08-2018 11:12:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:12:21 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:12:21 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:12:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:12:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:12:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:12:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:12:28 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'77','Descricao':'bbb','Object':'Encadeamento_TestData',}]
+08-08-2018 11:13:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:13:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:13:20 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:13:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:13:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:13:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:13:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:13:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'78','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 11:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:16:46 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:16:46 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:16:46 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:16:46 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'79','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 11:27:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:27:02 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:27:02 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:27:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:27:02 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:27:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:27:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:27:02 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'80','Descricao':'','Object':'Encadeamento_TestData',}]
+08-08-2018 11:28:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:28:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:28:08 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:28:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:28:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:28:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:28:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:28:09 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'81','Descricao':'','Object':'Encadeamento_TestData',}]
+08-08-2018 11:33:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:33:19 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:33:19 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:33:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:33:19 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:33:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:33:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:33:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'82','Descricao':'aaaa','Object':'Encadeamento_TestData',}]
+08-08-2018 11:33:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:33:35 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:33:35 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:33:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:33:35 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 11:33:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:33:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:33:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'83','Descricao':'aabbb','Object':'Encadeamento_TestData',}]
+08-08-2018 11:57:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 11:57:28 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 11:57:28 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 11:57:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 11:57:29 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senha',}]
+08-08-2018 11:57:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 11:57:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 11:57:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'84','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 13:40:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 13:40:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 13:40:24 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 13:40:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 13:40:24 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 13:40:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 13:40:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 13:40:25 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'85','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 13:44:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 13:44:03 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 13:44:03 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 13:44:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 13:44:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 13:44:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 13:44:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 13:44:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'86','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 13:47:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 13:47:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 13:47:51 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 13:47:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 13:47:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 13:47:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 13:47:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 13:47:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'87','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 13:48:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 13:48:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 13:48:21 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 13:48:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 13:48:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 13:54:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 13:54:11 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 13:54:11 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 13:54:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 13:54:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 13:54:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 13:54:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 13:54:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'88','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 14:30:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:30:16 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 14:30:16 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:30:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 14:30:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:30:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:30:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:30:21 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'89','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 14:31:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:31:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 14:31:27 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:31:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 14:31:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:31:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:31:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:31:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'90','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+08-08-2018 14:38:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:38:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 14:38:20 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:38:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 14:38:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:38:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:38:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:38:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'91','Descricao':'bbb','Object':'Encadeamento_TestData',}]
+08-08-2018 14:41:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:41:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 14:41:51 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:41:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 14:41:55 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:41:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:41:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:41:56 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'92','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+08-08-2018 14:43:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:43:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 14:43:24 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:43:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 14:43:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:43:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:43:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:43:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'93','Descricao':'bbb','Object':'Encadeamento_TestData',}]
+08-08-2018 14:44:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:44:22 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 14:44:22 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:44:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 14:44:22 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:44:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:44:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:44:23 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'94','Descricao':'aaaa','Object':'Encadeamento_TestData',}]
+08-08-2018 14:44:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 14:44:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 14:44:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 14:44:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 14:44:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 14:54:02 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 14:54:02 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - A opção Editar é False
+08-08-2018 14:54:02 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 14:54:02 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Usuário Logado capturado:
+08-08-2018 14:54:06 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 14:54:06 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 14:54:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 14:54:07 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 48) - Object: Encadeamento[{'Id':'95','Descricao':'bbbb','Object':'Encadeamento_TestData',}]
+08-08-2018 14:54:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 14:54:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Id do DataPool: 7
+08-08-2018 14:54:14 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - 
+08-08-2018 15:03:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 15:03:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 15:03:39 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 15:03:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 15:03:39 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 15:08:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 15:08:49 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 15:08:49 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 15:08:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 15:08:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 15:08:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 15:08:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 15:08:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'96','Descricao':'bbb','Object':'Encadeamento_TestData',}]
+08-08-2018 15:09:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:09:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 11
+08-08-2018 15:09:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:09:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 15:09:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 15:09:34 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 15:09:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 15:09:37 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 15:22:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 15:22:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 15:22:47 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 15:22:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 15:22:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 15:22:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 15:22:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 15:22:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'101','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 15:22:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:22:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 13
+08-08-2018 15:22:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 15:23:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 9
+08-08-2018 15:23:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 8
+08-08-2018 15:23:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 7
+08-08-2018 15:23:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 6
+08-08-2018 15:23:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 5
+08-08-2018 15:23:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 9
+08-08-2018 15:23:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:23:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:23:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 8
+08-08-2018 15:23:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:26:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:26:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 11
+08-08-2018 15:26:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:26:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:26:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 15:26:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 13
+08-08-2018 15:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:26:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:26:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 15:26:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:26:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:26:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 11
+08-08-2018 15:26:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:27:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 15:27:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 10
+08-08-2018 15:27:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 15:27:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 15:27:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 15:27:25 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 15:27:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 15:27:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 15:27:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+08-08-2018 15:27:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'195','IdTestData':'75','IdEncadeamento':'101','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+08-08-2018 16:38:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 16:38:09 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 16:38:09 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 16:38:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 16:38:14 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 16:38:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 16:38:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 16:38:14 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'102','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 16:38:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:38:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 6
+08-08-2018 16:38:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 16:38:37 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:38:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 11
+08-08-2018 16:38:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 16:38:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:38:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 16:38:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - 
+08-08-2018 16:39:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 16:39:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 16:39:01 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 16:39:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 16:39:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 16:39:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+08-08-2018 16:39:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'196','IdTestData':'60','IdEncadeamento':'102','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+08-08-2018 16:51:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 16:51:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 16:51:51 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 16:51:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 16:51:56 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 16:51:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 16:51:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 16:51:56 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'103','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 16:52:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:52:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 13
+08-08-2018 16:52:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 13
+08-08-2018 16:52:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+08-08-2018 16:52:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:52:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 10
+08-08-2018 16:52:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 10
+08-08-2018 16:52:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 5 registros.
+08-08-2018 16:52:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 16:52:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 16:52:14 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 16:52:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 16:52:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 16:52:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+08-08-2018 16:52:22 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'197','IdTestData':'68','IdEncadeamento':'103','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+08-08-2018 16:52:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 10], [IdTestData => 68]
+08-08-2018 16:52:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+08-08-2018 16:53:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 16:53:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 16:53:08 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 16:53:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 16:53:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 16:53:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 16:53:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 16:53:08 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'104','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 16:53:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:53:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 7
+08-08-2018 16:53:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 7
+08-08-2018 16:53:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+08-08-2018 16:53:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:53:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 11
+08-08-2018 16:53:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 11
+08-08-2018 16:53:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+08-08-2018 16:53:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 16:53:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 16:53:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 12
+08-08-2018 16:53:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 5 registros.
+08-08-2018 16:53:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 16:53:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 16:53:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 16:53:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 16:53:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 16:53:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+08-08-2018 16:53:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'198','IdTestData':'59','IdEncadeamento':'104','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+08-08-2018 16:53:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 12], [IdTestData => 59]
+08-08-2018 16:53:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+08-08-2018 17:06:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:06:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:06:17 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:06:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:06:21 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:06:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:06:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:06:21 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'105','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:06:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 17:06:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 17:06:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 12
+08-08-2018 17:06:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 4 registros.
+08-08-2018 17:06:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 17:06:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 17:06:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 17:06:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 17:06:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 17:06:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+08-08-2018 17:06:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'199','IdTestData':'60','IdEncadeamento':'105','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+08-08-2018 17:10:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:10:02 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:10:02 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:10:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:10:02 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:10:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:10:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:10:02 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'106','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:10:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 17:10:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 13
+08-08-2018 17:10:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 13
+08-08-2018 17:10:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 5 registros.
+08-08-2018 17:10:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 17:10:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 17:10:11 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 17:10:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 17:10:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 17:32:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:32:05 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:32:05 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:32:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:32:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:32:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:32:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:32:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'0','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:32:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 17:32:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 9
+08-08-2018 17:32:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 9
+08-08-2018 17:32:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+08-08-2018 17:32:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 17:32:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 17:32:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 17:32:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 17:32:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 17:33:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:33:41 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:33:41 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:33:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:33:45 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:33:45 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:33:45 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:33:45 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'0','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:33:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 17:33:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 13
+08-08-2018 17:33:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 13
+08-08-2018 17:34:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 5 registros.
+08-08-2018 17:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+08-08-2018 17:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+08-08-2018 17:34:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+08-08-2018 17:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+08-08-2018 17:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+08-08-2018 17:38:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:38:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:38:26 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:38:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:38:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:38:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:38:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:38:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'0','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:39:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+08-08-2018 17:39:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 12
+08-08-2018 17:39:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 12
+08-08-2018 17:45:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:45:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:45:48 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:45:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:45:52 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:45:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:45:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:45:52 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'0','Descricao':'daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:46:37 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:46:37 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:46:37 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:46:37 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:46:37 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:46:37 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:46:37 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:46:37 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'0','Descricao':'Daniel','Object':'Encadeamento_TestData',}]
+08-08-2018 17:47:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+08-08-2018 17:47:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+08-08-2018 17:47:26 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+08-08-2018 17:47:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+08-08-2018 17:47:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'2','Login':'bruce','Senha':'senha',}]
+08-08-2018 17:47:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+08-08-2018 17:47:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+08-08-2018 17:47:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'0','Descricao':'Daniel','Object':'Encadeamento_TestData',}]

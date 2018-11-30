@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The type for column EnvioTelegram in table [dbo].[Execucao] is currently  INT NULL but is being changed to  BIT NOT
+         NULL. Data loss could occur.
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Execucao] (Default Constraint)
+     Alter
+       [dbo].[Execucao] (Table)
+     Create
+       [dbo].[Encadeamento] (Table)
+       [dbo].[Encadeamento_TestData] (Table)
+       [dbo].[FK_Encadeamento_TestData_TestData] (Foreign Key)
+       [dbo].[FK_Encadeamento_TestData_Encadeamento] (Foreign Key)
+
+** Supporting actions
+     Create
+       Default Constraint: unnamed constraint on [dbo].[Execucao] (Default Constraint)
+
+The column EnvioTelegram on table [dbo].[Execucao] must be changed from NULL to NOT NULL. If the table contains data, the ALTER script may not work. To avoid this issue, you must add values to this column for all rows or mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column EnvioTelegram in table [dbo].[Execucao] is currently  INT NULL but is being changed to  BIT NOT NULL. Data loss could occur.
+

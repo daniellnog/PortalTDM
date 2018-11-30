@@ -1,0 +1,1083 @@
+09-10-2018 10:20:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:20:12 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:20:12 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:20:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:20:12 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:20:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:20:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:20:12 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'93','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:20:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:20:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 8
+09-10-2018 10:20:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 8
+09-10-2018 10:20:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 4 registros.
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:20:19 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:20:19 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'133','IdTestData':'377','IdEncadeamento':'93','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 8], [IdTestData => 377]
+09-10-2018 10:20:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:20:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:20:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 126
+09-10-2018 10:20:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 126
+09-10-2018 10:20:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 13 registros.
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:20:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:20:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'134','IdTestData':'4428','IdEncadeamento':'93','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 126], [IdTestData => 4428]
+09-10-2018 10:20:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:22:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:22:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 93], [IdTestData => 0]
+09-10-2018 10:22:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 35 registros.
+09-10-2018 10:26:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:26:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:26:31 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:26:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:26:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:26:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:26:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:26:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'94','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:26:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:26:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 8
+09-10-2018 10:26:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 8
+09-10-2018 10:26:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 4 registros.
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:26:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:26:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'135','IdTestData':'377','IdEncadeamento':'94','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 8], [IdTestData => 377]
+09-10-2018 10:26:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 33
+09-10-2018 10:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 33
+09-10-2018 10:26:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 17 registros.
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:26:43 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:26:43 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'136','IdTestData':'4222','IdEncadeamento':'94','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 33], [IdTestData => 4222]
+09-10-2018 10:26:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:26:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:26:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 94], [IdTestData => 0]
+09-10-2018 10:26:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 35 registros.
+09-10-2018 10:32:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:32:41 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:32:41 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:32:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:32:41 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:32:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:32:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:32:41 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'95','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:32:45 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:32:45 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 8
+09-10-2018 10:32:45 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 8
+09-10-2018 10:32:45 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 4 registros.
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:32:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:32:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'137','IdTestData':'379','IdEncadeamento':'95','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 8], [IdTestData => 379]
+09-10-2018 10:32:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:32:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:32:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 95], [IdTestData => 0]
+09-10-2018 10:32:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 18 registros.
+09-10-2018 10:34:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:34:57 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:34:57 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:34:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:34:57 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:34:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:34:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:34:57 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'96','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:35:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:35:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 99
+09-10-2018 10:35:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 99
+09-10-2018 10:35:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+09-10-2018 10:35:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:35:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 43
+09-10-2018 10:35:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 43
+09-10-2018 10:35:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 14 registros.
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:35:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:35:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'138','IdTestData':'4099','IdEncadeamento':'96','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 43], [IdTestData => 4099]
+09-10-2018 10:35:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:35:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:35:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 138
+09-10-2018 10:35:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 138
+09-10-2018 10:35:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:35:13 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:35:13 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'139','IdTestData':'4347','IdEncadeamento':'96','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 138], [IdTestData => 4347]
+09-10-2018 10:35:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:35:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:35:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 96], [IdTestData => 0]
+09-10-2018 10:35:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 31 registros.
+09-10-2018 10:35:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:35:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:35:47 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:35:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:35:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:35:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:35:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:35:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'97','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:35:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:35:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 34
+09-10-2018 10:35:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 34
+09-10-2018 10:35:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 268 registros.
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:35:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:35:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'140','IdTestData':'1828','IdEncadeamento':'97','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 34], [IdTestData => 1828]
+09-10-2018 10:35:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:35:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:35:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 138
+09-10-2018 10:35:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 138
+09-10-2018 10:35:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:35:58 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:35:58 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'141','IdTestData':'4373','IdEncadeamento':'97','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 138], [IdTestData => 4373]
+09-10-2018 10:35:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:36:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:36:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 97], [IdTestData => 0]
+09-10-2018 10:36:02 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 25 registros.
+09-10-2018 10:37:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:37:49 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:37:49 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:37:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:37:49 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:37:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:37:49 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:37:49 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'98','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:37:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:37:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 10:37:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 10:37:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:37:55 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:37:55 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'142','IdTestData':'4597','IdEncadeamento':'98','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4597]
+09-10-2018 10:37:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:38:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:38:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 140
+09-10-2018 10:38:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 140
+09-10-2018 10:38:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 3 registros.
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:38:03 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:38:03 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'143','IdTestData':'4349','IdEncadeamento':'98','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 140], [IdTestData => 4349]
+09-10-2018 10:38:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:38:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:38:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 98], [IdTestData => 0]
+09-10-2018 10:38:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 34 registros.
+09-10-2018 10:42:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:42:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:42:54 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:42:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:42:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:42:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:42:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:42:55 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'99','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:43:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:43:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 10:43:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 10:43:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:43:04 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:43:04 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'144','IdTestData':'4469','IdEncadeamento':'99','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4469]
+09-10-2018 10:43:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:43:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:43:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 129
+09-10-2018 10:43:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 129
+09-10-2018 10:43:08 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 24 registros.
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:43:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:43:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'145','IdTestData':'4548','IdEncadeamento':'99','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 129], [IdTestData => 4548]
+09-10-2018 10:43:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:43:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:43:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 99], [IdTestData => 0]
+09-10-2018 10:43:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 32 registros.
+09-10-2018 10:44:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:44:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:44:24 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:44:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:44:25 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:44:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:44:25 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:44:25 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'100','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:44:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:44:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 10:44:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 10:44:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:44:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:44:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'146','IdTestData':'4459','IdEncadeamento':'100','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4459]
+09-10-2018 10:44:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:44:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:44:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 127
+09-10-2018 10:44:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 127
+09-10-2018 10:44:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 26 registros.
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:44:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:44:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'147','IdTestData':'4432','IdEncadeamento':'100','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 127], [IdTestData => 4432]
+09-10-2018 10:44:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:44:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:44:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 100], [IdTestData => 0]
+09-10-2018 10:44:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 36 registros.
+09-10-2018 10:47:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:47:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:47:48 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:47:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:47:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:47:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:47:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:47:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'101','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:47:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:47:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 10:47:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 10:47:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:47:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:47:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'148','IdTestData':'4458','IdEncadeamento':'101','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4458]
+09-10-2018 10:47:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:47:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:47:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 127
+09-10-2018 10:47:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 127
+09-10-2018 10:47:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 26 registros.
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:48:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:48:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'149','IdTestData':'4481','IdEncadeamento':'101','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 127], [IdTestData => 4481]
+09-10-2018 10:48:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:48:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:48:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 101], [IdTestData => 0]
+09-10-2018 10:48:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 36 registros.
+09-10-2018 10:48:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:48:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:48:51 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:48:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:48:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:48:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:48:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:48:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'102','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:48:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:48:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 10:48:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 10:48:56 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:48:58 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:48:58 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'150','IdTestData':'4357','IdEncadeamento':'102','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4357]
+09-10-2018 10:48:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:49:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:49:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 131
+09-10-2018 10:49:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 131
+09-10-2018 10:49:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 5 registros.
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:49:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:49:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'151','IdTestData':'4402','IdEncadeamento':'102','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 131], [IdTestData => 4402]
+09-10-2018 10:49:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:49:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:49:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 102], [IdTestData => 0]
+09-10-2018 10:49:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 19 registros.
+09-10-2018 10:57:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:57:29 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:57:29 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:57:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:57:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:57:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:57:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:57:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'103','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:57:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:57:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 126
+09-10-2018 10:57:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 126
+09-10-2018 10:57:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 13 registros.
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:57:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:57:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'152','IdTestData':'4428','IdEncadeamento':'103','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 126], [IdTestData => 4428]
+09-10-2018 10:57:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:57:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:57:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 123
+09-10-2018 10:57:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 123
+09-10-2018 10:57:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:57:42 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:57:42 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'153','IdTestData':'4372','IdEncadeamento':'103','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 123], [IdTestData => 4372]
+09-10-2018 10:57:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:57:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:57:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 103], [IdTestData => 0]
+09-10-2018 10:57:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 36 registros.
+09-10-2018 10:59:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 10:59:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 10:59:26 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 10:59:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 10:59:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 10:59:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 10:59:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 10:59:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'104','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 10:59:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:59:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 10:59:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 10:59:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:59:33 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:59:33 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'154','IdTestData':'4357','IdEncadeamento':'104','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4357]
+09-10-2018 10:59:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:59:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 10:59:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 139
+09-10-2018 10:59:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 139
+09-10-2018 10:59:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 10:59:40 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 10:59:40 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'155','IdTestData':'4348','IdEncadeamento':'104','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 139], [IdTestData => 4348]
+09-10-2018 10:59:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 10:59:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 10:59:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 104], [IdTestData => 0]
+09-10-2018 10:59:41 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 17 registros.
+09-10-2018 11:01:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:01:33 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:01:33 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:01:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:01:33 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:01:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:01:33 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:01:33 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'105','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:01:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:01:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 11:01:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 11:01:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:01:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:01:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:01:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:01:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:01:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:01:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:01:39 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'156','IdTestData':'4357','IdEncadeamento':'105','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:01:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4357]
+09-10-2018 11:01:39 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:01:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:01:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 126
+09-10-2018 11:01:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 126
+09-10-2018 11:01:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 13 registros.
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:01:44 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:01:44 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'157','IdTestData':'4428','IdEncadeamento':'105','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 126], [IdTestData => 4428]
+09-10-2018 11:01:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:01:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:01:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 105], [IdTestData => 0]
+09-10-2018 11:01:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 22 registros.
+09-10-2018 11:04:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:04:46 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:04:46 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:04:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:04:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:04:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:04:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:04:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'106','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:04:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:04:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 120
+09-10-2018 11:04:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 120
+09-10-2018 11:04:50 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:04:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:04:51 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'158','IdTestData':'4594','IdEncadeamento':'106','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 120], [IdTestData => 4594]
+09-10-2018 11:04:51 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:04:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:04:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 138
+09-10-2018 11:04:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 138
+09-10-2018 11:04:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:04:57 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:04:57 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'159','IdTestData':'4347','IdEncadeamento':'106','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 138], [IdTestData => 4347]
+09-10-2018 11:04:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:04:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:04:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 106], [IdTestData => 0]
+09-10-2018 11:04:58 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 38 registros.
+09-10-2018 11:08:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:08:59 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:08:59 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:08:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:08:59 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:08:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:08:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:08:59 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'107','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:09:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:09:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 11:09:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 11:09:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:09:05 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:09:05 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'160','IdTestData':'4458','IdEncadeamento':'107','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4458]
+09-10-2018 11:09:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:09:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:09:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 139
+09-10-2018 11:09:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 139
+09-10-2018 11:09:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:09:11 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:09:11 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'161','IdTestData':'4375','IdEncadeamento':'107','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 139], [IdTestData => 4375]
+09-10-2018 11:09:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:09:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:09:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 107], [IdTestData => 0]
+09-10-2018 11:09:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 29 registros.
+09-10-2018 11:11:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:11:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:11:06 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:11:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:11:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:11:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:11:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:11:07 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'108','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:11:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:11:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 11:11:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 11:11:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:11:11 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:11:11 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'162','IdTestData':'4472','IdEncadeamento':'108','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4472]
+09-10-2018 11:11:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:11:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:11:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 141
+09-10-2018 11:11:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 141
+09-10-2018 11:11:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:11:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:11:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'163','IdTestData':'4378','IdEncadeamento':'108','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 141], [IdTestData => 4378]
+09-10-2018 11:11:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:11:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:11:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 108], [IdTestData => 0]
+09-10-2018 11:11:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 28 registros.
+09-10-2018 11:14:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:14:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:14:53 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:14:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:14:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:14:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:14:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:14:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'109','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:14:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:14:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 11:14:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 11:14:57 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:15:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:15:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'164','IdTestData':'4357','IdEncadeamento':'109','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4357]
+09-10-2018 11:15:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:15:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:15:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 139
+09-10-2018 11:15:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 139
+09-10-2018 11:15:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:15:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:15:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'165','IdTestData':'4375','IdEncadeamento':'109','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 139], [IdTestData => 4375]
+09-10-2018 11:15:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:15:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no Método de AlterarOrdem do Encadeamento.
+09-10-2018 11:15:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Dados recebidod por parâmetros: [idEncadeamento => 109;idTestData => 4375;acao =>0]
+09-10-2018 11:15:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Foram encontrados 2 registros em Encadeamento_TestData com o IdEncadeamento igual a 109
+09-10-2018 11:15:09 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Encadeamento_TestData: Encadeamento_TestDat_B20A686531267C2BEB5CB175445A2E8EC6B9AD2E4092AA24A9D61DDD70E04AB5[{'Object':'Encadeamento','Object':'TestData','Id':'165','IdTestData':'4375','IdEncadeamento':'109','Ordem':'2',}]
+09-10-2018 11:15:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:15:11 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 109], [IdTestData => 0]
+09-10-2018 11:15:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 17 registros.
+09-10-2018 11:16:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:16:09 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:16:09 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:16:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:16:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:16:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:16:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:16:10 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'110','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:16:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:16:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 11:16:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 11:16:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:16:14 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:16:14 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'166','IdTestData':'4369','IdEncadeamento':'110','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4369]
+09-10-2018 11:16:14 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:16:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:16:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 142
+09-10-2018 11:16:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 142
+09-10-2018 11:16:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:16:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:16:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'167','IdTestData':'4379','IdEncadeamento':'110','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 142], [IdTestData => 4379]
+09-10-2018 11:16:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no Método de AlterarOrdem do Encadeamento.
+09-10-2018 11:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Dados recebidod por parâmetros: [idEncadeamento => 110;idTestData => 4379;acao =>0]
+09-10-2018 11:16:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Foram encontrados 2 registros em Encadeamento_TestData com o IdEncadeamento igual a 110
+09-10-2018 11:16:35 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Encadeamento_TestData: Encadeamento_TestDat_B20A686531267C2BEB5CB175445A2E8EC6B9AD2E4092AA24A9D61DDD70E04AB5[{'Object':'Encadeamento','Object':'TestData','Id':'167','IdTestData':'4379','IdEncadeamento':'110','Ordem':'2',}]
+09-10-2018 11:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 110], [IdTestData => 0]
+09-10-2018 11:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 11:19:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:19:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:19:15 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:19:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:19:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:19:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:19:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:19:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'111','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:19:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:19:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 124
+09-10-2018 11:19:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 124
+09-10-2018 11:19:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 4 registros.
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:19:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:19:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'168','IdTestData':'4359','IdEncadeamento':'111','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 124], [IdTestData => 4359]
+09-10-2018 11:19:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:19:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:19:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 140
+09-10-2018 11:19:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 140
+09-10-2018 11:19:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 3 registros.
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:19:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:19:26 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'169','IdTestData':'4377','IdEncadeamento':'111','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 140], [IdTestData => 4377]
+09-10-2018 11:19:26 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:19:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no Método de AlterarOrdem do Encadeamento.
+09-10-2018 11:19:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Dados recebidod por parâmetros: [idEncadeamento => 111;idTestData => 4377;acao =>0]
+09-10-2018 11:19:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Foram encontrados 2 registros em Encadeamento_TestData com o IdEncadeamento igual a 111
+09-10-2018 11:19:29 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Encadeamento_TestData: Encadeamento_TestDat_B20A686531267C2BEB5CB175445A2E8EC6B9AD2E4092AA24A9D61DDD70E04AB5[{'Object':'Encadeamento','Object':'TestData','Id':'169','IdTestData':'4377','IdEncadeamento':'111','Ordem':'2',}]
+09-10-2018 11:19:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:19:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 111], [IdTestData => 0]
+09-10-2018 11:19:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 25 registros.
+09-10-2018 11:22:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:22:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:22:17 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:22:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:22:18 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:22:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:22:18 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:22:18 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'112','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:22:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:22:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 130
+09-10-2018 11:22:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 130
+09-10-2018 11:22:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 5 registros.
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:22:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:22:24 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'170','IdTestData':'4408','IdEncadeamento':'112','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 130], [IdTestData => 4408]
+09-10-2018 11:22:24 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:22:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:22:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 139
+09-10-2018 11:22:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 139
+09-10-2018 11:22:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:22:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:22:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'171','IdTestData':'4375','IdEncadeamento':'112','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 139], [IdTestData => 4375]
+09-10-2018 11:22:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:22:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:22:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 112], [IdTestData => 0]
+09-10-2018 11:22:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 27 registros.
+09-10-2018 11:25:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:25:01 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:25:01 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:25:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:25:01 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:25:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:25:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:25:01 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'113','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:25:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:25:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 11:25:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 11:25:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:25:05 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:25:05 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'172','IdTestData':'4597','IdEncadeamento':'113','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4597]
+09-10-2018 11:25:05 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:25:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:25:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 128
+09-10-2018 11:25:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 128
+09-10-2018 11:25:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+09-10-2018 11:25:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:25:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 138
+09-10-2018 11:25:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 138
+09-10-2018 11:25:13 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:25:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:25:15 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'173','IdTestData':'4373','IdEncadeamento':'113','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 138], [IdTestData => 4373]
+09-10-2018 11:25:15 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:25:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no Método de AlterarOrdem do Encadeamento.
+09-10-2018 11:25:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Dados recebidod por parâmetros: [idEncadeamento => 113;idTestData => 4373;acao =>0]
+09-10-2018 11:25:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Foram encontrados 2 registros em Encadeamento_TestData com o IdEncadeamento igual a 113
+09-10-2018 11:25:20 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Encadeamento_TestData: Encadeamento_TestDat_B20A686531267C2BEB5CB175445A2E8EC6B9AD2E4092AA24A9D61DDD70E04AB5[{'Object':'Encadeamento','Object':'TestData','Id':'173','IdTestData':'4373','IdEncadeamento':'113','Ordem':'2',}]
+09-10-2018 11:25:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:25:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 113], [IdTestData => 0]
+09-10-2018 11:25:21 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 31 registros.
+09-10-2018 11:26:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:26:59 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:26:59 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:26:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:26:59 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:26:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:27:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:27:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'114','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:27:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:27:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 11:27:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 11:27:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:27:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:27:06 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'174','IdTestData':'4357','IdEncadeamento':'114','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4357]
+09-10-2018 11:27:06 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:27:09 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:27:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 140
+09-10-2018 11:27:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 140
+09-10-2018 11:27:10 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 3 registros.
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:27:12 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:27:12 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'175','IdTestData':'4377','IdEncadeamento':'114','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 140], [IdTestData => 4377]
+09-10-2018 11:27:12 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:27:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no Método de AlterarOrdem do Encadeamento.
+09-10-2018 11:27:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Dados recebidod por parâmetros: [idEncadeamento => 114;idTestData => 4377;acao =>0]
+09-10-2018 11:27:16 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Foram encontrados 2 registros em Encadeamento_TestData com o IdEncadeamento igual a 114
+09-10-2018 11:27:16 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Encadeamento_TestData: Encadeamento_TestDat_B20A686531267C2BEB5CB175445A2E8EC6B9AD2E4092AA24A9D61DDD70E04AB5[{'Object':'Encadeamento','Object':'TestData','Id':'175','IdTestData':'4377','IdEncadeamento':'114','Ordem':'2',}]
+09-10-2018 11:27:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:27:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 114], [IdTestData => 0]
+09-10-2018 11:27:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 22 registros.
+09-10-2018 11:34:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:34:43 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:34:43 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:34:43 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:34:44 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:34:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:34:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:34:44 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'115','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 11:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 11:34:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:34:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:34:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'176','IdTestData':'4600','IdEncadeamento':'115','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4600]
+09-10-2018 11:34:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:34:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:34:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 129
+09-10-2018 11:34:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 129
+09-10-2018 11:34:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 24 registros.
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:34:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:34:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'177','IdTestData':'4547','IdEncadeamento':'115','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 129], [IdTestData => 4547]
+09-10-2018 11:34:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:34:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:34:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 115], [IdTestData => 0]
+09-10-2018 11:34:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 32 registros.
+09-10-2018 11:48:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 11:48:27 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 11:48:27 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 11:48:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 11:48:28 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 11:48:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 11:48:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 11:48:28 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'116','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 11:48:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:48:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 122
+09-10-2018 11:48:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 122
+09-10-2018 11:48:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:48:35 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:48:35 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'178','IdTestData':'4369','IdEncadeamento':'116','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 122], [IdTestData => 4369]
+09-10-2018 11:48:35 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:48:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 11:48:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 139
+09-10-2018 11:48:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 139
+09-10-2018 11:48:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 11:48:42 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 11:48:42 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'179','IdTestData':'4375','IdEncadeamento':'116','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 139], [IdTestData => 4375]
+09-10-2018 11:48:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 11:48:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 11:48:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 116], [IdTestData => 0]
+09-10-2018 11:48:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 17 registros.
+09-10-2018 11:51:55 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script editado com sucesso
+09-10-2018 11:51:55 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script: Script[{'Id':'1','IdScriptPai':'','IdAUT':'1','Descricao':'CRIAÇÃO DE CONTATO E CONTA PF ','AUT':'NULL','Script2':'NULL',}]
+09-10-2018 11:52:05 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - ScriptCondiçãoScript adicionado com sucesso
+09-10-2018 11:52:05 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'2','IdScript':'1','IdCondicaoScript':'1','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as 'AMBIENTE EXECUCAO', (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'CEP' AND parvAux.IdTestData = tdt.Id) AS CEP,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'CPF' AND parvAux.IdTestData = tdt.Id) AS CPF,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'DDD' AND parvAux.IdTestData = tdt.Id) AS DDD,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: AMBIENTE' AND parvAux.IdTestData = tdt.Id) AS AMBIENTE,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: AUTOR' AND parvAux.IdTestData = tdt.Id) AS AUTOR,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: DADOS DE ENTRADA' AND parvAux.IdTestData = tdt.Id) AS DADOS_DE_ENTRADA,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: FASE' AND parvAux.IdTestData = tdt.Id) AS FASE,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: NOME DO CASO DE TESTE' AND parvAux.IdTestData = tdt.Id) AS NOME_DO_CASO_DE_TESTE,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: NUMERO DO CASO DE TESTE' AND parvAux.IdTestData = tdt.Id) AS NUMERO_DO_CASO_DE_TESTE,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: PRJ' AND parvAux.IdTestData = tdt.Id) AS PRJ,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: RESULTADO ESPERADO' AND parvAux.IdTestData = tdt.Id) AS RESULTADO_ESPERADO,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'EVIDENCIA: TITULO' AND parvAux.IdTestData = tdt.Id) AS TITULO,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'NUMERO COMPLEMENTO' AND parvAux.IdTestData = tdt.Id) AS NUMERO_COMPLEMENTO,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'NUMERO RESIDENCIA' AND parvAux.IdTestData = tdt.Id) AS NUMERO_RESIDENCIA,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'PDV' AND parvAux.IdTestData = tdt.Id) AS PDV,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'PONTO REFERENCIA' AND parvAux.IdTestData = tdt.Id) AS PONTO_REFERENCIA,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'SENHA' AND parvAux.IdTestData = tdt.Id) AS SENHA,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'TIPO RESIDENCIA' AND parvAux.IdTestData = tdt.Id) AS TIPO_RESIDENCIA,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'USUARIO' AND parvAux.IdTestData = tdt.Id) AS USUARIO,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'CONTA FATURA' AND parvAux.IdTestData = tdt.Id) AS CONTA_FATURA FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN Execucao execu ON execu.IdTestData = tdt.Id INNER JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id AND execu.IdScript_CondicaoScript_Ambiente = scrconamb.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN (ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/SIEBEL_63/CONTATO_E_CONTA_PF_SEM_ENVIO_CDI','CaminhoArquivoTCS':'C:\Tosca_Projects\Tosca_Workspaces\TDM\remote_exec\contato-e-conta-pf-sem-envio-cdi.tcs','DiretorioRelatorio':'C:/Tosca_Projects/Tosca_Workspaces/TDM/remote_exec/Reports/report.txt','TempoEstimadoExecucao':'01/01/2001 00:30:00','NomeTecnicoScript':'CONTATO_E_CONTA_PF_SEM_ENVIO_CDI','CondicaoScript':'NULL',}]
+09-10-2018 14:00:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 14:00:47 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 14:00:48 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 14:00:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 14:00:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 14:00:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 14:00:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 14:00:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'117','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 14:00:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:00:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 120
+09-10-2018 14:00:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 120
+09-10-2018 14:00:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:00:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:00:54 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'180','IdTestData':'4624','IdEncadeamento':'117','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 120], [IdTestData => 4624]
+09-10-2018 14:00:54 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:00:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:00:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 142
+09-10-2018 14:00:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 142
+09-10-2018 14:00:59 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 2 registros.
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:01:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:01:00 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'181','IdTestData':'4379','IdEncadeamento':'117','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 142], [IdTestData => 4379]
+09-10-2018 14:01:00 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:01:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 14:01:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 117], [IdTestData => 0]
+09-10-2018 14:01:01 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 39 registros.
+09-10-2018 14:03:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 14:03:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 14:03:48 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 14:03:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 14:03:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 14:03:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 14:03:48 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 14:03:48 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'118','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 14:03:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:03:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 14:03:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 14:03:52 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:03:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:03:53 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'182','IdTestData':'4600','IdEncadeamento':'118','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4600]
+09-10-2018 14:03:53 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:03:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 14:03:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 118], [IdTestData => 0]
+09-10-2018 14:03:55 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 17 registros.
+09-10-2018 14:08:03 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 14:08:03 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 14:08:04 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 14:08:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 14:08:04 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 14:08:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 14:08:04 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 14:08:04 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'119','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 14:09:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:09:19 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 45
+09-10-2018 14:09:20 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 45
+09-10-2018 14:12:27 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 44 registros.
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:12:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:12:31 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'183','IdTestData':'2668','IdEncadeamento':'119','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 45], [IdTestData => 2668]
+09-10-2018 14:12:31 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:12:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:12:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 14:12:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 14:12:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:12:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:12:38 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'184','IdTestData':'4597','IdEncadeamento':'119','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4597]
+09-10-2018 14:12:38 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:12:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 14:12:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 119], [IdTestData => 0]
+09-10-2018 14:12:40 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 17 registros.
+09-10-2018 14:14:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 14:14:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 14:14:17 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 14:14:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 14:14:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 14:14:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 14:14:17 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 14:14:17 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'120','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 14:14:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:14:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 121
+09-10-2018 14:14:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 121
+09-10-2018 14:14:22 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 20 registros.
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:14:23 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:14:23 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'185','IdTestData':'4472','IdEncadeamento':'120','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 121], [IdTestData => 4472]
+09-10-2018 14:14:23 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:14:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:14:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 126
+09-10-2018 14:14:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 126
+09-10-2018 14:14:28 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 13 registros.
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:14:29 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:14:29 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'186','IdTestData':'4534','IdEncadeamento':'120','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 126], [IdTestData => 4534]
+09-10-2018 14:14:29 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:14:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 14:14:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 120], [IdTestData => 0]
+09-10-2018 14:14:32 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 34 registros.
+09-10-2018 14:16:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de Salvar Encadeamento
+09-10-2018 14:16:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - A opção Editar é False
+09-10-2018 14:16:30 [WARN ] (LaefazWeb.Controllers.EncadeamentoController - line 113) - Não foi possível detalhar um objeto.
+09-10-2018 14:16:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Usuário Logado capturado:
+09-10-2018 14:16:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Usuario: Usuario_3E5D3B99CE1BF30D42F96DBD5187B01EF289B280F3BD25AD0FCFF735885A8A7C[{'Object':'Historico','Object':'MapaCalor','Object':'TDM_Usuario','Object':'TestData','Id':'6','Login':'daniel','Senha':'senhadaniel',}]
+09-10-2018 14:16:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - O método Salvar foi chamado para uma Criação de Encadeamento.
+09-10-2018 14:16:30 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Encadeamento adicionado com sucesso
+09-10-2018 14:16:30 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento[{'Id':'121','Descricao':'DANIEL','Object':'Encadeamento_TestData',}]
+09-10-2018 14:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 137
+09-10-2018 14:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 137
+09-10-2018 14:16:34 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 3 registros.
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:16:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 1ª posição.
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:16:36 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'187','IdTestData':'4344','IdEncadeamento':'121','Ordem':'1','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 137], [IdTestData => 4344]
+09-10-2018 14:16:36 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:16:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:16:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 128
+09-10-2018 14:16:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 128
+09-10-2018 14:16:42 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 0 registros.
+09-10-2018 14:16:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método listarTestDatas do Encadeamento.
+09-10-2018 14:16:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Id do DataPool: 125
+09-10-2018 14:16:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando o parâmtetro: 125
+09-10-2018 14:16:44 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 29 registros.
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método AssociarTestData da entidade encadeamento.
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Verifica se a operação com o TestData é apenas uma associação.
+09-10-2018 14:16:46 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 31) - O TestData atual é apenas uma associação.
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - A ordem do Encadeamento será 2ª posição.
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Salvando a associação do Encadeamento com TestData...
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Associação de Encadeamento com TestData adicionado com sucesso!
+09-10-2018 14:16:46 [DEBUG] (LaefazWeb.Controllers.EncadeamentoController - line 48) - Object: Encadeamento_TestData[{'Id':'188','IdTestData':'4465','IdEncadeamento':'121','Ordem':'2','Encadeamento':'NULL','TestData':'NULL',}]
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC PR_LISTAR_TEST_DATA, passando os parâmtetros [IdDataPool => 125], [IdTestData => 4465]
+09-10-2018 14:16:46 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_TEST_DATA' executada com sucesso e foram retornados 1 registros.
+09-10-2018 14:16:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Entrada no método de ProcessarParametrosTestData em Encadeamento.
+09-10-2018 14:16:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - Preparando a execução da PROC [PR_LISTAR_PARAMETRO_TESTDATA], passando os parâmtetros [IdEncadeamento => 121], [IdTestData => 0]
+09-10-2018 14:16:47 [INFO ] (LaefazWeb.Controllers.EncadeamentoController - line 99) - PROC 'PR_LISTAR_PARAMETRO_TESTDATA' executada com sucesso e foram retornados 25 registros.

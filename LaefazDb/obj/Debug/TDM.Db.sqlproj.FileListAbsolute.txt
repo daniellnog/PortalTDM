@@ -1,0 +1,9 @@
+C:\Portal TDM\Portal\LaefazDb\bin\Debug\TDM.Db.dacpac
+C:\Portal TDM\Portal\LaefazDb\bin\Debug\LaefazDb.dll
+C:\Portal TDM\Portal\LaefazDb\bin\Debug\LaefazDb.pdb
+C:\Portal TDM\Portal\LaefazDb\obj\Debug\LaefazDb.dll
+C:\Portal TDM\Portal\LaefazDb\obj\Debug\LaefazDb.pdb
+C:\Portal TDM\Portal\LaefazDb\obj\Debug\Model.xml
+C:\Portal TDM\Portal\LaefazDb\obj\Debug\refactor.xml
+C:\Portal TDM\Portal\LaefazDb\obj\Debug\postdeploy.sql
+C:\Portal TDM\Portal\LaefazDb\obj\Debug\predeploy.sql

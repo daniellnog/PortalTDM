@@ -1,0 +1,35 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Execucao]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Drop
+       unnamed constraint on [dbo].[Execucao] (Default Constraint)
+     Table rebuild
+       [dbo].[Execucao] (Table)
+     Alter
+       [dbo].[Pr_listar_ambiente_execucao] (Procedure)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+     Create
+       [dbo].[FK_TipoFaseTeste_Execucao] (Foreign Key)
+       [dbo].[FK_TipoFaseTeste_StatusExecucao] (Foreign Key)
+       [dbo].[FK_Script_CondicaoScript_Ambiente_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_TestData_Execucao] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)

@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[Agendamento]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[Agendamento] (Table)
+     Alter
+       [dbo].[Script_CondicaoScript] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+     Create
+       [dbo].[FK_Agendamento_Execucao] (Foreign Key)
+       [dbo].[FK_Agendamento_TestData_Encadeamento] (Foreign Key)
+     Refresh
+       [dbo].[PR_LISTAR_DADOS_EXECUCAO] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL] (Procedure)
+       [dbo].[PR_LISTAR_DATAPOOL_SEM_USUARIO] (Procedure)
+       [dbo].[PR_LISTAR_ENCADEAMENTO] (Procedure)
+       [dbo].[PR_LISTAR_EXECUCAO] (Procedure)

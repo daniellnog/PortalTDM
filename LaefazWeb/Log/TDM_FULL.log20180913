@@ -1,0 +1,170 @@
+13-09-2018 12:01:49 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 12:01:49 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'5','Descricao':'aaaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 14:23:16 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+13-09-2018 14:23:17 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'5','Descricao':'aabbb','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 14:33:07 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+13-09-2018 14:33:08 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 14:35:37 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+13-09-2018 14:35:37 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 14:39:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+13-09-2018 14:39:11 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 14:44:21 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 14:44:21 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:03:17 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 99) - Script adicionado com sucesso
+13-09-2018 15:03:17 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'daniel','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:04:33 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:04:33 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'2','Descricao':'aaabb','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:06:36 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:06:36 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:28:00 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:28:00 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:44:56 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:44:57 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'aaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:45:18 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NotSupportedException: LINQ to Entities does not recognize the method 'LaefazWeb.Models.VOs.ParametroVO get_Item(Int32)' method, and this method cannot be translated into a store expression.
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MemberAccessTranslator.TypedTranslate(ExpressionConverter parent, MemberExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SelectTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   em System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   em System.Lazy`1.CreateValue()
+   em System.Lazy`1.LazyInitValue()
+   em System.Lazy`1.get_Value()
+   em System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   em System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   em System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   em System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   em System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   em System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   em LaefazWeb.Controllers.ScriptController.MakeQueryTosca() na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 426
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1088
+13-09-2018 15:47:21 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:47:21 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'bbb','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:52:28 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:52:28 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'5','Descricao':'bbb','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:52:28 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - System.NotSupportedException: LINQ to Entities does not recognize the method 'LaefazWeb.Models.VOs.ParametroVO get_Item(Int32)' method, and this method cannot be translated into a store expression.
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.DefaultTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MemberAccessTranslator.TypedTranslate(ExpressionConverter parent, MemberExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.EqualsTranslator.TypedTranslate(ExpressionConverter parent, BinaryExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateLambda(LambdaExpression lambda, DbExpression input, DbExpressionBinding& binding)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, DbExpression& source, DbExpressionBinding& sourceBinding, DbExpression& lambda)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.OneLambdaTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.UnarySequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.SequenceMethodTranslator.Translate(ExpressionConverter parent, MethodCallExpression call, SequenceMethod sequenceMethod)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.MethodCallTranslator.TypedTranslate(ExpressionConverter parent, MethodCallExpression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TypedTranslator`1.Translate(ExpressionConverter parent, Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.TranslateExpression(Expression linq)
+   em System.Data.Entity.Core.Objects.ELinq.ExpressionConverter.Convert()
+   em System.Data.Entity.Core.Objects.ELinq.ELinqQueryState.GetExecutionPlan(Nullable`1 forMergeOption)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__a()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClassb.<GetResults>b__9()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   em System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   em System.Lazy`1.CreateValue()
+   em System.Lazy`1.LazyInitValue()
+   em System.Lazy`1.get_Value()
+   em System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   em System.Linq.Enumerable.FirstOrDefault[TSource](IEnumerable`1 source)
+   em System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.<GetElementFunction>b__1[TResult](IEnumerable`1 sequence)
+   em System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.ExecuteSingle[TResult](IEnumerable`1 query, Expression queryRoot)
+   em System.Data.Entity.Core.Objects.ELinq.ObjectQueryProvider.System.Linq.IQueryProvider.Execute[TResult](Expression expression)
+   em System.Data.Entity.Internal.Linq.DbQueryProvider.Execute[TResult](Expression expression)
+   em System.Linq.Queryable.FirstOrDefault[TSource](IQueryable`1 source)
+   em LaefazWeb.Controllers.ScriptController.MakeQueryTosca() na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 426
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1086
+13-09-2018 15:55:55 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:55:55 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:59:35 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 15:59:35 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'5','Descricao':'bbb','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 15:59:35 [ERROR] (LaefazWeb.Controllers.ScriptController - line 66) - Newtonsoft.Json.JsonSerializationException: Error converting value 126 to type 'LaefazWeb.Models.VOs.ParametroVO'. Path '', line 1, position 3. ---> System.ArgumentException: Could not cast or convert from System.Int64 to LaefazWeb.Models.VOs.ParametroVO.
+   em Newtonsoft.Json.Utilities.ConvertUtils.EnsureTypeAssignable(Object value, Type initialType, Type targetType)
+   em Newtonsoft.Json.Utilities.ConvertUtils.ConvertOrCast(Object initialValue, CultureInfo culture, Type targetType)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.EnsureType(JsonReader reader, Object value, CultureInfo culture, JsonContract contract, Type targetType)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   em Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   em LaefazWeb.Controllers.ScriptController.MakeQueryTosca() na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 451
+   em LaefazWeb.Controllers.ScriptController.Salvar(ScriptVO objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 1088
+13-09-2018 16:05:55 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 16:05:55 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'aaa','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 16:07:10 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - ScriptCondiçãoScript adicionado com sucesso
+13-09-2018 16:07:11 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'0','IdScript':'0','IdCondicaoScript':'','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as 'AMBIENTE EXECUCAO', (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'ADDON' AND parvAux.IdTestData = tdt.Id) AS ADDON,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'ADDONS GRATUITO' AND parvAux.IdTestData = tdt.Id) AS ADDONS_GRATUITO, FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN Execucao execu ON execu.IdTestData = tdt.Id INNER JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id AND execu.IdScript_CondicaoScript_Ambiente = scrconamb.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN (ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/SAC/aaa','CaminhoArquivoTCS':'C:\Tosca_Projects\Tosca_Workspaces\TDM\remote_exec\aaa.tcs','DiretorioRelatorio':'C:/Tosca_Projects/Tosca_Workspaces/TDM/remote_exec/Reports/report.txt','TempoEstimadoExecucao':'01/01/2001 00:00:00','NomeTecnicoScript':'aaa','CondicaoScript':'NULL','Script':'NULL',}]
+13-09-2018 16:07:21 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Ambiente adicionado com sucesso na tabela Script_CondicaoScript_Ambiente
+13-09-2018 16:07:21 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script_CondicaoScript_Ambiente = Script_CondicaoScript_Ambiente[{'Id':'0','IdScript_CondicaoScript':'0','IdAmbienteVirtual':'2','IdAmbienteExecucao':'2','AmbienteExecucao':'NULL','AmbienteVirtual':'NULL','Script_CondicaoScript':'NULL',}]
+13-09-2018 16:19:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script adicionado com sucesso
+13-09-2018 16:19:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'5','Descricao':'bbb','AUT':'NULL','Script2':'NULL',}]
+13-09-2018 16:19:17 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - ScriptCondiçãoScript adicionado com sucesso
+13-09-2018 16:19:17 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'0','IdScript':'0','IdCondicaoScript':'','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as 'AMBIENTE EXECUCAO', (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'AGENDADO' AND parvAux.IdTestData = tdt.Id) AS AGENDADO,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'ADDON' AND parvAux.IdTestData = tdt.Id) AS ADDON, FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN Execucao execu ON execu.IdTestData = tdt.Id INNER JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id AND execu.IdScript_CondicaoScript_Ambiente = scrconamb.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN (ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/BLL/bbb','CaminhoArquivoTCS':'C:\Tosca_Projects\Tosca_Workspaces\TDM\remote_exec\bbb.tcs','DiretorioRelatorio':'C:/Tosca_Projects/Tosca_Workspaces/TDM/remote_exec/Reports/report.txt','TempoEstimadoExecucao':'01/01/2001 00:15:00','NomeTecnicoScript':'bbb','CondicaoScript':'NULL','Script':'NULL',}]
+13-09-2018 16:19:18 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Ambiente adicionado com sucesso na tabela Script_CondicaoScript_Ambiente
+13-09-2018 16:19:18 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script_CondicaoScript_Ambiente = Script_CondicaoScript_Ambiente[{'Id':'0','IdScript_CondicaoScript':'0','IdAmbienteVirtual':'3','IdAmbienteExecucao':'1','AmbienteExecucao':'NULL','AmbienteVirtual':'NULL','Script_CondicaoScript':'NULL',}]
+13-09-2018 16:21:24 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Parametro adicionado com sucesso na tabela parametro_script
+13-09-2018 16:21:24 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ParametroScript = ParametroScript[{'Id':'935','IdParametro':'168','IdScript_CondicaoScript':'58','IdTipoParametro':'1','Obrigatorio':'True','ValorDefault':'','VisivelEmTela':'False','TipoParametro':'NULL',}]
+13-09-2018 16:21:58 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Parametro adicionado com sucesso na tabela parametro_script
+13-09-2018 16:21:59 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ParametroScript = ParametroScript[{'Id':'936','IdParametro':'142','IdScript_CondicaoScript':'58','IdTipoParametro':'2','Obrigatorio':'False','ValorDefault':'','VisivelEmTela':'False','TipoParametro':'NULL',}]
+13-09-2018 17:20:01 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script_CondicaoScript_Ambiente excluído com sucesso!
+13-09-2018 17:20:01 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script_CondicaoScript_Ambiente: Script_CondicaoScrip_F2BA028FA2E382E0D493FEB0ECBDFCEB5CCD9836D85F644B853B8DFDC4621EB1[{'AmbienteExecucao':'NULL','AmbienteVirtual':'NULL','Script_CondicaoScript':'NULL','Id':'314','IdScript_CondicaoScript':'57','IdAmbienteVirtual':'','IdAmbienteExecucao':'',}]
+13-09-2018 17:20:04 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script_CondicaoScript excluído com sucesso!
+13-09-2018 17:20:04 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script_CondicaoScript: Script_CondicaoScrip_9C14ADFA53E1CC6E97108642ED05695FDAF99BC686C4ADD9E0FF085775F0B586[{'CondicaoScript':'NULL','Script':'NULL','Id':'57','IdScript':'54','IdCondicaoScript':'','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as 'AMBIENTE EXECUCAO', (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'ADDON' AND parvAux.IdTestData = tdt.Id) AS ADDON,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'ADDONS GRATUITO' AND parvAux.IdTestData = tdt.Id) AS ADDONS_GRATUITO, FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN Execucao execu ON execu.IdTestData = tdt.Id INNER JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id AND execu.IdScript_CondicaoScript_Ambiente = scrconamb.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN (ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/SAC/aaa','CaminhoArquivoTCS':'C:\Tosca_Projects\Tosca_Workspaces\TDM\remote_exec\aaa.tcs','DiretorioRelatorio':'C:/Tosca_Projects/Tosca_Workspaces/TDM/remote_exec/Reports/report.txt','TempoEstimadoExecucao':'01/01/2001 00:00:00','NomeTecnicoScript':'aaa',}]
+13-09-2018 17:20:04 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script excluído com sucesso!
+13-09-2018 17:20:04 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'54','IdScriptPai':'','IdAUT':'','Descricao':'aaa',}]
+13-09-2018 17:20:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script_CondicaoScript_Ambiente excluído com sucesso!
+13-09-2018 17:20:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script_CondicaoScript_Ambiente: Script_CondicaoScrip_F2BA028FA2E382E0D493FEB0ECBDFCEB5CCD9836D85F644B853B8DFDC4621EB1[{'AmbienteExecucao':'NULL','AmbienteVirtual':'NULL','Script_CondicaoScript':'NULL','Id':'315','IdScript_CondicaoScript':'58','IdAmbienteVirtual':'','IdAmbienteExecucao':'',}]
+13-09-2018 17:20:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - ParametroScript excluído com sucesso!
+13-09-2018 17:20:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ParametroScript: ParametroScript_AEEEECCF21A2A4FD79DEABADAEFB73F4DBE63D911706C3D7C6BCE252E96BA27E[{'Parametro':'NULL','Script_CondicaoScript':'NULL','TipoParametro':'NULL','Id':'935','IdParametro':'168','IdScript_CondicaoScript':'58','IdTipoParametro':'1','Obrigatorio':'True','ValorDefault':'','VisivelEmTela':'False',}]
+13-09-2018 17:20:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - ParametroScript excluído com sucesso!
+13-09-2018 17:20:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - ParametroScript: ParametroScript_AEEEECCF21A2A4FD79DEABADAEFB73F4DBE63D911706C3D7C6BCE252E96BA27E[{'Parametro':'NULL','Script_CondicaoScript':'NULL','TipoParametro':'NULL','Id':'936','IdParametro':'142','IdScript_CondicaoScript':'58','IdTipoParametro':'2','Obrigatorio':'False','ValorDefault':'','VisivelEmTela':'False',}]
+13-09-2018 17:20:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script_CondicaoScript excluído com sucesso!
+13-09-2018 17:20:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script_CondicaoScript: Script_CondicaoScrip_9C14ADFA53E1CC6E97108642ED05695FDAF99BC686C4ADD9E0FF085775F0B586[{'CondicaoScript':'NULL','Script':'NULL','Id':'58','IdScript':'55','IdCondicaoScript':'','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as 'AMBIENTE EXECUCAO', (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'AGENDADO' AND parvAux.IdTestData = tdt.Id) AS AGENDADO,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = 'ADDON' AND parvAux.IdTestData = tdt.Id) AS ADDON, FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN Execucao execu ON execu.IdTestData = tdt.Id INNER JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id AND execu.IdScript_CondicaoScript_Ambiente = scrconamb.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN (ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/BLL/bbb','CaminhoArquivoTCS':'C:\Tosca_Projects\Tosca_Workspaces\TDM\remote_exec\bbb.tcs','DiretorioRelatorio':'C:/Tosca_Projects/Tosca_Workspaces/TDM/remote_exec/Reports/report.txt','TempoEstimadoExecucao':'01/01/2001 00:15:00','NomeTecnicoScript':'bbb',}]
+13-09-2018 17:20:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 99) - Script excluído com sucesso!
+13-09-2018 17:20:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 31) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'55','IdScriptPai':'','IdAUT':'','Descricao':'bbb',}]

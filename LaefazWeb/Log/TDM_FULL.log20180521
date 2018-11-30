@@ -1,0 +1,555 @@
+21-05-2018 11:42:45 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(DataPool objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 161
+21-05-2018 11:42:45 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 11:42:45 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = DataPool[{'Id':'0','IdTDM':'0','IdAut':'4','IdDemanda':'','IdScript_CondicaoScript':'0','Descricao':'CRIAR ANÁLISE DE CRÉDITO 2','QtdSolicitada':'','Observacao':'','DataSolicitacao':'21/05/2018 11:42:45','DataInicioExecucao':'','DataTermino':'','AUT':'NULL','Demanda':'NULL','Script_CondicaoScript':'NULL','TDM':'NULL',}]
+21-05-2018 11:45:56 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(DataPool objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 161
+21-05-2018 11:45:56 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 11:45:56 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = DataPool[{'Id':'0','IdTDM':'0','IdAut':'4','IdDemanda':'','IdScript_CondicaoScript':'0','Descricao':'CRIAR PERFIL DE FATURAMENTO 3','QtdSolicitada':'','Observacao':'','DataSolicitacao':'21/05/2018 11:45:56','DataInicioExecucao':'','DataTermino':'','AUT':'NULL','Demanda':'NULL','Script_CondicaoScript':'NULL','TDM':'NULL',}]
+21-05-2018 11:48:10 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Models.Entities.SaveChanges() na C:\Portal TDM\Portal\LaefazWeb\Models\Entities.cs:linha 47
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 169
+21-05-2018 11:49:36 [ERROR] (LaefazWeb.Controllers.ScriptController - line 0) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Models.Entities.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar)
+21-05-2018 11:49:36 [WARN ] (LaefazWeb.Controllers.ScriptController - line 0) - Já existe um DataPool com essa descrição.
+21-05-2018 11:49:36 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 0) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO 6','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 11:56:30 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Models.Entities.SaveChanges() na C:\Portal TDM\Portal\LaefazWeb\Models\Entities.cs:linha 47
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 170
+21-05-2018 11:56:30 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 11:56:30 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO 555','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:01:41 [ERROR] (LaefazWeb.Controllers.ScriptController - line 0) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Models.Entities.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar)
+21-05-2018 12:01:41 [WARN ] (LaefazWeb.Controllers.ScriptController - line 0) - Já existe um DataPool com essa descrição.
+21-05-2018 12:01:41 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 0) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO 4444','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:08:49 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Models.Entities.SaveChanges() na C:\Portal TDM\Portal\LaefazWeb\Models\Entities.cs:linha 47
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 158
+21-05-2018 12:08:49 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 12:08:49 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO 55','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:10:26 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Models.Entities.SaveChanges() na C:\Portal TDM\Portal\LaefazWeb\Models\Entities.cs:linha 47
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 158
+21-05-2018 12:10:26 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 12:10:26 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO cdc','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:12:29 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 158
+21-05-2018 12:12:29 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 12:12:29 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO 55','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:14:56 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries. ---> System.Data.Entity.Core.OptimisticConcurrencyException: Store update, insert, or delete statement affected an unexpected number of rows (0). Entities may have been modified or deleted since entities were loaded. Refresh ObjectStateManager entries.
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.ValidateRowsAffected(Int64 rowsAffected, UpdateCommand source)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 158
+21-05-2018 12:14:56 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um DataPool com essa descrição.
+21-05-2018 12:14:56 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO666','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:22:06 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script editado com sucesso
+21-05-2018 12:22:06 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script[{'Id':'6','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO4536','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:22:16 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script editado com sucesso
+21-05-2018 12:22:16 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script[{'Id':'6','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 12:27:30 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 12:27:30 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'9','IdScriptPai':'','IdAUT':'1','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 13:40:23 [ERROR] (LaefazWeb.Controllers.ScriptController - line 45) - Erro ao excluir o Script.
+System.FormatException: A cadeia de caracteres de entrada não estava em um formato correto.
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Remover(IList`1 ids) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 51
+21-05-2018 13:41:02 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - DataPool adicionado com sucesso
+21-05-2018 13:41:02 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = DataPool[{'Id':'2','IdTDM':'1','IdAut':'4','IdDemanda':'2','IdScript_CondicaoScript':'7','Descricao':'Teste Daniel','QtdSolicitada':'2','Observacao':'','DataSolicitacao':'21/05/2018 00:00:00','DataInicioExecucao':'','DataTermino':'21/05/2018 00:00:00','Demanda':'NULL','TDM':'NULL',}]
+21-05-2018 13:41:58 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - DataPool excluído com sucesso!
+21-05-2018 13:41:58 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool: DataPool_6587BE534994318BDB14E7C5A79E43F0E99D194CB96FF0955977C2815B6C996D[{'AUT':'NULL','Demanda':'NULL','Script_CondicaoScript':'NULL','TDM':'NULL','Id':'2','IdTDM':'1','IdAut':'4','IdDemanda':'','IdScript_CondicaoScript':'7','Descricao':'Teste Daniel','QtdSolicitada':'2','Observacao':'','DataSolicitacao':'21/05/2018 00:00:00','DataInicioExecucao':'','DataTermino':'21/05/2018 00:00:00',}]
+21-05-2018 13:42:13 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - O DataPool não pôde ser incluido pois existe um já cadastrado com a mesma condição, script e demanda.
+21-05-2018 13:42:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = DataPool[{'Id':'0','IdTDM':'1','IdAut':'0','IdDemanda':'','IdScript_CondicaoScript':'8','Descricao':'456456','QtdSolicitada':'455','Observacao':'','DataSolicitacao':'21/05/2018 13:42:13','DataInicioExecucao':'','DataTermino':'21/05/2018 00:00:00','AUT':'NULL','Demanda':'NULL','Script_CondicaoScript':'NULL','TDM':'NULL',}]
+21-05-2018 13:42:26 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - DataPool adicionado com sucesso
+21-05-2018 13:42:26 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - DataPool = DataPool[{'Id':'3','IdTDM':'1','IdAut':'4','IdDemanda':'','IdScript_CondicaoScript':'7','Descricao':'4555','QtdSolicitada':'4555','Observacao':'45','DataSolicitacao':'21/05/2018 00:00:00','DataInicioExecucao':'','DataTermino':'21/05/2018 00:00:00','Demanda':'NULL','TDM':'NULL',}]
+21-05-2018 13:42:37 [DEBUG] (LaefazWeb.Controllers.TestDataController - line 24) - TestData[{'Id':'3','IdExecucao':'','IdDataPool':'0','IdStatus':'0','IdUsuario':'','IdScript_CondicaoScript':'7','Descricao':'','GerarMigracao':'False','CasoTesteRelativo':'teste','Observacao':'','GeradoPor':'','DataGeracao':'','CaminhoEvidencia':'','ClassificacaoMassa':'0','DataPool':'NULL','Execucao':'NULL','Script_CondicaoScript':'NULL','Status':'NULL','Usuario':'NULL',}]
+21-05-2018 13:42:37 [INFO ] (LaefazWeb.Controllers.TestDataController - line 66) - TestData adicionado com sucesso
+21-05-2018 13:45:56 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 45) - Erro ao excluir o Script.
+System.FormatException: A cadeia de caracteres de entrada não estava em um formato correto.
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Remover(IList`1 ids) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 51
+21-05-2018 13:50:52 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script excluído com sucesso!
+21-05-2018 13:50:52 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'9','IdScriptPai':'','IdAUT':'','Descricao':'teste',}]
+21-05-2018 14:07:58 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 14:07:58 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'10','IdScriptPai':'','IdAUT':'','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:08:04 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script editado com sucesso
+21-05-2018 14:08:04 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script: Script[{'Id':'10','IdScriptPai':'','IdAUT':'','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:08:23 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script editado com sucesso
+21-05-2018 14:08:23 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script: Script[{'Id':'10','IdScriptPai':'','IdAUT':'','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:08:55 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script editado com sucesso
+21-05-2018 14:08:55 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script: Script[{'Id':'10','IdScriptPai':'','IdAUT':'','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:10:19 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script editado com sucesso
+21-05-2018 14:10:19 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script: Script[{'Id':'10','IdScriptPai':'','IdAUT':'','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:13:01 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script editado com sucesso
+21-05-2018 14:13:03 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script[{'Id':'10','IdScriptPai':'','IdAUT':'1','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:13:25 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 14:13:25 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'11','IdScriptPai':'','IdAUT':'1','Descricao':'teste 2','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 14:13:33 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script excluído com sucesso!
+21-05-2018 14:13:33 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'11','IdScriptPai':'','IdAUT':'','Descricao':'teste 2',}]
+21-05-2018 14:13:38 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script excluído com sucesso!
+21-05-2018 14:13:38 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'10','IdScriptPai':'','IdAUT':'','Descricao':'teste',}]
+21-05-2018 14:15:12 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script' with unique index 'IX_Script_Descricao'. The duplicate key value is (REALIZAR PEDIDO).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 145
+21-05-2018 14:16:24 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script' with unique index 'IX_Script_Descricao'. The duplicate key value is (REALIZAR PEDIDO).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 145
+21-05-2018 14:18:13 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script' with unique index 'IX_Script_Descricao'. The duplicate key value is (REALIZAR PEDIDO).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 145
+21-05-2018 14:18:15 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+21-05-2018 14:18:16 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'REALIZAR PEDIDO','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:21:04 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 15:21:05 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'16','IdScriptPai':'','IdAUT':'1','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:21:14 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - ScriptCondiçãoScript adicionado com sucesso
+21-05-2018 15:21:15 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'9','IdScript':'16','IdCondicaoScript':'8','QueryTosca':'','ListaExecucaoTosca':'','CaminhoArquivoTCS':'','DiretorioRelatorio':'','TempoEstimadoExecucao':'','CondicaoScript':'NULL',}]
+21-05-2018 15:21:44 [ERROR] (LaefazWeb.Controllers.ScriptController - line 45) - Erro ao excluir o Script.
+System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: The DELETE statement conflicted with the REFERENCE constraint "FK_Script_CondicaoScript_Script". The conflict occurred in database "TDM.Db", table "dbo.Script_CondicaoScript", column 'IdScript'.
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(TaskCompletionSource`1 completion, String methodName, Boolean sendToPipe, Int32 timeout, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.NonQuery(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteNonQuery()
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Remover(IList`1 ids) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 58
+21-05-2018 15:21:44 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'16','IdScriptPai':'','IdAUT':'','Descricao':'teste',}]
+21-05-2018 15:24:20 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script excluído com sucesso!
+21-05-2018 15:24:20 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'AUT':'NULL','Script2':'NULL','Id':'16','IdScriptPai':'','IdAUT':'','Descricao':'teste',}]
+21-05-2018 15:33:12 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 15:33:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'17','IdScriptPai':'','IdAUT':'4','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:36:20 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 15:36:20 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'18','IdScriptPai':'','IdAUT':'4','Descricao':'Teste Daniel','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:36:20 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - ScriptCondiçãoScript adicionado com sucesso
+21-05-2018 15:36:20 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'10','IdScript':'18','IdCondicaoScript':'5','QueryTosca':'','ListaExecucaoTosca':'','CaminhoArquivoTCS':'','DiretorioRelatorio':'','TempoEstimadoExecucao':'','CondicaoScript':'NULL',}]
+21-05-2018 15:37:12 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 15:37:12 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'19','IdScriptPai':'','IdAUT':'4','Descricao':'tessste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:53:18 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 15:53:18 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'20','IdScriptPai':'','IdAUT':'3','Descricao':'teste 22','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:53:29 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - ScriptCondiçãoScript adicionado com sucesso
+21-05-2018 15:53:29 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'11','IdScript':'20','IdCondicaoScript':'9','QueryTosca':'','ListaExecucaoTosca':'','CaminhoArquivoTCS':'','DiretorioRelatorio':'','TempoEstimadoExecucao':'','CondicaoScript':'NULL',}]
+21-05-2018 15:58:20 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script' with unique index 'IX_Script_Descricao'. The duplicate key value is (teste 22).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 156
+21-05-2018 15:58:20 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+21-05-2018 15:58:20 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'teste 22','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 15:58:36 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 15:58:36 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'22','IdScriptPai':'','IdAUT':'4','Descricao':'tessssssssste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:01:53 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:01:53 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'23','IdScriptPai':'','IdAUT':'4','Descricao':'novo','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:03:36 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script' with unique index 'IX_Script_Descricao'. The duplicate key value is (novo).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 156
+21-05-2018 16:03:36 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+21-05-2018 16:03:36 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'novo','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:03:45 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 16:03:45 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'25','IdScriptPai':'','IdAUT':'4','Descricao':'novo 2 ','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:11:42 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 16:11:42 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'26','IdScriptPai':'','IdAUT':'4','Descricao':'novo 222','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:15:00 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:15:00 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'27','IdScriptPai':'','IdAUT':'1','Descricao':'novo 2222','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:15:52 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 16:15:52 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'28','IdScriptPai':'','IdAUT':'1','Descricao':'nvooooo','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:19:20 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 16:19:20 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'29','IdScriptPai':'','IdAUT':'4','Descricao':'tasasss','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:24:21 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - Script adicionado com sucesso
+21-05-2018 16:24:21 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'30','IdScriptPai':'','IdAUT':'4','Descricao':'aaaaa','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:37:09 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:37:09 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'31','IdScriptPai':'','IdAUT':'2','Descricao':'aaaaaaa','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:38:11 [INFO ] (LaefazWeb.Controllers.ScriptController - line 0) - ScriptCondiçãoScript adicionado com sucesso
+21-05-2018 16:38:11 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 0) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'12','IdScript':'31','IdCondicaoScript':'8','QueryTosca':'','ListaExecucaoTosca':'','CaminhoArquivoTCS':'','DiretorioRelatorio':'','TempoEstimadoExecucao':'','CondicaoScript':'NULL',}]
+21-05-2018 16:38:26 [INFO ] (LaefazWeb.Controllers.ScriptController - line 0) - Script adicionado com sucesso
+21-05-2018 16:38:26 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 0) - Script = Script[{'Id':'32','IdScriptPai':'','IdAUT':'4','Descricao':'aasadass','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:44:51 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:44:51 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'33','IdScriptPai':'','IdAUT':'1','Descricao':'aabbb','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:47:17 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:47:17 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'34','IdScriptPai':'','IdAUT':'1','Descricao':'aaabbb','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:49:43 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:49:43 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'35','IdScriptPai':'','IdAUT':'1','Descricao':'aaaa','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:52:23 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:52:23 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'36','IdScriptPai':'','IdAUT':'4','Descricao':'aaaabbbb','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:58:36 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script' with unique index 'IX_Script_Descricao'. The duplicate key value is (teste).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 156
+21-05-2018 16:58:36 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+21-05-2018 16:58:36 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'teste','AUT':'NULL','Script2':'NULL',}]
+21-05-2018 16:58:46 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+21-05-2018 16:58:46 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'38','IdScriptPai':'','IdAUT':'1','Descricao':'asasaaa','AUT':'NULL','Script2':'NULL',}]

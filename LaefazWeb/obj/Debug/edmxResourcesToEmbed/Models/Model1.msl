@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TDMDbModelStoreContainer" CdmEntityContainer="DbEntities">
+    <EntitySetMapping Name="AmbienteExecucao">
+      <EntityTypeMapping TypeName="TDM.DbModel.AmbienteExecucao">
+        <MappingFragment StoreEntitySet="AmbienteExecucao">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AmbienteVirtual">
+      <EntityTypeMapping TypeName="TDM.DbModel.AmbienteVirtual">
+        <MappingFragment StoreEntitySet="AmbienteVirtual">
+          <ScalarProperty Name="IP" ColumnName="IP" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AUT">
+      <EntityTypeMapping TypeName="TDM.DbModel.AUT">
+        <MappingFragment StoreEntitySet="AUT">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CondicaoScript">
+      <EntityTypeMapping TypeName="TDM.DbModel.CondicaoScript">
+        <MappingFragment StoreEntitySet="CondicaoScript">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DataPool">
+      <EntityTypeMapping TypeName="TDM.DbModel.DataPool">
+        <MappingFragment StoreEntitySet="DataPool">
+          <ScalarProperty Name="DataTermino" ColumnName="DataTermino" />
+          <ScalarProperty Name="DataInicioExecucao" ColumnName="DataInicioExecucao" />
+          <ScalarProperty Name="DataSolicitacao" ColumnName="DataSolicitacao" />
+          <ScalarProperty Name="Observacao" ColumnName="Observacao" />
+          <ScalarProperty Name="QtdSolicitada" ColumnName="QtdSolicitada" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdScript_CondicaoScript" ColumnName="IdScript_CondicaoScript" />
+          <ScalarProperty Name="IdDemanda" ColumnName="IdDemanda" />
+          <ScalarProperty Name="IdAut" ColumnName="IdAut" />
+          <ScalarProperty Name="IdTDM" ColumnName="IdTDM" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Demanda">
+      <EntityTypeMapping TypeName="TDM.DbModel.Demanda">
+        <MappingFragment StoreEntitySet="Demanda">
+          <ScalarProperty Name="Complemento" ColumnName="Complemento" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Execucao">
+      <EntityTypeMapping TypeName="TDM.DbModel.Execucao">
+        <MappingFragment StoreEntitySet="Execucao">
+          <ScalarProperty Name="ToscaOutput" ColumnName="ToscaOutput" />
+          <ScalarProperty Name="ToscaInput" ColumnName="ToscaInput" />
+          <ScalarProperty Name="SituacaoAmbiente" ColumnName="SituacaoAmbiente" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="IdTipoFaseTeste" ColumnName="IdTipoFaseTeste" />
+          <ScalarProperty Name="IdStatusExecucao" ColumnName="IdStatusExecucao" />
+          <ScalarProperty Name="IdTestData" ColumnName="IdTestData" />
+          <ScalarProperty Name="IdScript_CondicaoScript_Ambiente" ColumnName="IdScript_CondicaoScript_Ambiente" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MapaCalor">
+      <EntityTypeMapping TypeName="TDM.DbModel.MapaCalor">
+        <MappingFragment StoreEntitySet="MapaCalor">
+          <ScalarProperty Name="PosY" ColumnName="PosY" />
+          <ScalarProperty Name="PosX" ColumnName="PosX" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdTelaMapaCalor" ColumnName="IdTelaMapaCalor" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Parametro">
+      <EntityTypeMapping TypeName="TDM.DbModel.Parametro">
+        <MappingFragment StoreEntitySet="Parametro">
+          <ScalarProperty Name="ColunaTecnicaTosca" ColumnName="ColunaTecnicaTosca" />
+          <ScalarProperty Name="Tipo" ColumnName="Tipo" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParametroScript">
+      <EntityTypeMapping TypeName="TDM.DbModel.ParametroScript">
+        <MappingFragment StoreEntitySet="ParametroScript">
+          <ScalarProperty Name="Obrigatorio" ColumnName="Obrigatorio" />
+          <ScalarProperty Name="IdTipoParametro" ColumnName="IdTipoParametro" />
+          <ScalarProperty Name="IdScript_CondicaoScript" ColumnName="IdScript_CondicaoScript" />
+          <ScalarProperty Name="IdParametro" ColumnName="IdParametro" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ParametroValor">
+      <EntityTypeMapping TypeName="TDM.DbModel.ParametroValor">
+        <MappingFragment StoreEntitySet="ParametroValor">
+          <ScalarProperty Name="Valor" ColumnName="Valor" />
+          <ScalarProperty Name="IdParametroScript" ColumnName="IdParametroScript" />
+          <ScalarProperty Name="IdTestData" ColumnName="IdTestData" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Script">
+      <EntityTypeMapping TypeName="TDM.DbModel.Script">
+        <MappingFragment StoreEntitySet="Script">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdAUT" ColumnName="IdAUT" />
+          <ScalarProperty Name="IdScriptPai" ColumnName="IdScriptPai" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Script_CondicaoScript">
+      <EntityTypeMapping TypeName="TDM.DbModel.Script_CondicaoScript">
+        <MappingFragment StoreEntitySet="Script_CondicaoScript">
+          <ScalarProperty Name="DiretorioRelatorio" ColumnName="DiretorioRelatorio" />
+          <ScalarProperty Name="CaminhoArquivoTCS" ColumnName="CaminhoArquivoTCS" />
+          <ScalarProperty Name="ListaExecucaoTosca" ColumnName="ListaExecucaoTosca" />
+          <ScalarProperty Name="QueryTosca" ColumnName="QueryTosca" />
+          <ScalarProperty Name="IdCondicaoScript" ColumnName="IdCondicaoScript" />
+          <ScalarProperty Name="IdScript" ColumnName="IdScript" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Script_CondicaoScript_Ambiente">
+      <EntityTypeMapping TypeName="TDM.DbModel.Script_CondicaoScript_Ambiente">
+        <MappingFragment StoreEntitySet="Script_CondicaoScript_Ambiente">
+          <ScalarProperty Name="IdAmbienteExecucao" ColumnName="IdAmbienteExecucao" />
+          <ScalarProperty Name="IdAmbienteVirtual" ColumnName="IdAmbienteVirtual" />
+          <ScalarProperty Name="IdScript_CondicaoScript" ColumnName="IdScript_CondicaoScript" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Status">
+      <EntityTypeMapping TypeName="TDM.DbModel.Status">
+        <MappingFragment StoreEntitySet="Status">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatusExecucao">
+      <EntityTypeMapping TypeName="TDM.DbModel.StatusExecucao">
+        <MappingFragment StoreEntitySet="StatusExecucao">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TDM">
+      <EntityTypeMapping TypeName="TDM.DbModel.TDM">
+        <MappingFragment StoreEntitySet="TDM">
+          <ScalarProperty Name="TdmPublico" ColumnName="TdmPublico" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TDM_Usuario">
+      <EntityTypeMapping TypeName="TDM.DbModel.TDM_Usuario">
+        <MappingFragment StoreEntitySet="TDM_Usuario">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdTDM" ColumnName="IdTDM" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TelaMapaCalor">
+      <EntityTypeMapping TypeName="TDM.DbModel.TelaMapaCalor">
+        <MappingFragment StoreEntitySet="TelaMapaCalor">
+          <ScalarProperty Name="Caminho" ColumnName="Caminho" />
+          <ScalarProperty Name="Imagem" ColumnName="Imagem" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TestData">
+      <EntityTypeMapping TypeName="TDM.DbModel.TestData">
+        <MappingFragment StoreEntitySet="TestData">
+          <ScalarProperty Name="CaminhoEvidencia" ColumnName="CaminhoEvidencia" />
+          <ScalarProperty Name="DataGeracao" ColumnName="DataGeracao" />
+          <ScalarProperty Name="GeradoPor" ColumnName="GeradoPor" />
+          <ScalarProperty Name="TerminoExecucao" ColumnName="TerminoExecucao" />
+          <ScalarProperty Name="InicioExecucao" ColumnName="InicioExecucao" />
+          <ScalarProperty Name="Observacao" ColumnName="Observacao" />
+          <ScalarProperty Name="CasoTesteRelativo" ColumnName="CasoTesteRelativo" />
+          <ScalarProperty Name="GerarMigracao" ColumnName="GerarMigracao" />
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="IdScript_CondicaoScript" ColumnName="IdScript_CondicaoScript" />
+          <ScalarProperty Name="IdUsuario" ColumnName="IdUsuario" />
+          <ScalarProperty Name="IdStatus" ColumnName="IdStatus" />
+          <ScalarProperty Name="IdDataPool" ColumnName="IdDataPool" />
+          <ScalarProperty Name="IdExecucao" ColumnName="IdExecucao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoFaseTeste">
+      <EntityTypeMapping TypeName="TDM.DbModel.TipoFaseTeste">
+        <MappingFragment StoreEntitySet="TipoFaseTeste">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TipoParametro">
+      <EntityTypeMapping TypeName="TDM.DbModel.TipoParametro">
+        <MappingFragment StoreEntitySet="TipoParametro">
+          <ScalarProperty Name="Descricao" ColumnName="Descricao" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuario">
+      <EntityTypeMapping TypeName="TDM.DbModel.Usuario">
+        <MappingFragment StoreEntitySet="Usuario">
+          <ScalarProperty Name="Senha" ColumnName="Senha" />
+          <ScalarProperty Name="Login" ColumnName="Login" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

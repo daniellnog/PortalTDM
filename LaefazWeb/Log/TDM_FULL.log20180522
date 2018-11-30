@@ -1,0 +1,180 @@
+22-05-2018 09:37:38 [ERROR] (LaefazWeb.Controllers.ScriptController - line 45) - Erro ao excluir o Script.
+System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: entity
+   em System.Data.Entity.Utilities.Check.NotNull[T](T value, String parameterName)
+   em System.Data.Entity.DbSet`1.Remove(TEntity entity)
+   em LaefazWeb.Controllers.ScriptController.Remover(IList`1 ids) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 60
+22-05-2018 09:37:39 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script: Script_E0DE016034ECECDF48BD1EE2BE5A8480412E0A5FE7BB2B086A784565FB159AEB[{'Script2':'NULL','Id':'35','IdScriptPai':'','IdAUT':'1','Descricao':'aaaa',}]
+22-05-2018 10:04:48 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 175
+22-05-2018 10:04:48 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 10:04:48 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'dsdsdssd','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:01:07 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 196
+22-05-2018 12:01:07 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:01:07 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'daniel testando','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:13:16 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.ArgumentNullException: Valor não pode ser nulo.
+Nome do parâmetro: String
+   em System.Number.StringToNumber(String str, NumberStyles options, NumberBuffer& number, NumberFormatInfo info, Boolean parseDecimal)
+   em System.Number.ParseInt32(String s, NumberStyles style, NumberFormatInfo info)
+   em System.Int32.Parse(String s)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 197
+22-05-2018 12:13:16 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:13:16 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'axxx','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:17:42 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 195
+22-05-2018 12:17:42 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:17:42 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'abbbaaa','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:18:23 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 195
+22-05-2018 12:18:23 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:18:23 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aavvv','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:19:37 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 195
+22-05-2018 12:19:37 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:19:37 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'asasazz','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:20:11 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - System.NullReferenceException: Referência de objeto não definida para uma instância de um objeto.
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 195
+22-05-2018 12:20:11 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:20:11 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aaazzzz','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:22:03 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 12.
+   em Newtonsoft.Json.JsonTextReader.Read()
+   em Newtonsoft.Json.Linq.JObject.Parse(String json, JsonLoadSettings settings)
+   em Newtonsoft.Json.Linq.JObject.Parse(String json)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 197
+22-05-2018 12:22:03 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:22:03 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aaaaxxxx','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:25:36 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - Newtonsoft.Json.JsonReaderException: Could not convert string to integer: DDD. Path 'id', line 1, position 11.
+   em Newtonsoft.Json.JsonReader.ReadInt32String(String s)
+   em Newtonsoft.Json.JsonTextReader.FinishReadQuotedNumber(ReadType readType)
+   em Newtonsoft.Json.JsonTextReader.ReadNumberValue(ReadType readType)
+   em Newtonsoft.Json.JsonTextReader.ReadAsInt32()
+   em Newtonsoft.Json.JsonReader.ReadForType(JsonContract contract, Boolean hasConverter)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   em Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 198
+22-05-2018 12:25:36 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:25:36 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aazzzzc vas','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:27:19 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 19.
+   em Newtonsoft.Json.JsonTextReader.Read()
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   em Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 198
+22-05-2018 12:27:19 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:27:19 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'asaassss','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:28:06 [ERROR] (LaefazWeb.Controllers.DataPoolController - line 40) - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 19.
+   em Newtonsoft.Json.JsonTextReader.Read()
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   em Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 198
+22-05-2018 12:28:06 [WARN ] (LaefazWeb.Controllers.DataPoolController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:28:06 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aassssqqqq','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:38:19 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - Newtonsoft.Json.JsonSerializationException: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[LaefazWeb.Models.Parametro]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'id', line 1, position 6.
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   em Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 198
+22-05-2018 12:38:19 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:38:19 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aaaaaaaaaa','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 12:44:32 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - Newtonsoft.Json.JsonReaderException: Additional text encountered after finished reading JSON content: ,. Path '', line 1, position 0.
+   em Newtonsoft.Json.JsonTextReader.Read()
+   em Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   em Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   em Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 204
+22-05-2018 12:44:32 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 12:44:32 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'','Descricao':'aasssxxx','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:06:38 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:06:38 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'DANIEL ESTÁ TESTANDO','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:06:38 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - ScriptCondiçãoScript adicionado com sucesso
+22-05-2018 14:06:38 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'13','IdScript':'39','IdCondicaoScript':'11','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as AMBIENTE, (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = {'id':'1' AND parvAux.IdTestData = tdt.Id) AS {'id':'1',(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao =  'Descricao' : 'CPF' AND parvAux.IdTestData = tdt.Id) AS  'Descricao' : 'CPF',(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao =  'Tipo': 'STRING' AND parvAux.IdTestData = tdt.Id) AS  'Tipo': 'STRING',(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao =  'ColunaTecnicaTosca':'CPF'}|{'id':'2' AND parvAux.IdTestData = tdt.Id) AS  'ColunaTecnicaTosca':'CPF'}|{'id':'2',(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao =  'Descricao' : 'DDD' AND parvAux.IdTestData = tdt.Id) AS  'Descricao' : 'DDD',(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao =  'Tipo': 'STRING' AND parvAux.IdTestData = tdt.Id) AS  'Tipo': 'STRING',(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao =  'ColunaTecnicaTosca':'DDD'} AND parvAux.IdTestData = tdt.Id) AS  'ColunaTecnicaTosca':'DDD'}
+FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN(ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/CPF','CaminhoArquivoTCS':'','DiretorioRelatorio':'','TempoEstimadoExecucao':'','CondicaoScript':'NULL',}]
+22-05-2018 14:06:38 [ERROR] (LaefazWeb.Controllers.ScriptController - line 40) - System.Data.Entity.Infrastructure.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.Entity.Core.UpdateException: An error occurred while updating the entries. See the inner exception for details. ---> System.Data.SqlClient.SqlException: Cannot insert duplicate key row in object 'dbo.Script_CondicaoScript' with unique index 'IX_Script_CondicaoScript'. The duplicate key value is (39, 11).
+The statement has been terminated.
+   em System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   em System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   em System.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   em System.Data.SqlClient.SqlDataReader.TryConsumeMetaData()
+   em System.Data.SqlClient.SqlDataReader.get_MetaData()
+   em System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async, Int32 timeout, Task& task, Boolean asyncWrite, Boolean inRetry, SqlDataReader ds, Boolean describeParameterEncryptionRequest)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, TaskCompletionSource`1 completion, Int32 timeout, Task& task, Boolean& usedCache, Boolean asyncWrite, Boolean inRetry)
+   em System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteReader(CommandBehavior behavior, String method)
+   em System.Data.SqlClient.SqlCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.<>c__DisplayClassb.<Reader>b__8()
+   em System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TInterceptionContext,TResult](Func`1 operation, TInterceptionContext interceptionContext, Action`1 executing, Action`1 executed)
+   em System.Data.Entity.Infrastructure.Interception.DbCommandDispatcher.Reader(DbCommand command, DbCommandInterceptionContext interceptionContext)
+   em System.Data.Entity.Internal.InterceptableDbCommand.ExecuteDbDataReader(CommandBehavior behavior)
+   em System.Data.Common.DbCommand.ExecuteReader(CommandBehavior behavior)
+   em System.Data.Entity.Core.Mapping.Update.Internal.DynamicUpdateCommand.Execute(Dictionary`2 identifierValues, List`1 generatedValues)
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Core.Mapping.Update.Internal.UpdateTranslator.Update()
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.<Update>b__2(UpdateTranslator ut)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update[T](T noChangesResult, Func`2 updateFunction, Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.EntityClient.Internal.EntityAdapter.Update(Boolean throwOnClosedConnection)
+   em System.Data.Entity.Core.Objects.ObjectContext.<SaveChangesToStore>b__33()
+   em System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChangesToStore(SaveOptions options, IDbExecutionStrategy executionStrategy)
+   em System.Data.Entity.Core.Objects.ObjectContext.<>c__DisplayClass28.<SaveChanges>b__25()
+   em System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   em System.Data.Entity.Core.Objects.ObjectContext.SaveChanges(SaveOptions options)
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   --- Fim do rastreamento de pilha de exceções internas ---
+   em System.Data.Entity.Internal.InternalContext.SaveChanges()
+   em System.Data.Entity.Internal.LazyInternalContext.SaveChanges()
+   em System.Data.Entity.DbContext.SaveChanges()
+   em LaefazWeb.Controllers.ScriptController.Salvar(Script objeto, Boolean editar) na C:\Portal TDM\Portal\LaefazWeb\Controllers\ScriptController.cs:linha 246
+22-05-2018 14:06:38 [WARN ] (LaefazWeb.Controllers.ScriptController - line 77) - Já existe um Script com essa descrição.
+22-05-2018 14:06:38 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'39','IdScriptPai':'','IdAUT':'1','Descricao':'DANIEL ESTÁ TESTANDO','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:07:00 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:07:00 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'DANIEL ESTA TESTANDO','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:10:12 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:10:12 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'abbbb','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:11:33 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:11:33 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'3','Descricao':'abbb','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:13:02 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:13:02 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'aabb','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:15:54 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:15:54 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'abbb','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:17:44 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:17:44 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'abbb','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:44:29 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:44:29 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'teste','NomeTecnicoScript':'','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:45:21 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:45:21 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'4','Descricao':'aaaa','NomeTecnicoScript':'','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:48:13 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - Script adicionado com sucesso
+22-05-2018 14:48:13 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - Script = Script[{'Id':'0','IdScriptPai':'','IdAUT':'1','Descricao':'SCRIPT DE TESTE','NomeTecnicoScript':'SCRIPT_TESTE','AUT':'NULL','Script2':'NULL',}]
+22-05-2018 14:49:11 [INFO ] (LaefazWeb.Controllers.ScriptController - line 66) - ScriptCondiçãoScript adicionado com sucesso
+22-05-2018 14:49:14 [DEBUG] (LaefazWeb.Controllers.ScriptController - line 24) - ScriptCondiçãoScript = Script_CondicaoScript[{'Id':'9','IdScript':'9','IdCondicaoScript':'2','QueryTosca':'SELECT DISTINCT top 10000 tdt.Id AS ID_TEST_DATA, scr.Descricao AS SCRIPT, dem.Descricao AS DEMANDA, tdt.CasoTesteRelativo AS CASO_TESTE, aut.Descricao AS SISTEMA, ambexec.descricao as AMBIENTE, (SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = CPF AND parvAux.IdTestData = tdt.Id) AS CPF,(SELECT parvAux.valor FROM ParametroValor parvAux INNER JOIN ParametroScript parsAux ON parvAux.IdParametroScript = parsAux.Id INNER JOIN Parametro parAux ON parsAux.IdParametro = parAux.Id WHERE parAux.Descricao = DDD AND parvAux.IdTestData = tdt.Id) AS DDD FROM TestData tdt INNER JOIN DataPool dtp ON tdt.IdDataPool = dtp.Id LEFT JOIN Script_CondicaoScript scrcon ON dtp.IdScript_CondicaoScript = scrcon.Id LEFT JOIN Script_CondicaoScript_Ambiente scrconamb ON scrconamb.IdScript_CondicaoScript = scrcon.Id INNER JOIN Script scr ON scrcon.IdScript = scr.Id LEFT JOIN CondicaoScript con ON scrcon.IdCondicaoScript = con.Id INNER JOIN ParametroScript parscr ON parscr.IdScript_CondicaoScript = scrcon.Id INNER JOIN Parametro par ON parscr.IdParametro = par.Id INNER JOIN AUT aut ON dtp.IdAut = aut.Id LEFT JOIN AmbienteExecucao ambexec ON scrconamb.IdAmbienteExecucao = ambexec.Id INNER JOIN AmbienteVirtual ambvir ON scrconamb.IdAmbienteVirtual = ambvir.Id LEFT JOIN Demanda dem ON dtp.IdDemanda = dem.Id INNER JOIN Usuario us ON tdt.IdUsuario = us.Id WHERE tdt.Id IN(ptdTosca) ORDER BY tdt.id','ListaExecucaoTosca':'/Execution/ExecutionLists/SCRIPT_TESTE','CaminhoArquivoTCS':'C:\Tosca_Projects\Tosca_Workspaces\TDM\remote_exec\script-teste','DiretorioRelatorio':'C:/Tosca_Projects/Tosca_Workspaces/TDM/remote_exec/Reports/report.txt','TempoEstimadoExecucao':'','CondicaoScript':'NULL',}]

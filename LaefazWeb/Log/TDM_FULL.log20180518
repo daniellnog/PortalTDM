@@ -1,0 +1,2 @@
+18-05-2018 16:00:11 [INFO ] (LaefazWeb.Controllers.DataPoolController - line 66) - DataPool editado com sucesso
+18-05-2018 16:00:12 [DEBUG] (LaefazWeb.Controllers.DataPoolController - line 24) - DataPool: DataPool[{'Id':'1','IdTDM':'1','IdAut':'3','IdDemanda':'1','IdScript_CondicaoScript':'8','Descricao':'DATAPOOL TESTE','QtdSolicitada':'10','Observacao':'OBSERVAÇÃO PARA DATAPOOL TESTE','DataSolicitacao':'18/05/2018 00:00:00','DataInicioExecucao':'','DataTermino':'18/05/2018 00:00:00','AUT':'NULL','Demanda':'NULL','TDM':'NULL',}]
